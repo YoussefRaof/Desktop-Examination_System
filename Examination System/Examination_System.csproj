@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41741873-B1F7-4A8F-B1DA-F5DCAC782397}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Examination_System</RootNamespace>
+    <AssemblyName>Examination System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\AdminMethods.cs" />
+    <Compile Include="Controller\DatabaseConnection.cs" />
+    <Compile Include="Controller\IAdminRepo.cs" />
+    <Compile Include="Controller\InstructorController\IInstructorRepo.cs" />
+    <Compile Include="Controller\InstructorController\InstructorMethods.cs" />
+    <Compile Include="Controller\StudentController\IStudentRepo.cs" />
+    <Compile Include="Controller\StudentController\StudentMethods.cs" />
+    <Compile Include="Controller\TableData.cs" />
+    <Compile Include="Model\Admin.cs" />
+    <Compile Include="Model\Branch.cs" />
+    <Compile Include="Model\Branch_Track.cs" />
+    <Compile Include="Model\Course.cs" />
+    <Compile Include="Model\Exam.cs" />
+    <Compile Include="Model\Exam_Questions.cs" />
+    <Compile Include="Model\Instructor.cs" />
+    <Compile Include="Model\Instructor_Course.cs" />
+    <Compile Include="Model\Questions.cs" />
+    <Compile Include="Model\Question_Choices.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\Student_Courses.cs" />
+    <Compile Include="Model\Student_Exam.cs" />
+    <Compile Include="Model\Student_Exam_Questions.cs" />
+    <Compile Include="Model\Topic.cs" />
+    <Compile Include="Model\Track.cs" />
+    <Compile Include="Model\Track_Course.cs" />
+    <Compile Include="Model\Track_Instructor.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="View\admin\Assign_Instractors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\Assign_Instractors.Designer.cs">
+      <DependentUpon>Assign_Instractors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\Assign_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\Assign_Students.Designer.cs">
+      <DependentUpon>Assign_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\Branches_Tracks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\Branches_Tracks.Designer.cs">
+      <DependentUpon>Branches_Tracks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\Courses_Topics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\Courses_Topics.Designer.cs">
+      <DependentUpon>Courses_Topics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\ManageInstractors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\ManageInstractors.Designer.cs">
+      <DependentUpon>ManageInstractors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\ManageStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\ManageStudents.Designer.cs">
+      <DependentUpon>ManageStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\instractor\ExamStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\instractor\ExamStatus.Designer.cs">
+      <DependentUpon>ExamStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\instractor\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\instractor\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\instractor\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\instractor\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\instractor\MakeExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\instractor\MakeExam.Designer.cs">
+      <DependentUpon>MakeExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\instractor\ShowResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\instractor\ShowResult.Designer.cs">
+      <DependentUpon>ShowResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Prompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Prompt.Designer.cs">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\SignUpAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\SignUpAdmin.Designer.cs">
+      <DependentUpon>SignUpAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\student\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\student\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\student\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\student\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\student\ShowResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\student\ShowResult.Designer.cs">
+      <DependentUpon>ShowResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\student\TakeExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\student\TakeExam.Designer.cs">
+      <DependentUpon>TakeExam.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\admin\Assign_Instractors.resx">
+      <DependentUpon>Assign_Instractors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\Assign_Students.resx">
+      <DependentUpon>Assign_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\Branches_Tracks.resx">
+      <DependentUpon>Branches_Tracks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\Courses_Topics.resx">
+      <DependentUpon>Courses_Topics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\ManageInstractors.resx">
+      <DependentUpon>ManageInstractors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\ManageStudents.resx">
+      <DependentUpon>ManageStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\SignUpAdmin.resx">
+      <DependentUpon>SignUpAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\instractor\ExamStatus.resx">
+      <DependentUpon>ExamStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\instractor\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\instractor\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\instractor\MakeExam.resx">
+      <DependentUpon>MakeExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\instractor\ShowResult.resx">
+      <DependentUpon>ShowResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Prompt.resx">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\student\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\student\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\student\ShowResult.resx">
+      <DependentUpon>ShowResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\student\TakeExam.resx">
+      <DependentUpon>TakeExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Icons\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
