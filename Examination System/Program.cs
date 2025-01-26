@@ -18,7 +18,7 @@ namespace Examination_System
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new View.Start());
 
-            //Application.Run(new view.student.TakeExam());
+            //Application.Run(new view.admin.Assign_Instractors(null, null));
         }
     }
 }

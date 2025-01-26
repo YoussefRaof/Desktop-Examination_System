@@ -13,6 +13,7 @@ namespace Examination_System.view.admin
     public partial class Home : Form
     {
         public static string _email;
+
         public Home(string email)
         {
             InitializeComponent();
@@ -33,43 +34,43 @@ namespace Examination_System.view.admin
         private void info_btn_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new Information(_email, this).Show();
+            new Information(this, _email).Show();
         }
 
         private void instractor_btn_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new ManageInstractors(this).Show();
+            new ManageInstractors(this, _email).Show();
         }
 
         private void student_btn_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new ManageStudents(this).Show();
+            new ManageStudents(this, _email).Show();
         }
 
         private void branchTrack_btn_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new Branches_Tracks(this).Show();
+            new Branches_Tracks(this, _email).Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new Courses_Topics(this).Show();
+            new Courses_Topics(this, _email).Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new Assign_Instractors(this).Show();
+            new Assign_Instractors(this, _email).Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new Assign_Students(this).Show();
+            new Assign_Students(this, _email).Show();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Examination_System.controller
         void Insert(Admin admin);
         void Update(Admin admin);
         bool Login(Admin admin);
-        int getID(string email);
-        bool checkPassword(string password, string email);
+        int getID(string table, string email);
+        bool checkPassword(string password, string table, string email);
     }
 }

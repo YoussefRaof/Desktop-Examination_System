@@ -139,6 +139,12 @@
     <Compile Include="View\admin\ManageStudents.Designer.cs">
       <DependentUpon>ManageStudents.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\instractor\Courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\instractor\Courses.Designer.cs">
+      <DependentUpon>Courses.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\instractor\ExamStatus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,18 @@
     </Compile>
     <Compile Include="View\admin\SignUpAdmin.Designer.cs">
       <DependentUpon>SignUpAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\student\ChoseExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\student\ChoseExam.Designer.cs">
+      <DependentUpon>ChoseExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\student\Courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\student\Courses.Designer.cs">
+      <DependentUpon>Courses.cs</DependentUpon>
     </Compile>
     <Compile Include="View\student\Home.cs">
       <SubType>Form</SubType>
@@ -258,6 +276,9 @@
     <EmbeddedResource Include="View\admin\SignUpAdmin.resx">
       <DependentUpon>SignUpAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\instractor\Courses.resx">
+      <DependentUpon>Courses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\instractor\ExamStatus.resx">
       <DependentUpon>ExamStatus.cs</DependentUpon>
     </EmbeddedResource>
@@ -281,6 +302,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\student\ChoseExam.resx">
+      <DependentUpon>ChoseExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\student\Courses.resx">
+      <DependentUpon>Courses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\student\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

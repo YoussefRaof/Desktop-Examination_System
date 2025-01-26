@@ -22,17 +22,22 @@ namespace Examination_System.view.admin
     public partial class ManageInstractors : Form
     {
         private Form _Home;
-        
+        private string _adminEmail;
+
         private Instructor instructor;
         private IInstructorRepo instructorMethods;
+        private IAdminRepo adminMethods;
 
-        public ManageInstractors(Form home)
+        public ManageInstractors(Form home, string adminEmail)
         {
             InitializeComponent();
-            TableData.show("Instructor", instractors_table);
+            TableData.getData("instructorView", "ins_name", search.Text, instractors_table);
             _Home = home;
+            _adminEmail = adminEmail;
+
             instructor = new Instructor();
             instructorMethods = new InstructorMethods();
+            adminMethods = new AdminMethods();
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -46,14 +51,21 @@ namespace Examination_System.view.admin
             _Home.Visible = true;
         }
 
+        private void clearData()
+        {
+            name.Text = string.Empty;
+            email.Text = string.Empty;
+            phone.Text = string.Empty;
+            salary.Text = string.Empty;
+        }
+
         private void setData()
         {
             instructor.Name = name.Text;
             instructor.Email = email.Text;
             instructor.Phone = phone.Text;
             instructor.Salary = Convert.ToInt32(salary.Text);
-            instructor.AdminId = GetAdminIdByEmail(Home._email);
-
+            instructor.AdminId = adminMethods.getID("admin", _adminEmail);
         }
 
         private void insert_btn_Click(object sender, EventArgs e)
@@ -61,15 +73,12 @@ namespace Examination_System.view.admin
             if (checkData())
             {
                 setData();
+
                 instructorMethods.Insert(instructor);
+                TableData.getData("instructorView", "ins_name", search.Text, instractors_table);
                 MessageBox.Show("Instructor Created Successfuly !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TableData.show("Instructor", instractors_table);
-                name.Text= string.Empty;
-                email.Text= string.Empty;
-                phone.Text= string.Empty;
-                salary.Text= string.Empty;
 
-
+                clearData();
             }
             else
             {
@@ -138,9 +147,6 @@ namespace Examination_System.view.admin
 
 
 
-
-
-
                     instructor.Salary = int.TryParse(salary.Text, out int salaryValue) ? salaryValue : Convert.ToInt32(selectedRow.Cells["ins_salary"].Value.ToString());
 
                     //if (ValidateInstructorData(instructor))
@@ -153,14 +159,14 @@ namespace Examination_System.view.admin
 
                         if (confirmation == DialogResult.Yes)
                         {
-                           
-                            instructorMethods.Update(instructor);
+                            instructorMethods.Update(instructor, null);
+                            clearData();
 
-                            
-                            TableData.show("Instructor", instractors_table);
+                        TableData.getData("instructorView", "ins_name", search.Text, instractors_table);
 
-                            MessageBox.Show("Instructor updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                        MessageBox.Show("Instructor updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
                     //}
                     //else
                     //{
@@ -203,16 +209,18 @@ namespace Examination_System.view.admin
                                                        MessageBoxButtons.YesNo,
                                                        MessageBoxIcon.Warning);
 
+                    int rowCount = instractors_table.RowCount;
                     if (confirmation == DialogResult.Yes)
                     {
                         instructor.Id = instructorId;
                    
                         instructorMethods.Delete(instructor);
+                        TableData.getData("instructorView", "ins_name", search.Text, instractors_table);
 
-                        
-                        TableData.show("Instructor", instractors_table);
-
-                        MessageBox.Show("Instructor deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (instractors_table.RowCount == rowCount - 1)
+                            MessageBox.Show("Instructor deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Instructor deleted failed!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else
@@ -226,44 +234,11 @@ namespace Examination_System.view.admin
             }
         }
 
-  
+        
         private void search_TextChanged(object sender, EventArgs e)
         {
-            TableData.showAfterSearch("admin", search.Text, instractors_table);
+            TableData.getData("instructorView", "ins_name", search.Text, instractors_table);
         }
 
-        private int GetAdminIdByEmail(string email)
-        {
-
-            string connectionString = @"Data Source=(local);Initial Catalog=Examination System;Integrated Security=True;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-
-                string query = $@"SELECT id FROM Admin WHERE admin_email = '{email}'";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("id", email);
-
-
-                    var result = command.ExecuteScalar();
-
-                    if (result == null || result == DBNull.Value)
-                    {
-                        throw new Exception("Admin not found.");
-                    }
-
-                    return Convert.ToInt32(result);
-                }
-            }
-        }
-
-        private void instractors_table_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

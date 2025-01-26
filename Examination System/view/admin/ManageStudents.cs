@@ -19,19 +19,22 @@ namespace Examination_System.view.admin
     public partial class ManageStudents : Form
     {
         private Form _Home;
+        private string _adminEmail;
 
         private Student student;
         private IStudentRepo studentMethods;
+        private IAdminRepo adminMethods;
 
-        public ManageStudents(Form home)
+        public ManageStudents(Form home, string adminEmail)
         {
-
             InitializeComponent();
-            TableData.show("student", students_table);
+            TableData.getData("studentView", "stud_fname", search.Text, students_table);
             _Home = home;
+            _adminEmail = adminEmail;
+
             student = new Student();
             studentMethods = new StudentMethods();
-
+            adminMethods = new AdminMethods();
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -51,26 +54,36 @@ namespace Examination_System.view.admin
             {
                 setData();
 
+                int rowCount = students_table.RowCount;
+
                 studentMethods.Insert(student);
-                MessageBox.Show("Student Created Successfuly !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TableData.show("Student", students_table);
-                ssn.Text = string.Empty;
-                fname.Text = string.Empty;
-                email.Text = string.Empty;
-                phone.Text = string.Empty;
-                address.Text = string.Empty;
-                gender.Text = string.Empty;
-                track_id.Text = string.Empty;
-                birthdate.Text = string.Empty;
+                TableData.getData("studentView", "stud_fname", search.Text, students_table);
 
 
+                if (students_table.RowCount == rowCount + 1)
+                    MessageBox.Show("Student Created Successfuly !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Student Created failed !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+                clearData();
             }
             else
             {
                 MessageBox.Show("Please Enter Student Data!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void clearData()
+        {
+            ssn.Text = string.Empty;
+            fname.Text = string.Empty;
+            lname.Text = string.Empty;
+            email.Text = string.Empty;
+            phone.Text = string.Empty;
+            address.Text = string.Empty;
+            gender.Text = string.Empty;
+            track_id.Text = string.Empty;
+            birthdate.Text = string.Empty;
         }
 
         private void setData()
@@ -84,11 +97,7 @@ namespace Examination_System.view.admin
             student.Gender = (Gender)Enum.Parse(typeof(Gender), gender.Text);
             student.TrackId = Convert.ToInt32(track_id.Text);
             student.BirthDate = birthdate.Value.ToString("yyyy-MM-dd");
-            student.AdminId = GetAdminIdByEmail(Home._email);
-
-
-
-
+            student.AdminId = adminMethods.getID("admin", _adminEmail);
         }
 
         private bool checkData()
@@ -173,11 +182,11 @@ namespace Examination_System.view.admin
                     //Gender
                     if (gender.Text == string.Empty)
                     {
-                        student.Gender =(Gender) Enum.Parse(typeof(Gender),(selectedRow.Cells["stud_gender"].Value.ToString()));
+                        student.Gender = (Gender) Enum.Parse(typeof(Gender), selectedRow.Cells["stud_gender"].Value.ToString());
                     }
                     else
                     {
-                        student.Gender= (Gender)Enum.Parse(typeof(Gender),gender.Text);
+                        student.Gender= (Gender)Enum.Parse(typeof(Gender), gender.Text);
                     }
 
                     //Bdate
@@ -218,14 +227,15 @@ namespace Examination_System.view.admin
                     if (confirmation == DialogResult.Yes)
                     {
 
-                        studentMethods.Update(student);
+                        studentMethods.Update(student, null);
 
 
                         MessageBox.Show("Student updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        clearData();
 
-                        TableData.show("Student", students_table);
+                        TableData.getData("studentView", "stud_fname", search.Text, students_table);
                     }
-                   
+
                 }
                 else
                 {
@@ -254,16 +264,18 @@ namespace Examination_System.view.admin
                                                        MessageBoxButtons.YesNo,
                                                        MessageBoxIcon.Warning);
 
+                    int rowCount = students_table.RowCount;
                     if (confirmation == DialogResult.Yes)
                     {
                         student.SSN = StudentSSN;
 
                         studentMethods.Delete(student);
+                        TableData.getData("studentView", "stud_fname", search.Text, students_table);
 
-
-                        MessageBox.Show("Student deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        TableData.show("Student", students_table);
+                        if (students_table.RowCount == rowCount - 1)
+                            MessageBox.Show("Student deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Student deleted failed!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else
@@ -279,37 +291,7 @@ namespace Examination_System.view.admin
 
         private void search_TextChanged(object sender, EventArgs e)
         {
-            TableData.showAfterSearch("student", search.Text, students_table);
-        }
-
-
-        private int GetAdminIdByEmail(string email)
-        {
-
-            string connectionString = @"Data Source=(local);Initial Catalog=Examination System;Integrated Security=True;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-
-                string query = $@"SELECT id FROM Admin WHERE admin_email = '{email}'";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("id", email);
-
-
-                    var result = command.ExecuteScalar();
-
-                    if (result == null || result == DBNull.Value)
-                    {
-                        throw new Exception("Admin not found.");
-                    }
-
-                    return Convert.ToInt32(result);
-                }
-            }
+            TableData.getData("studentView", "stud_fname", search.Text, students_table);
         }
 
     }

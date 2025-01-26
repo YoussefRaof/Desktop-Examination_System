@@ -130,6 +130,7 @@
             // 
             this.topic_table.AllowUserToAddRows = false;
             this.topic_table.AllowUserToDeleteRows = false;
+            this.topic_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.topic_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.topic_table.Location = new System.Drawing.Point(725, 304);
             this.topic_table.Name = "topic_table";
@@ -154,6 +155,7 @@
             // 
             this.course_table.AllowUserToAddRows = false;
             this.course_table.AllowUserToDeleteRows = false;
+            this.course_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.course_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.course_table.Location = new System.Drawing.Point(12, 304);
             this.course_table.Name = "course_table";

@@ -17,21 +17,7 @@ namespace Examination_System.controller
     {
         public TableData() { }
 
-        public static void show(String tableName, DataGridView table)
-        {
-            string query = "select * from " + tableName;
-            getData(query, table);
-        }
-
-
-        public static void showAfterSearch(String tableName, string search, DataGridView table)
-        {
-            string query = "select * from " + tableName + " where name like '%" + search + "%'";
-            getData(query, table);
-        }
-
-
-        private static void getData(String query, DataGridView table)
+        public static void getData(String tableName, string column, string searchText, DataGridView table)
         {
             using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
             {
@@ -40,8 +26,14 @@ namespace Examination_System.controller
 
                 try
                 {
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlCommand command = new SqlCommand("search", connection))
                     {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@table", tableName);
+                        command.Parameters.AddWithValue("@col", column);
+                        command.Parameters.AddWithValue("@search_text", searchText);
+
                         SqlDataAdapter adapter = new SqlDataAdapter(command);
                         DataTable dataTable = new DataTable();
 
@@ -79,6 +71,7 @@ namespace Examination_System.controller
                 MessageBox.Show($"Error: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         public static void generateReport(DataGridView table)
         {

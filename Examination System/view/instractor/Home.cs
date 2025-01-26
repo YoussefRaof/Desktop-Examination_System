@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examination_System.View.instractor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Examination_System.view.instractor
 {
     public partial class Home : Form
     {
-        public Home()
+        public static string _email;
+
+        public Home(string email)
         {
             InitializeComponent();
+            _email = email;
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -30,26 +35,32 @@ namespace Examination_System.view.instractor
 
         private void info_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new Information().Show();
+            this.Visible = false;
+            new Information(this, _email).Show();
         }
 
         private void exam_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new MakeExam().Show();
+            this.Visible = false;
+            new MakeExam(this, _email).Show();
         }
 
         private void result_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new ShowResult().Show();
+            this.Visible = false;
+            new ShowResult(this, _email).Show();
         }
 
         private void examStatus_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new ExamStatus().Show();
+            this.Visible = false;
+            new Courses(this, _email).Show();
+        }
+
+        private void exam_status_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible=false;
+            new ExamStatus(this, _email).Show();
         }
     }
 }

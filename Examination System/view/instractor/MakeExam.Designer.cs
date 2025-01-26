@@ -54,7 +54,14 @@
             this.insert_btn = new System.Windows.Forms.Button();
             this.course_exam = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.a_rbtn = new System.Windows.Forms.RadioButton();
+            this.b_rbtn = new System.Windows.Forms.RadioButton();
+            this.c_rbtn = new System.Windows.Forms.RadioButton();
+            this.d_rbtn = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -203,7 +210,7 @@
             // question
             // 
             this.question.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.question.ForeColor = System.Drawing.Color.Black;
             this.question.Location = new System.Drawing.Point(17, 327);
             this.question.Multiline = true;
             this.question.Name = "question";
@@ -224,21 +231,21 @@
             // option_a
             // 
             this.option_a.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.option_a.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.option_a.ForeColor = System.Drawing.Color.Black;
             this.option_a.Location = new System.Drawing.Point(17, 542);
             this.option_a.Multiline = true;
             this.option_a.Name = "option_a";
-            this.option_a.Size = new System.Drawing.Size(350, 150);
+            this.option_a.Size = new System.Drawing.Size(350, 156);
             this.option_a.TabIndex = 76;
             // 
             // option_b
             // 
             this.option_b.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.option_b.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.option_b.ForeColor = System.Drawing.Color.Black;
             this.option_b.Location = new System.Drawing.Point(424, 542);
             this.option_b.Multiline = true;
             this.option_b.Name = "option_b";
-            this.option_b.Size = new System.Drawing.Size(350, 150);
+            this.option_b.Size = new System.Drawing.Size(350, 156);
             this.option_b.TabIndex = 78;
             // 
             // label6
@@ -255,11 +262,11 @@
             // option_c
             // 
             this.option_c.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.option_c.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.option_c.ForeColor = System.Drawing.Color.Black;
             this.option_c.Location = new System.Drawing.Point(836, 542);
             this.option_c.Multiline = true;
             this.option_c.Name = "option_c";
-            this.option_c.Size = new System.Drawing.Size(350, 150);
+            this.option_c.Size = new System.Drawing.Size(350, 156);
             this.option_c.TabIndex = 80;
             // 
             // label7
@@ -276,11 +283,11 @@
             // option_d
             // 
             this.option_d.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.option_d.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.option_d.ForeColor = System.Drawing.Color.Black;
             this.option_d.Location = new System.Drawing.Point(1246, 542);
             this.option_d.Multiline = true;
             this.option_d.Name = "option_d";
-            this.option_d.Size = new System.Drawing.Size(350, 150);
+            this.option_d.Size = new System.Drawing.Size(350, 156);
             this.option_d.TabIndex = 82;
             // 
             // label8
@@ -362,12 +369,92 @@
             this.label10.TabIndex = 86;
             this.label10.Text = "Course Exam";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.label11.Location = new System.Drawing.Point(15, 728);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(162, 24);
+            this.label11.TabIndex = 88;
+            this.label11.Text = "Right Answer :";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.d_rbtn);
+            this.panel3.Controls.Add(this.c_rbtn);
+            this.panel3.Controls.Add(this.b_rbtn);
+            this.panel3.Controls.Add(this.a_rbtn);
+            this.panel3.Location = new System.Drawing.Point(15, 758);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(353, 40);
+            this.panel3.TabIndex = 89;
+            // 
+            // a_rbtn
+            // 
+            this.a_rbtn.AutoSize = true;
+            this.a_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.a_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.a_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.a_rbtn.Location = new System.Drawing.Point(7, 3);
+            this.a_rbtn.Name = "a_rbtn";
+            this.a_rbtn.Size = new System.Drawing.Size(46, 28);
+            this.a_rbtn.TabIndex = 0;
+            this.a_rbtn.TabStop = true;
+            this.a_rbtn.Text = "A";
+            this.a_rbtn.UseVisualStyleBackColor = true;
+            // 
+            // b_rbtn
+            // 
+            this.b_rbtn.AutoSize = true;
+            this.b_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.b_rbtn.Location = new System.Drawing.Point(81, 3);
+            this.b_rbtn.Name = "b_rbtn";
+            this.b_rbtn.Size = new System.Drawing.Size(46, 28);
+            this.b_rbtn.TabIndex = 1;
+            this.b_rbtn.TabStop = true;
+            this.b_rbtn.Text = "B";
+            this.b_rbtn.UseVisualStyleBackColor = true;
+            // 
+            // c_rbtn
+            // 
+            this.c_rbtn.AutoSize = true;
+            this.c_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.c_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.c_rbtn.Location = new System.Drawing.Point(159, 3);
+            this.c_rbtn.Name = "c_rbtn";
+            this.c_rbtn.Size = new System.Drawing.Size(46, 28);
+            this.c_rbtn.TabIndex = 2;
+            this.c_rbtn.TabStop = true;
+            this.c_rbtn.Text = "C";
+            this.c_rbtn.UseVisualStyleBackColor = true;
+            // 
+            // d_rbtn
+            // 
+            this.d_rbtn.AutoSize = true;
+            this.d_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.d_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.d_rbtn.Location = new System.Drawing.Point(233, 3);
+            this.d_rbtn.Name = "d_rbtn";
+            this.d_rbtn.Size = new System.Drawing.Size(48, 28);
+            this.d_rbtn.TabIndex = 3;
+            this.d_rbtn.TabStop = true;
+            this.d_rbtn.Text = "D";
+            this.d_rbtn.UseVisualStyleBackColor = true;
+            // 
             // MakeExam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1612, 860);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.course_exam);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.delete_btn);
@@ -396,6 +483,8 @@
             this.Text = "Examination System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,5 +517,11 @@
         private System.Windows.Forms.Button insert_btn;
         private System.Windows.Forms.ComboBox course_exam;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.RadioButton a_rbtn;
+        private System.Windows.Forms.RadioButton d_rbtn;
+        private System.Windows.Forms.RadioButton c_rbtn;
+        private System.Windows.Forms.RadioButton b_rbtn;
     }
 }

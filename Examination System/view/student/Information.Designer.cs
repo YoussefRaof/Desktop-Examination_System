@@ -36,14 +36,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.newPass = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.email = new System.Windows.Forms.Label();
+            this.emailLabel = new System.Windows.Forms.Label();
             this.back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -128,16 +128,16 @@
             this.label4.TabIndex = 45;
             this.label4.Text = "New Password";
             // 
-            // name
+            // nameLabel
             // 
-            this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.name.Location = new System.Drawing.Point(166, 340);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(94, 33);
-            this.name.TabIndex = 44;
-            this.name.Text = "name";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.nameLabel.Location = new System.Drawing.Point(166, 340);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(94, 33);
+            this.nameLabel.TabIndex = 44;
+            this.nameLabel.Text = "name";
             // 
             // pictureBox1
             // 
@@ -206,16 +206,16 @@
             this.label2.TabIndex = 40;
             this.label2.Text = "Information Page";
             // 
-            // email
+            // emailLabel
             // 
-            this.email.AutoSize = true;
-            this.email.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.email.Location = new System.Drawing.Point(166, 386);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(97, 33);
-            this.email.TabIndex = 42;
-            this.email.Text = "email";
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.emailLabel.Location = new System.Drawing.Point(166, 386);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(97, 33);
+            this.emailLabel.TabIndex = 42;
+            this.emailLabel.Text = "email";
             // 
             // back
             // 
@@ -255,11 +255,11 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.newPass);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.email);
+            this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -283,14 +283,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox newPass;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label name;
+        private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label email;
+        private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Panel panel1;
     }

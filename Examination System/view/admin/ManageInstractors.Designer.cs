@@ -210,7 +210,6 @@
             this.instractors_table.RowTemplate.Height = 24;
             this.instractors_table.Size = new System.Drawing.Size(908, 580);
             this.instractors_table.TabIndex = 26;
-            this.instractors_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.instractors_table_CellContentClick);
             // 
             // name
             // 

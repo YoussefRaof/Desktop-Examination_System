@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examination_System.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,18 @@ namespace Examination_System.view.admin
     public partial class Branches_Tracks : Form
     {
         private Form _Home;
+        private string _adminEmail;
 
-        public Branches_Tracks(Form home)
+        public Branches_Tracks(Form home, string adminEmail)
         {
             InitializeComponent();
             setDisabledItems();
+
             _Home = home;
+            _adminEmail = adminEmail;
+
+            TableData.getData("Branch", "branch_name", search.Text, branch_table);
+            TableData.getData("Track", "track_name", search.Text, track_table);
         }
 
         private void setDisabledItems()
@@ -31,6 +38,7 @@ namespace Examination_System.view.admin
         private void setEnabledItems()
         {
             search.Enabled = true;
+            search.Clear();
             search.Focus();
         }
 
@@ -76,7 +84,10 @@ namespace Examination_System.view.admin
 
         private void search_TextChanged(object sender, EventArgs e)
         {
-
+            if (branch_rbtn.Checked)
+                TableData.getData("Branch", "branch_name", search.Text, branch_table);
+            else if (track_rbtn.Checked)
+                TableData.getData("Track", "track_name", search.Text, track_table);
         }
     }
 }

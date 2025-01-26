@@ -24,7 +24,7 @@ namespace Examination_System.controller
 
         public void Update(Admin admin)
         {
-            string columns = $"name = '{admin.Name}', password = '{admin.Password}'";
+            string columns = $"admin_name = '{admin.Name}', admin_password = '{admin.Password}'";
             string condition = $"id = {admin.Id}";
             ExecuteDmlQuery("Admin", "update", columns, null, condition);
         }
@@ -42,19 +42,16 @@ namespace Examination_System.controller
 
                 try
                 {
-                    
-                    string query = $@"SELECT COUNT(*) FROM Admin WHERE admin_email = '{admin.Email}' AND admin_password = '{admin.Password}'";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlCommand command = new SqlCommand("login_check", connection))
                     {
-                      
-                        command.Parameters.AddWithValue("admin_email", admin.Email);
-                        command.Parameters.AddWithValue("admin_password", admin.Password);
+                        command.CommandType = CommandType.StoredProcedure;
 
+                        command.Parameters.AddWithValue("@table", "Admin");
+                        command.Parameters.AddWithValue("@email", admin.Email);
+                        command.Parameters.AddWithValue("@password", admin.Password);
                         
                         int count = Convert.ToInt32(command.ExecuteScalar());
 
-                       
                         return count > 0;
                     }
                 }
@@ -67,7 +64,7 @@ namespace Examination_System.controller
         }
 
 
-        public int getID(string email)
+        public int getID(string table, string email)
         {
             using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
             {
@@ -76,9 +73,10 @@ namespace Examination_System.controller
 
                 try
                 {
-                    using (SqlCommand command = new SqlCommand("getID", connection))
+                    using (SqlCommand command = new SqlCommand("get_id", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@table", table);
                         command.Parameters.AddWithValue("@Email", email);
 
                         var result = command.ExecuteScalar();
@@ -97,7 +95,7 @@ namespace Examination_System.controller
         }
 
 
-        public bool checkPassword(string password, string email)
+        public bool checkPassword(string password, string table, string email)
         {
             using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
             {
@@ -106,10 +104,11 @@ namespace Examination_System.controller
 
                 try
                 {
-                    using (SqlCommand command = new SqlCommand("getPassword", connection))
+                    using (SqlCommand command = new SqlCommand("get_password", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
-                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@table", table);
+                        command.Parameters.AddWithValue("@email", email);
 
                         var result = command.ExecuteScalar();
 

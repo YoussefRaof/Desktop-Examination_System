@@ -19,7 +19,7 @@ namespace Examination_System.view.admin
         private IAdminRepo adminMethods;
         private Form _Home;
 
-        public Information(string email, Form home)
+        public Information(Form home, string email)
         {
             InitializeComponent();
 
@@ -56,14 +56,14 @@ namespace Examination_System.view.admin
         private void setData()
         {
             admin.Email = emailLabel.Text;
-            admin.Id = adminMethods.getID(admin.Email);
+            admin.Id = adminMethods.getID("admin", admin.Email);
             admin.Name = name.Text;
             admin.Password = newPass.Text;
         }
 
         private bool checkData()
         {
-            if (name.Text != string.Empty && emailLabel.Text != string.Empty && currentPass.Text != string.Empty && newPass.Text != string.Empty && confirmPass.Text != string.Empty)
+            if (name.Text != string.Empty && currentPass.Text != string.Empty && newPass.Text != string.Empty && confirmPass.Text != string.Empty)
                 if(newPass.Text == confirmPass.Text)
                     return true;
 
@@ -93,7 +93,7 @@ namespace Examination_System.view.admin
 
                 try
                 {
-                    if (adminMethods.checkPassword(currentPass.Text, admin.Email))
+                    if (adminMethods.checkPassword(currentPass.Text, "admin", admin.Email))
                     {
                         adminMethods.Update(admin);
                         MessageBox.Show("Successfuly Updated !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -40,29 +40,33 @@
             this.info_btn = new System.Windows.Forms.Button();
             this.exam_btn = new System.Windows.Forms.Button();
             this.result_btn = new System.Windows.Forms.Button();
+            this.courses_btn = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-13, -5);
+            this.panel1.Location = new System.Drawing.Point(-13, -10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(143, 619);
+            this.panel1.Size = new System.Drawing.Size(143, 718);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(38, 361);
+            this.pictureBox4.Location = new System.Drawing.Point(38, 487);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(64, 64);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -72,7 +76,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(38, 230);
+            this.pictureBox3.Location = new System.Drawing.Point(38, 360);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 64);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -82,7 +86,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(38, 100);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 100);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -92,7 +96,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(41, 497);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 623);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -130,7 +134,7 @@
             this.logout_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logout_btn.Font = new System.Drawing.Font("Century Schoolbook", 19.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout_btn.ForeColor = System.Drawing.Color.White;
-            this.logout_btn.Location = new System.Drawing.Point(152, 499);
+            this.logout_btn.Location = new System.Drawing.Point(152, 616);
             this.logout_btn.Name = "logout_btn";
             this.logout_btn.Size = new System.Drawing.Size(353, 49);
             this.logout_btn.TabIndex = 10;
@@ -158,7 +162,7 @@
             this.exam_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exam_btn.Font = new System.Drawing.Font("Century Schoolbook", 19.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exam_btn.ForeColor = System.Drawing.Color.White;
-            this.exam_btn.Location = new System.Drawing.Point(152, 240);
+            this.exam_btn.Location = new System.Drawing.Point(152, 363);
             this.exam_btn.Name = "exam_btn";
             this.exam_btn.Size = new System.Drawing.Size(353, 49);
             this.exam_btn.TabIndex = 12;
@@ -172,7 +176,7 @@
             this.result_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.result_btn.Font = new System.Drawing.Font("Century Schoolbook", 19.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.result_btn.ForeColor = System.Drawing.Color.White;
-            this.result_btn.Location = new System.Drawing.Point(152, 373);
+            this.result_btn.Location = new System.Drawing.Point(152, 489);
             this.result_btn.Name = "result_btn";
             this.result_btn.Size = new System.Drawing.Size(353, 49);
             this.result_btn.TabIndex = 13;
@@ -180,12 +184,37 @@
             this.result_btn.UseVisualStyleBackColor = false;
             this.result_btn.Click += new System.EventHandler(this.result_btn_Click);
             // 
+            // courses_btn
+            // 
+            this.courses_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.courses_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.courses_btn.Font = new System.Drawing.Font("Century Schoolbook", 19.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courses_btn.ForeColor = System.Drawing.Color.White;
+            this.courses_btn.Location = new System.Drawing.Point(152, 237);
+            this.courses_btn.Name = "courses_btn";
+            this.courses_btn.Size = new System.Drawing.Size(353, 49);
+            this.courses_btn.TabIndex = 14;
+            this.courses_btn.Text = "Courses";
+            this.courses_btn.UseVisualStyleBackColor = false;
+            this.courses_btn.Click += new System.EventHandler(this.courses_btn_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(33, 232);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(532, 587);
+            this.ClientSize = new System.Drawing.Size(532, 700);
+            this.Controls.Add(this.courses_btn);
             this.Controls.Add(this.result_btn);
             this.Controls.Add(this.exam_btn);
             this.Controls.Add(this.info_btn);
@@ -204,6 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +252,7 @@
         private System.Windows.Forms.Button result_btn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button courses_btn;
     }
 }

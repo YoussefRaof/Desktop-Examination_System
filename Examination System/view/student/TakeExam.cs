@@ -14,13 +14,18 @@ namespace Examination_System.view.student
     {
         private bool flag = false; //
         private int totalSeconds = 10 * 60;
+        private Form _Home;
+        private string _email;
 
-        public TakeExam()
+        public TakeExam(Form Home, string email)
         {
             InitializeComponent();
+            checkExamStatus();
 
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            checkExamStatus();
+            //back.Enabled = false;
+            _Home = Home;
+            _email = email;
         }
 
 
@@ -31,7 +36,7 @@ namespace Examination_System.view.student
                 MessageBox.Show("Exam is OFF", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
                 this.Close();
-                new Home().Show();
+                _Home.Show();
             }
         }
 
@@ -47,12 +52,15 @@ namespace Examination_System.view.student
         private void back_Click(object sender, EventArgs e)
         {
             this.Close();
-            new Home().Show();
+            _Home.Show();
         }
 
         private void endExam_btn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("The Exam is End", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            this.Close();
+            _Home.Show();
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -68,7 +76,7 @@ namespace Examination_System.view.student
             else
             {
                 this.Close();
-                new Home().Show();
+                _Home.Show();
                 
                 MessageBox.Show("The Exam is Over", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

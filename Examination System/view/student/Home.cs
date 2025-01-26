@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examination_System.View.student;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Examination_System.view.student
 {
     public partial class Home : Form
     {
-        public Home()
+        public static string _email;
+
+        public Home(string email)
         {
             InitializeComponent();
+            _email = email;
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -30,27 +34,26 @@ namespace Examination_System.view.student
 
         private void info_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new Information().Show();
+            this.Visible = false;
+            new Information(this, _email).Show();
         }
 
         private void exam_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            try
-            {
-                new TakeExam().Show();
-            }
-            catch (Exception ex)
-            {
-
-            }
+            this.Visible = false;
+            new ChoseExam(this, _email).Show();
         }
 
         private void result_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new ShowResult().Show();
+            this.Visible = false;
+            new ShowResult(this, _email).Show();
+        }
+
+        private void courses_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new Courses(this, _email).Show();
         }
     }
 }

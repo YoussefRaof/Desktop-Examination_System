@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examination_System.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,17 @@ namespace Examination_System.view.admin
     public partial class Courses_Topics : Form
     {
         private Form _Home;
+        private string _adminEmail;
 
-        public Courses_Topics(Form home)
+        public Courses_Topics(Form home, string adminEmail)
         {
             InitializeComponent();
             setDisabledItems();
             _Home = home;
+            _adminEmail = adminEmail;
+
+            TableData.getData("Course", "crs_name", search.Text, course_table);
+            TableData.getData("Topic", "topic_name", search.Text, topic_table);
         }
 
         private void setDisabledItems()
@@ -30,6 +36,7 @@ namespace Examination_System.view.admin
         private void setEnabledItems()
         {
             search.Enabled = true;
+            search.Clear();
             search.Focus();
         }
 
@@ -75,7 +82,10 @@ namespace Examination_System.view.admin
 
         private void search_TextChanged(object sender, EventArgs e)
         {
-
+            if (course_rbtn.Checked)
+                TableData.getData("Course", "crs_name", search.Text, course_table);
+            else if (topic_rbtn.Checked)
+                TableData.getData("Topic", "topic_name", search.Text, topic_table);
         }
     }
 }

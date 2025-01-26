@@ -16,10 +16,16 @@ namespace Examination_System.view.instractor
 {
     public partial class ShowResult : Form
     {
-        public ShowResult()
+        private Form _Home;
+        private string _email;
+
+        public ShowResult(Form home, string email)
         {
             InitializeComponent();
-            TableData.show("Stud_Course", grades_table);
+            _Home = home;
+            _email = email;
+
+            TableData.getData("GradeIndView", "_name", search.Text, grades_table); //
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -30,7 +36,7 @@ namespace Examination_System.view.instractor
         private void back_Click(object sender, EventArgs e)
         {
             this.Close();
-            new Home().Show();
+            _Home.Show();
         }
 
 
@@ -39,5 +45,9 @@ namespace Examination_System.view.instractor
             TableData.generateReport(grades_table);
         }
 
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            TableData.getData("GradeIndView", "_name", search.Text, grades_table); //
+        }
     }
 }

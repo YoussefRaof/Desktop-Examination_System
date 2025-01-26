@@ -9,20 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Examination_System.view.student
+namespace Examination_System.View.student
 {
-    public partial class ShowResult : Form
+    public partial class Courses : Form
     {
         private Form _Home;
         private string _email;
 
-        public ShowResult(Form Home, string email)
+        public Courses(Form home, string email)
         {
             InitializeComponent();
-            _Home = Home;
+            _Home = home;
             _email = email;
 
-            TableData.getData("GradeStudView", "_name", search.Text, grades_table); //
+            TableData.getData("CourseStudView", "crs_name", search.Text, courses_table); //
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace Examination_System.view.student
 
         private void search_TextChanged(object sender, EventArgs e)
         {
-            TableData.getData("GradeStudView", "_name", search.Text, grades_table); //
+            TableData.getData("CourseStudView", "crs_name", search.Text, courses_table); //
         }
     }
 }

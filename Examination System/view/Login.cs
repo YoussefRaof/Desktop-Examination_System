@@ -97,12 +97,11 @@ namespace Examination_System.view
             if(instractor_rbtn.Checked)
             {
                 setInstructorData();
-                var r = instrcutorMethods.Login(instructor);
-                if(r)
+                if(instrcutorMethods.Login(instructor))
                 {
                     MessageBox.Show("Successfuly Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
-                    new instractor.Home().Show();
+                    new instractor.Home(instructor.Email).Show();
 
                 }
                 else
@@ -114,13 +113,12 @@ namespace Examination_System.view
             else if (student_rbtn.Checked)
             {
                 setStudentData();
-                var r = studentMethods.Login(student);
-                if(r )
+                if(studentMethods.Login(student))
                 {
                     MessageBox.Show("Successfuly Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
 
-                    new student.Home().Show();
+                    new student.Home(student.Email).Show();
                 }
                 else
                     MessageBox.Show("Invalid Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);

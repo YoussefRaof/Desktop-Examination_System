@@ -181,6 +181,7 @@
             // 
             this.branch_table.AllowUserToAddRows = false;
             this.branch_table.AllowUserToDeleteRows = false;
+            this.branch_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.branch_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.branch_table.Location = new System.Drawing.Point(12, 333);
             this.branch_table.Name = "branch_table";
@@ -195,7 +196,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label4.Location = new System.Drawing.Point(977, 302);
+            this.label4.Location = new System.Drawing.Point(977, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 29);
             this.label4.TabIndex = 80;
@@ -206,7 +207,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label5.Location = new System.Drawing.Point(235, 302);
+            this.label5.Location = new System.Drawing.Point(235, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 29);
             this.label5.TabIndex = 81;
@@ -336,6 +337,7 @@
             // 
             this.track_table.AllowUserToAddRows = false;
             this.track_table.AllowUserToDeleteRows = false;
+            this.track_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.track_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.track_table.Location = new System.Drawing.Point(725, 333);
             this.track_table.Name = "track_table";
@@ -349,7 +351,7 @@
             // 
             this.search.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.search.Location = new System.Drawing.Point(473, 690);
+            this.search.Location = new System.Drawing.Point(473, 695);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(429, 35);
             this.search.TabIndex = 95;
@@ -358,7 +360,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(416, 689);
+            this.pictureBox2.Location = new System.Drawing.Point(416, 694);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -369,9 +371,9 @@
             // 
             this.panel3.Controls.Add(this.track_rbtn);
             this.panel3.Controls.Add(this.branch_rbtn);
-            this.panel3.Location = new System.Drawing.Point(494, 727);
+            this.panel3.Location = new System.Drawing.Point(494, 732);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(383, 53);
+            this.panel3.Size = new System.Drawing.Size(383, 40);
             this.panel3.TabIndex = 97;
             // 
             // track_rbtn

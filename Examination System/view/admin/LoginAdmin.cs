@@ -47,6 +47,7 @@ namespace Examination_System.view.admin
                 setEnabledItems();
         }
 
+
         ////////////////////////////////////////////////////////////
 
 
@@ -69,28 +70,34 @@ namespace Examination_System.view.admin
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-
             setData();
 
-            var r= adminMethods.Login(admin);
-            if (r == true)
+            try
             {
-                MessageBox.Show("Successfuly Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                new admin.Home(email.Text).Show();
-                this.Close();
-            }
+                if (adminMethods.Login(admin))
+                {
+                    MessageBox.Show("Successfuly Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    new admin.Home(email.Text).Show();
+                    this.Close();
+                }
 
-            else
-                MessageBox.Show("Faild to Login!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Faild to Login!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
             //if (true) ///
             //{
             //    MessageBox.Show("Successfuly Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                //    new admin.Home(email.Text).Show();
-                //    this.Close();
-                //}
+            //    new admin.Home(email.Text).Show();
+            //    this.Close();
+            //}
         }
+
         private void setData()
         {
             //admin.Id = adminMethods.getID(admin.Email); 

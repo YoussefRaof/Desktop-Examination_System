@@ -45,24 +45,29 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.course_rbtn = new System.Windows.Forms.RadioButton();
             this.student_rbtn = new System.Windows.Forms.RadioButton();
+            this.stud_course_table = new System.Windows.Forms.DataGridView();
+            this.unassign_btn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.course_table)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.student_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stud_course_table)).BeginInit();
             this.SuspendLayout();
             // 
             // course_table
             // 
             this.course_table.AllowUserToAddRows = false;
             this.course_table.AllowUserToDeleteRows = false;
+            this.course_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.course_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.course_table.Location = new System.Drawing.Point(656, 158);
+            this.course_table.Location = new System.Drawing.Point(656, 155);
             this.course_table.Name = "course_table";
             this.course_table.ReadOnly = true;
             this.course_table.RowHeadersWidth = 51;
             this.course_table.RowTemplate.Height = 24;
-            this.course_table.Size = new System.Drawing.Size(632, 504);
+            this.course_table.Size = new System.Drawing.Size(632, 250);
             this.course_table.TabIndex = 103;
             // 
             // label5
@@ -151,8 +156,9 @@
             // 
             this.student_table.AllowUserToAddRows = false;
             this.student_table.AllowUserToDeleteRows = false;
+            this.student_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.student_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.student_table.Location = new System.Drawing.Point(10, 158);
+            this.student_table.Location = new System.Drawing.Point(10, 155);
             this.student_table.Name = "student_table";
             this.student_table.ReadOnly = true;
             this.student_table.RowHeadersWidth = 51;
@@ -167,9 +173,9 @@
             this.assign_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.assign_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.assign_btn.ForeColor = System.Drawing.Color.White;
-            this.assign_btn.Location = new System.Drawing.Point(493, 759);
+            this.assign_btn.Location = new System.Drawing.Point(442, 761);
             this.assign_btn.Name = "assign_btn";
-            this.assign_btn.Size = new System.Drawing.Size(304, 43);
+            this.assign_btn.Size = new System.Drawing.Size(210, 43);
             this.assign_btn.TabIndex = 108;
             this.assign_btn.Text = "Assign";
             this.assign_btn.UseVisualStyleBackColor = false;
@@ -242,12 +248,54 @@
             this.student_rbtn.UseVisualStyleBackColor = true;
             this.student_rbtn.CheckedChanged += new System.EventHandler(this.course_rbtn_CheckedChanged);
             // 
+            // stud_course_table
+            // 
+            this.stud_course_table.AllowUserToAddRows = false;
+            this.stud_course_table.AllowUserToDeleteRows = false;
+            this.stud_course_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.stud_course_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.stud_course_table.Location = new System.Drawing.Point(656, 452);
+            this.stud_course_table.Name = "stud_course_table";
+            this.stud_course_table.ReadOnly = true;
+            this.stud_course_table.RowHeadersWidth = 51;
+            this.stud_course_table.RowTemplate.Height = 24;
+            this.stud_course_table.Size = new System.Drawing.Size(632, 207);
+            this.stud_course_table.TabIndex = 126;
+            // 
+            // unassign_btn
+            // 
+            this.unassign_btn.BackColor = System.Drawing.Color.White;
+            this.unassign_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.unassign_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unassign_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.unassign_btn.Location = new System.Drawing.Point(661, 761);
+            this.unassign_btn.Name = "unassign_btn";
+            this.unassign_btn.Size = new System.Drawing.Size(210, 43);
+            this.unassign_btn.TabIndex = 132;
+            this.unassign_btn.Text = "Unassign";
+            this.unassign_btn.UseVisualStyleBackColor = false;
+            this.unassign_btn.Click += new System.EventHandler(this.unassign_btn_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.label4.Location = new System.Drawing.Point(911, 416);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 29);
+            this.label4.TabIndex = 133;
+            this.label4.Text = "Assigned";
+            // 
             // Assign_Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1299, 830);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.unassign_btn);
+            this.Controls.Add(this.stud_course_table);
             this.Controls.Add(this.search);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel3);
@@ -270,6 +318,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stud_course_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +342,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton course_rbtn;
         private System.Windows.Forms.RadioButton student_rbtn;
+        private System.Windows.Forms.DataGridView stud_course_table;
+        private System.Windows.Forms.Button unassign_btn;
+        private System.Windows.Forms.Label label4;
     }
 }

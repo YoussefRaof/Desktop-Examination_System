@@ -1,4 +1,5 @@
 ﻿using Examination_System.controller;
+using Examination_System.view.student;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,20 +10,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Examination_System.view.student
+namespace Examination_System.View.student
 {
-    public partial class ShowResult : Form
+    public partial class ChoseExam : Form
     {
         private Form _Home;
         private string _email;
 
-        public ShowResult(Form Home, string email)
+        public ChoseExam(Form Home, string email)
         {
             InitializeComponent();
+            TableData.fillComboBox(course); //
+
             _Home = Home;
             _email = email;
-
-            TableData.getData("GradeStudView", "_name", search.Text, grades_table); //
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -36,9 +37,17 @@ namespace Examination_System.view.student
             _Home.Show();
         }
 
-        private void search_TextChanged(object sender, EventArgs e)
+        private void next_btn_Click(object sender, EventArgs e)
         {
-            TableData.getData("GradeStudView", "_name", search.Text, grades_table); //
+            try
+            {
+                new TakeExam(_Home, _email).Show();
+            }
+            catch (Exception ex)
+            {
+                //
+            }
+            this.Close();
         }
     }
 }

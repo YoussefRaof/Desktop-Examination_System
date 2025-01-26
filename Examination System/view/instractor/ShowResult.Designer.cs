@@ -117,6 +117,7 @@
             // 
             this.grades_table.AllowUserToAddRows = false;
             this.grades_table.AllowUserToDeleteRows = false;
+            this.grades_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grades_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grades_table.Location = new System.Drawing.Point(9, 167);
             this.grades_table.Name = "grades_table";
@@ -145,6 +146,7 @@
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(623, 35);
             this.search.TabIndex = 73;
+            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // pictureBox2
             // 

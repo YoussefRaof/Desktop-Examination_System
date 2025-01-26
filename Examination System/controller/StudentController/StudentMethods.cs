@@ -17,10 +17,8 @@ namespace Examination_System.Controller.StudentController
         {
             if (student.SSN >= 0)
             {
-
                 string condition = $"SSN = {student.SSN}";
                 ExecuteDmlQuery("Student", "delete", null, null, condition, 0);
-
             }
             else
             {
@@ -46,13 +44,11 @@ namespace Examination_System.Controller.StudentController
              return false;
         }
 
-        public void Update(Student student)
+        public void Update(Student student, int? flag)
         {
-            if (student.SSN > 0)
+            if (student.SSN > 0 && flag != 1)
             {
-                
                 string columns = "stud_fname = '{0}', stud_lname = '{1}', stud_email = '{2}', stud_phone = '{3}', stud_address = '{4}', stud_gender = '{5}', stud_birthdate = '{6}', track_id_FK = {7}";
-
                
                 string formattedColumns = string.Format(columns,
                     student.FName,
@@ -65,12 +61,14 @@ namespace Examination_System.Controller.StudentController
                     student.TrackId
                 );
                     
-
-                
                 string condition = $"SSN = {student.SSN}";
-
-                
                 ExecuteDmlQuery("Student", "update", formattedColumns, null, condition, 0);
+            }
+            else if (flag == 1)
+            {
+                string columns = $"stud_password = '{student.Password}'";
+                string condition = $"ssn = {student.SSN}";
+                ExecuteDmlQuery("Student", "update", columns, null, condition);
             }
             else
             {
@@ -118,7 +116,99 @@ namespace Examination_System.Controller.StudentController
             }
         }
 
-        
+
+        public int getSSN(string table, string email)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("get_id", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@table", table);
+                        command.Parameters.AddWithValue("@Email", email);
+
+                        var result = command.ExecuteScalar();
+
+                        if (result == DBNull.Value)
+                            return -1;
+
+                        return Convert.ToInt32(result);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred: " + ex.Message, ex);
+                }
+            }
+        }
+
+
+        public string getName(string table, string email)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("get_name", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@table", table);
+                        command.Parameters.AddWithValue("@Email", email);
+
+                        var result = command.ExecuteScalar();
+
+                        if (result == DBNull.Value)
+                            return null;
+
+                        return result.ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred: " + ex.Message, ex);
+                }
+            }
+        }
+
+
+        public bool checkPassword(string password, string table, string email)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("get_password", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@table", table);
+                        command.Parameters.AddWithValue("@email", email);
+
+                        var result = command.ExecuteScalar();
+
+                        if (result == DBNull.Value)
+                            return false;
+
+                        return result.ToString() == password;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred: " + ex.Message, ex);
+                }
+            }
+        }
+
 
         private void ExecuteDmlQuery(string tableName, string operation, string columns = null, string values = null, string condition = null, int level = 0)
         {
