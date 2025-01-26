@@ -11,7 +11,7 @@ namespace Examination_System.controller
 {
     internal class DatabaseConnection
     {
-        private static string connectionString = @"Data Source=LSA3EDII\SQLEXPRESS01;Initial Catalog=Examination System;Integrated Security=True;";
+        private static string connectionString = @"Data Source=(local);Initial Catalog=Examination System;Integrated Security=True;";
 
         public DatabaseConnection() { }
     

@@ -1,4 +1,5 @@
 ﻿using Examination_System.model;
+using Examination_System.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -61,6 +62,28 @@ namespace Examination_System.controller
                 }
             }
             
+        }
+        public int  AssginInstructorToCourse(Instructor instructor, Course course)
+        {
+             //string columns = "ins_id_FK, crs_id_FK";
+            //string values = $"{instructor.Id}, {course.CourseId}";
+            return AssginOrUnAssginInstructorToCourseQuery(instructor.Id, course.CourseId, "insert");
+        }
+
+       public int UnAssignInstructorToCourse(Instructor instructor , Course course)
+       {
+            return AssginOrUnAssginInstructorToCourseQuery(instructor.Id, course.CourseId, "delete");
+        }
+
+        public int AssginStudentToCourse(Student student, Course course)
+        {
+            return AssginOrUnAssginStudentToCourseQuery(student.SSN, course.CourseId, "insert");
+        }
+
+        public int UnAssignStudentToCourse(Student student, Course course)
+        {
+
+            return AssginOrUnAssginStudentToCourseQuery(student.SSN, course.CourseId, "delete");
         }
 
 
@@ -157,5 +180,112 @@ namespace Examination_System.controller
             }
         }
 
+
+        private int AssginOrUnAssginInstructorToCourseQuery(int instrcutorId, int courseID, string operation)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("assigninstructortocourse", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@ins_id", instrcutorId);
+                        command.Parameters.AddWithValue("@crs_id", courseID);
+                        command.Parameters.AddWithValue("@operation", operation);
+
+
+
+
+
+
+                      
+                        SqlParameter resultParam = new SqlParameter("@result", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.Output
+                        };
+                        command.Parameters.Add(resultParam);
+
+                        command.ExecuteNonQuery();
+
+                        
+                        int returnValue = (int)resultParam.Value;
+
+                        return returnValue;
+
+
+                    }
+                }
+                catch (SqlException ex) when (ex.Number == 50000)
+                {
+                    
+                    throw new Exception(ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    
+                    throw new Exception("An error occurred while assigning the instructor to the course: " + ex.Message);
+                }
+            }
+
+
+        }
+
+        private int AssginOrUnAssginStudentToCourseQuery(int SSN, int courseID, string operation)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("assignStudentToCourse", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@ssn", SSN);
+                        command.Parameters.AddWithValue("@crs_id", courseID);
+                        command.Parameters.AddWithValue("@operation", operation);
+
+
+
+                        SqlParameter resultParam = new SqlParameter("@result", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.Output
+                        };
+                        command.Parameters.Add(resultParam);
+
+                        command.ExecuteNonQuery();
+
+
+                        int returnValue = (int)resultParam.Value;
+
+                        return returnValue;
+
+
+                    }
+                }
+                catch (SqlException ex) when (ex.Number == 50000)
+                {
+
+                    throw new Exception(ex.Message);
+                }
+                catch (Exception ex)
+                {
+
+                    throw new Exception("An error occurred while assigning the instructor to the course: " + ex.Message);
+                }
+            }
+
+
+        }
+
+
     }
 }
+

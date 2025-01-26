@@ -1,4 +1,6 @@
 ﻿using Examination_System.controller;
+using Examination_System.model;
+using Examination_System.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,9 @@ namespace Examination_System.view.admin
     {
         private Form _Home;
         private string _adminEmail;
+        private Student student;
+        private IAdminRepo adminMethods;
+        private Course course;
 
         public Assign_Students(Form home, string adminEmail)
         {
@@ -22,9 +27,13 @@ namespace Examination_System.view.admin
             setDisabledItems();
             _Home = home;
             _adminEmail = adminEmail;
+            student = new Student();
+            course = new Course();
+            adminMethods = new AdminMethods();
 
             TableData.getData("studentView", "stud_fname", search.Text, student_table);
             TableData.getData("course", "crs_name", search.Text, course_table);
+            TableData.getData("Student_Register_Course", "SSN_FK", search.Text, stud_course_table);
             //TableData.search("", "", search.Text, );
 
         }
@@ -59,6 +68,38 @@ namespace Examination_System.view.admin
         private void assign_btn_Click(object sender, EventArgs e)
         {
 
+            if (student_table.SelectedRows.Count != 1 || course_table.SelectedRows.Count != 1)
+            {
+                MessageBox.Show("Please select exactly one row from each table (Student and Course).", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            int studentSSN = Convert.ToInt32(student_table.SelectedRows[0].Cells["SSN"].Value);
+
+
+            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["crs_id"].Value);
+
+            student.SSN = studentSSN;
+            course.CourseId = courseID;
+
+
+
+
+            int r = adminMethods.AssginStudentToCourse(student, course);
+
+
+            if (r == 1)
+            {
+                MessageBox.Show("Student successfully assigned to the course.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TableData.getData("Student_Register_Course", "SSN_FK", search.Text, stud_course_table);
+
+            }
+            else if (r == 0)
+                MessageBox.Show("Duplicate Entry", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Database Exception", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private void topic_rbtn_CheckedChanged(object sender, EventArgs e)
@@ -82,6 +123,30 @@ namespace Examination_System.view.admin
         private void unassign_btn_Click(object sender, EventArgs e)
         {
 
+            if (student_table.SelectedRows.Count != 1 || course_table.SelectedRows.Count != 1)
+            {
+                MessageBox.Show("Please select exactly one row from each table (Student and Course).", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int studentSSN = Convert.ToInt32(student_table.SelectedRows[0].Cells["SSN"].Value);
+
+
+            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["crs_id"].Value);
+
+            student.SSN = studentSSN;
+            course.CourseId = courseID;
+
+            int r = adminMethods.UnAssignStudentToCourse(student, course);
+
+            if (r == 1)
+            {
+                MessageBox.Show("Student successfully Unassigned to the course.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TableData.getData("Student_Register_Course", "SSN_FK", search.Text, stud_course_table);
+
+            }
+            else
+                MessageBox.Show("Database Exception", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
