@@ -77,7 +77,7 @@ namespace Examination_System.view.admin
             int studentSSN = Convert.ToInt32(student_table.SelectedRows[0].Cells["SSN"].Value);
 
 
-            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["crs_id"].Value);
+            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["Course ID"].Value);
 
             student.SSN = studentSSN;
             course.CourseId = courseID;
@@ -131,7 +131,7 @@ namespace Examination_System.view.admin
             int studentSSN = Convert.ToInt32(student_table.SelectedRows[0].Cells["SSN"].Value);
 
 
-            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["crs_id"].Value);
+            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["Course ID"].Value);
 
             student.SSN = studentSSN;
             course.CourseId = courseID;

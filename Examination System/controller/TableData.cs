@@ -107,7 +107,7 @@ namespace Examination_System.controller
                         document.Open();
 
 
-                        iTextSharp.text.Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16);
+                        iTextSharp.text.Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14);
                         Paragraph title = new Paragraph("Students Grades", titleFont)
                         {
                             Alignment = Element.ALIGN_CENTER
@@ -154,7 +154,6 @@ namespace Examination_System.controller
                 }
             }
         }
-
 
     }
 }

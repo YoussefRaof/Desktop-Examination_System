@@ -26,6 +26,9 @@ namespace Examination_System.view.student
         private int studentSSN;
         private int examID;
 
+        private DataTable examData;
+        private List<int> questions_id = new List<int>();
+
         public TakeExam(Form Home, string email, string crs_name)
         {
             InitializeComponent();
@@ -45,7 +48,8 @@ namespace Examination_System.view.student
             studentAnswer = new Student_Exam_Questions();
             
             studentSSN = studentMethods.getSSN("student", _email);
-            examID = examMethods.GetExamID("exam", crs_name);
+            examID = examMethods.GetExamID("exam", crs_name); // examData.Rows[0]["exam_id"].ToString();
+            examData = examMethods.GetExamData(studentSSN, crs_name);
 
             LoadExamData();
         }
@@ -66,7 +70,6 @@ namespace Examination_System.view.student
         private void LoadExamData()
         {
             //DataTable examData = examMethods.GetExamData(0, "SQL Server");
-            DataTable examData = examMethods.GetExamData(studentSSN, course_name.Text);
 
             if (examData == null || examData.Rows.Count == 0)
                 MessageBox.Show("No exam data found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -214,7 +217,7 @@ namespace Examination_System.view.student
             if (confirmation == DialogResult.Yes)
             {
                 //setStudentAnswer();
-                examMethods.SaveStudentAnswers(studentAnswer);
+                //examMethods.SaveStudentAnswers(studentAnswer);
                 examMethods.CorrectExam(studentSSN, examID);
 
                 this.Close();
@@ -236,8 +239,6 @@ namespace Examination_System.view.student
             }
             else
             {
-                //setStudentAnswer();
-                examMethods.SaveStudentAnswers(studentAnswer);
                 examMethods.CorrectExam(studentSSN, examID);
 
                 this.Close();
@@ -250,202 +251,684 @@ namespace Examination_System.view.student
 
         private void q1_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q1_c1_rbtn.Checked)
+            {
+                string answer = q1_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q1.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q1_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q1_c2_rbtn.Checked)
+            {
+                string answer = q1_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q1.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q1_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q1_c3_rbtn.Checked)
+            {
+                string answer = q1_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q1.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q1_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q1_c4_rbtn.Checked)
+            {
+                string answer = q1_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q1.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q2_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q2_c1_rbtn.Checked)
+            {
+                string answer = q2_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q2.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q2_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q2_c2_rbtn.Checked)
+            {
+                string answer = q2_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q2.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q2_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q2_c3_rbtn.Checked)
+            {
+                string answer = q2_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q2.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q2_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q2_c4_rbtn.Checked)
+            {
+                string answer = q2_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q2.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q3_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q3_c1_rbtn.Checked)
+            {
+                string answer = q3_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q3.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q3_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q3_c2_rbtn.Checked)
+            {
+                string answer = q3_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q3.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q3_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q3_c3_rbtn.Checked)
+            {
+                string answer = q3_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q3.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q3_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q3_c4_rbtn.Checked)
+            {
+                string answer = q3_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q3.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q4_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q4_c1_rbtn.Checked)
+            {
+                string answer = q4_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q4.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q4_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q4_c2_rbtn.Checked)
+            {
+                string answer = q4_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q4.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q4_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q4_c3_rbtn.Checked)
+            {
+                string answer = q4_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q4.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q4_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q4_c4_rbtn.Checked)
+            {
+                string answer = q4_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q4.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q5_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q5_c1_rbtn.Checked)
+            {
+                string answer = q5_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q5.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q5_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q5_c2_rbtn.Checked)
+            {
+                string answer = q5_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q5.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q5_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q5_c3_rbtn.Checked)
+            {
+                string answer = q5_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q5.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q5_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q5_c4_rbtn.Checked)
+            {
+                string answer = q5_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q5.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q6_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q6_c1_rbtn.Checked)
+            {
+                string answer = q6_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q6.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q6_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q6_c2_rbtn.Checked)
+            {
+                string answer = q6_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q6.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q6_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q6_c3_rbtn.Checked)
+            {
+                string answer = q6_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q6.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q6_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q6_c4_rbtn.Checked)
+            {
+                string answer = q6_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q6.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q7_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q7_c1_rbtn.Checked)
+            {
+                string answer = q7_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q7.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q7_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q7_c2_rbtn.Checked)
+            {
+                string answer = q7_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q7.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q7_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q7_c3_rbtn.Checked)
+            {
+                string answer = q7_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q7.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q7_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q7_c4_rbtn.Checked)
+            {
+                string answer = q7_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q7.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q8_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q8_c1_rbtn.Checked)
+            {
+                string answer = q8_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q8.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q8_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q8_c2_rbtn.Checked)
+            {
+                string answer = q8_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q8.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q8_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q8_c3_rbtn.Checked)
+            {
+                string answer = q8_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q8.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q8_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q8_c4_rbtn.Checked)
+            {
+                string answer = q8_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q8.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q9_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q9_c1_rbtn.Checked)
+            {
+                string answer = q9_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q9.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q9_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q9_c2_rbtn.Checked)
+            {
+                string answer = q9_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q9.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q9_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q9_c3_rbtn.Checked)
+            {
+                string answer = q9_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q9.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q9_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q9_c4_rbtn.Checked)
+            {
+                string answer = q9_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q9.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q10_c1_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q10_c1_rbtn.Checked)
+            {
+                string answer = q10_c1_rbtn.Text;
+                if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q10.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q10_c2_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q10_c2_rbtn.Checked)
+            {
+                string answer = q10_c2_rbtn.Text;
+                if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q10.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q10_c3_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q10_c3_rbtn.Checked)
+            {
+                string answer = q10_c3_rbtn.Text;
+                if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q10.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void q10_c4_rbtn_CheckedChanged(object sender, EventArgs e)
         {
-            //setStudentAnswer();
+            if (q10_c4_rbtn.Checked)
+            {
+                string answer = q10_c4_rbtn.Text;
+                if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
+                {
+                    setStudentAnswer(questionId, answer);
+                    examMethods.SaveStudentAnswers(studentAnswer);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid question ID for Q10.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
+
     }
 }
+

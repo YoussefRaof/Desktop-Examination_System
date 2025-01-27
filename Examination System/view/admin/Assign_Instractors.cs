@@ -98,7 +98,7 @@ namespace Examination_System.view.admin
             int instructorID = Convert.ToInt32(instractor_table.SelectedRows[0].Cells["ins_id"].Value);
 
 
-            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["crs_id"].Value);
+            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["Course ID"].Value);
 
             instructor.Id = instructorID;
             course.CourseId = courseID;
@@ -137,7 +137,7 @@ namespace Examination_System.view.admin
             int instructorID = Convert.ToInt32(instractor_table.SelectedRows[0].Cells["ins_id"].Value);
 
 
-            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["crs_id"].Value);
+            int courseID = Convert.ToInt32(course_table.SelectedRows[0].Cells["Course ID"].Value);
 
             instructor.Id = instructorID;
             course.CourseId = courseID;
