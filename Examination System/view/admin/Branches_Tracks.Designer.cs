@@ -49,7 +49,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.track_id = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.bid = new System.Windows.Forms.TextBox();
+            this.branch_id2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.ins_id = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -293,14 +293,14 @@
             this.label7.TabIndex = 87;
             this.label7.Text = "Track ID";
             // 
-            // bid
+            // branch_id2
             // 
-            this.bid.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.bid.Location = new System.Drawing.Point(904, 255);
-            this.bid.Name = "bid";
-            this.bid.Size = new System.Drawing.Size(360, 32);
-            this.bid.TabIndex = 94;
+            this.branch_id2.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.branch_id2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.branch_id2.Location = new System.Drawing.Point(904, 255);
+            this.branch_id2.Name = "branch_id2";
+            this.branch_id2.Size = new System.Drawing.Size(360, 32);
+            this.branch_id2.TabIndex = 94;
             // 
             // label8
             // 
@@ -414,7 +414,7 @@
             this.ClientSize = new System.Drawing.Size(1342, 890);
             this.Controls.Add(this.search);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.bid);
+            this.Controls.Add(this.branch_id2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ins_id);
             this.Controls.Add(this.label9);
@@ -474,7 +474,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox track_id;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox bid;
+        private System.Windows.Forms.TextBox branch_id2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox ins_id;
         private System.Windows.Forms.Label label9;

@@ -1,4 +1,5 @@
 ﻿using Examination_System.controller;
+using Examination_System.Controller.InstructorController;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,13 +16,17 @@ namespace Examination_System.view.instractor
     {
         private Form _Home;
         private string _email;
+        private IInstructorRepo instructorMethods;
+
         public Courses(Form home, string email)
         {
             InitializeComponent();
             _Home = home;
             _email = email;
+            search.Enabled = false;
 
-            TableData.getData("CourseInsView", "crs_name", search.Text, courses_table); //
+            instructorMethods = new InstructorMethods();
+            TableData.fillComboBoxAndTable(courses_table, "ins_course", "insId", instructorMethods.getID("instructor", _email));
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -37,7 +42,7 @@ namespace Examination_System.view.instractor
 
         private void search_TextChanged(object sender, EventArgs e)
         {
-            TableData.getData("CourseInsView", "crs_name", search.Text, courses_table); //
+            TableData.getData("CourseInsView", "crs_name", search.Text, courses_table);
         }
 
         private void update_btn_Click(object sender, EventArgs e)

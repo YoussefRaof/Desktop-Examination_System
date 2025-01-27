@@ -33,8 +33,8 @@ namespace Examination_System.view.admin
 
 
             TableData.getData("instructorView", "ins_name", search.Text, instractor_table);
-            TableData.getData("Course", "crs_name", search.Text, course_table);
-            TableData.getData("Instructor_Teach_Course", "ins_id_FK", search.Text, ins_course_table);
+            TableData.getData("courseView", "[Course Name]", search.Text, course_table);
+            TableData.getData("instructorTeachCourse", "crs_name", "", ins_course_table);
 
             //TableData.search("", "", search.Text, );
         }
@@ -81,7 +81,7 @@ namespace Examination_System.view.admin
             if (instractor_rbtn.Checked)
                 TableData.getData("instructorView", "ins_name", search.Text, instractor_table);
             else if (course_rbtn.Checked)
-                TableData.getData("Course", "crs_name", search.Text, course_table);
+                TableData.getData("courseView", "[Course Name]", search.Text, course_table);
         }
 
         private void assign_btn_Click(object sender, EventArgs e)
@@ -112,7 +112,7 @@ namespace Examination_System.view.admin
             if (r == 1)
             {
                 MessageBox.Show("Instructor successfully assigned to the course.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TableData.getData("Instructor_Teach_Course", "ins_id_FK", search.Text, ins_course_table);
+                TableData.getData("instructorTeachCourse", "crs_name", "", ins_course_table);
 
             }
             else if (r == 0)
@@ -147,7 +147,7 @@ namespace Examination_System.view.admin
             if (r == 1)
             {
                 MessageBox.Show("Instructor successfully Unassigned to the course.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TableData.getData("Instructor_Teach_Course", "ins_id_FK", search.Text, ins_course_table);
+                TableData.getData("instructorTeachCourse", "crs_name", "", ins_course_table);
 
             }
             else

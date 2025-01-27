@@ -1,4 +1,5 @@
-﻿using Examination_System.model;
+﻿using Examination_System.Controller;
+using Examination_System.model;
 using Examination_System.Model;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Examination_System.controller
         {
             string columns = "admin_name, admin_email, admin_password";
             string values = $"'{admin.Name}', '{admin.Email}', '{admin.Password}'";
-            ExecuteDmlQuery("Admin", "insert", columns, values,null,0);
+            HelperMethods.ExecuteDmlQuery("Admin", "insert", columns, values,null,0);
         }
 
 
@@ -27,7 +28,7 @@ namespace Examination_System.controller
         {
             string columns = $"admin_name = '{admin.Name}', admin_password = '{admin.Password}'";
             string condition = $"id = {admin.Id}";
-            ExecuteDmlQuery("Admin", "update", columns, null, condition);
+            HelperMethods.ExecuteDmlQuery("Admin", "update", columns, null, condition);
         }
 
 
@@ -149,38 +150,6 @@ namespace Examination_System.controller
         }
 
 
-        private void ExecuteDmlQuery(string tableName, string operation, string columns = null, string values = null, string condition = null ,int level = 0)
-        {
-            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
-            {
-                if (connection == null)
-                    throw new Exception("Database connection failed.");
-
-                try
-                {
-                    using (SqlCommand command = new SqlCommand("dmlQuerries", connection))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        command.Parameters.AddWithValue("@tablename", tableName);
-                        command.Parameters.AddWithValue("@operation", operation);
-                        command.Parameters.AddWithValue("@columns", (object)columns ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@values", (object)values ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@condition", (object)condition ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@nestlevel", (object)level ?? DBNull.Value);
-
-
-                        command.ExecuteNonQuery();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("An error occurred: " + ex.Message, ex);
-                }
-            }
-        }
-
-
         private int AssginOrUnAssginInstructorToCourseQuery(int instrcutorId, int courseID, string operation)
         {
             using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
@@ -197,10 +166,6 @@ namespace Examination_System.controller
                         command.Parameters.AddWithValue("@ins_id", instrcutorId);
                         command.Parameters.AddWithValue("@crs_id", courseID);
                         command.Parameters.AddWithValue("@operation", operation);
-
-
-
-
 
 
                       

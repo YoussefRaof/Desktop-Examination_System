@@ -220,7 +220,7 @@ namespace Examination_System.view.admin
                         if (instractors_table.RowCount == rowCount - 1)
                             MessageBox.Show("Instructor deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Instructor deleted failed!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Instructor deleted failed!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else

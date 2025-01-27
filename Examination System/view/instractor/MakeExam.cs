@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 using Examination_System.controller;
+using Examination_System.Controller.InstructorController;
 
 namespace Examination_System.view.instractor
 {
@@ -17,6 +18,8 @@ namespace Examination_System.view.instractor
     {
         private Form _Home;
         private string _email;
+        private IInstructorRepo instructorMethods;
+
         public MakeExam(Form home, string email)
         {
             InitializeComponent();
@@ -28,7 +31,8 @@ namespace Examination_System.view.instractor
             _Home = home;
             _email = email;
 
-            TableData.fillComboBox(course_exam);
+            instructorMethods = new InstructorMethods();
+            TableData.fillComboBoxAndTable(course_exam, "ins_course", "insId", instructorMethods.getID("instructor", _email));
         }
 
         private void setDisabledQuestion()

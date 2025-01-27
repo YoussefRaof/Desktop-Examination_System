@@ -63,7 +63,7 @@ namespace Examination_System.view.admin
                 if (students_table.RowCount == rowCount + 1)
                     MessageBox.Show("Student Created Successfuly !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
-                    MessageBox.Show("Student Created failed !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Student Created failed !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 clearData();
             }
@@ -275,7 +275,7 @@ namespace Examination_System.view.admin
                         if (students_table.RowCount == rowCount - 1)
                             MessageBox.Show("Student deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Student deleted failed!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Student deleted failed!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else

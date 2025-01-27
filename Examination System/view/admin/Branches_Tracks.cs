@@ -26,8 +26,8 @@ namespace Examination_System.view.admin
             _Home = home;
             _adminEmail = adminEmail;
 
-            TableData.getData("Branch", "branch_name", search.Text, branch_table);
-            TableData.getData("Track", "track_name", search.Text, track_table);
+            TableData.getData("branchView", "[Branch Name]", search.Text, branch_table);
+            TableData.getData("trackView", "[Track Name]", search.Text, track_table);
         }
 
         private void setDisabledItems()
@@ -85,9 +85,9 @@ namespace Examination_System.view.admin
         private void search_TextChanged(object sender, EventArgs e)
         {
             if (branch_rbtn.Checked)
-                TableData.getData("Branch", "branch_name", search.Text, branch_table);
+                TableData.getData("branchView", "[Branch Name]", search.Text, branch_table);
             else if (track_rbtn.Checked)
-                TableData.getData("Track", "track_name", search.Text, track_table);
+                TableData.getData("trackView", "[Track Name]", search.Text, track_table);
         }
     }
 }

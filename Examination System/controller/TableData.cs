@@ -50,19 +50,32 @@ namespace Examination_System.controller
         }
 
 
-        public static void fillComboBox(ComboBox combobox)
+        public static void fillComboBoxAndTable(Object obj, string stName, string paramName, int id)
         {
             try
             {
                 using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
                 {
-                    string query = "select Crs_Name from Course";
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlCommand command = new SqlCommand(stName, connection))
                     {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue($"@{paramName}", id);
+
                         using (SqlDataReader reader = command.ExecuteReader())
-                            while (reader.Read())
-                                if (reader["Crs_Name"] != DBNull.Value)
-                                    combobox.Items.Add(reader["Crs_Name"].ToString());
+                        {
+                            if (obj is ComboBox comboBox)
+                            {
+                                while (reader.Read())
+                                    if (reader["CourseName"] != DBNull.Value)
+                                        comboBox.Items.Add(reader["CourseName"].ToString());
+                            }
+                            else if (obj is DataGridView dataGridView)
+                            {
+                                var dataTable = new DataTable();
+                                dataTable.Load(reader);
+                                dataGridView.DataSource = dataTable;
+                            }
+                        }
                     }
                 }
             }

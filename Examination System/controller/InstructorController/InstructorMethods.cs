@@ -23,7 +23,7 @@ namespace Examination_System.Controller.InstructorController
             {
                 
                 string condition = $"ins_id = {instructor.Id}";
-                ExecuteDmlQuery("Instructor", "delete", null, null, condition, 0);
+                HelperMethods.ExecuteDmlQuery("Instructor", "delete", null, null, condition, 0);
                 
             }
             else
@@ -38,7 +38,7 @@ namespace Examination_System.Controller.InstructorController
         {
             string columns = "ins_name, ins_email, ins_phone, ins_salary, admin_id_FK";
             string values = $"'{instructor.Name}', '{instructor.Email}', '{instructor.Phone}', '{instructor.Salary}', {instructor.AdminId}";
-            ExecuteDmlQuery("Instructor", "insert", columns, values, null, 0);
+            HelperMethods.ExecuteDmlQuery("Instructor", "insert", columns, values, null, 0);
         }
 
         public bool Login(Instructor instructor)
@@ -61,13 +61,13 @@ namespace Examination_System.Controller.InstructorController
                
                 string condition = $"ins_id = {instructor.Id}";
 
-                ExecuteDmlQuery("Instructor", "update", formattedColumns, null, condition, 0);
+                HelperMethods.ExecuteDmlQuery("Instructor", "update", formattedColumns, null, condition, 0);
             }
             else if (flag == 1)
             {
                 string columns = $"ins_password = '{instructor.Password}'";
                 string condition = $"ins_id = {instructor.Id}";
-                ExecuteDmlQuery("Instructor", "update", columns, null, condition);
+                HelperMethods.ExecuteDmlQuery("Instructor", "update", columns, null, condition);
             }
             else
             {
@@ -168,36 +168,6 @@ namespace Examination_System.Controller.InstructorController
             }
         }
 
-        private void ExecuteDmlQuery(string tableName, string operation, string columns = null, string values = null, string condition = null, int level = 0)
-        {
-            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
-            {
-                if (connection == null)
-                    throw new Exception("Database connection failed.");
-
-                try
-                {
-                    using (SqlCommand command = new SqlCommand("dmlQuerries", connection))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        command.Parameters.AddWithValue("@tablename", tableName);
-                        command.Parameters.AddWithValue("@operation", operation);
-                        command.Parameters.AddWithValue("@columns", (object)columns ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@values", (object)values ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@condition", (object)condition ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@nestlevel", (object)level ?? DBNull.Value);
-
-
-                           command.ExecuteNonQuery();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("An error occurred: " + ex.Message, ex);
-                }
-            }
-        }
 
         private bool CheckLogin(string tablename, string email, string password)
         {

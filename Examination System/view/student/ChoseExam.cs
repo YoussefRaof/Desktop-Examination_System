@@ -1,4 +1,6 @@
 ﻿using Examination_System.controller;
+using Examination_System.Controller.InstructorController;
+using Examination_System.Controller.StudentController;
 using Examination_System.view.student;
 using System;
 using System.Collections.Generic;
@@ -16,14 +18,17 @@ namespace Examination_System.View.student
     {
         private Form _Home;
         private string _email;
+        private IStudentRepo studentMethods;
 
         public ChoseExam(Form Home, string email)
         {
             InitializeComponent();
-            TableData.fillComboBox(course); //
-
+            
+            studentMethods = new StudentMethods();
             _Home = Home;
             _email = email;
+
+            TableData.fillComboBoxAndTable(course_box, "stud_course", "ssn", studentMethods.getSSN("student", _email));
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -41,13 +46,18 @@ namespace Examination_System.View.student
         {
             try
             {
-                new TakeExam(_Home, _email).Show();
+                if (course_box.Text != string.Empty)
+                {
+                    new TakeExam(_Home, _email, course_box.Text).Show();
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("Please select course!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                //
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            this.Close();
         }
     }
 }

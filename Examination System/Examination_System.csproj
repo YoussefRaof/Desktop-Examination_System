@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iti-logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
@@ -60,7 +63,10 @@
   <ItemGroup>
     <Compile Include="Controller\AdminMethods.cs" />
     <Compile Include="Controller\DatabaseConnection.cs" />
+    <Compile Include="Controller\ExamController\ExamMethods.cs" />
+    <Compile Include="Controller\HelperMethods.cs" />
     <Compile Include="Controller\IAdminRepo.cs" />
+    <Compile Include="Controller\ExamController\IExamRepo.cs" />
     <Compile Include="Controller\InstructorController\IInstructorRepo.cs" />
     <Compile Include="Controller\InstructorController\InstructorMethods.cs" />
     <Compile Include="Controller\StudentController\IStudentRepo.cs" />
@@ -85,94 +91,94 @@
     <Compile Include="Model\Track_Course.cs" />
     <Compile Include="Model\Track_Instructor.cs" />
     <Compile Include="Model\User.cs" />
-    <Compile Include="View\admin\Assign_Instractors.cs">
+    <Compile Include="View\Admin\Assign_Instractors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\Assign_Instractors.Designer.cs">
+    <Compile Include="View\Admin\Assign_Instractors.Designer.cs">
       <DependentUpon>Assign_Instractors.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\Assign_Students.cs">
+    <Compile Include="View\Admin\Assign_Students.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\Assign_Students.Designer.cs">
+    <Compile Include="View\Admin\Assign_Students.Designer.cs">
       <DependentUpon>Assign_Students.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\Branches_Tracks.cs">
+    <Compile Include="View\Admin\Branches_Tracks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\Branches_Tracks.Designer.cs">
+    <Compile Include="View\Admin\Branches_Tracks.Designer.cs">
       <DependentUpon>Branches_Tracks.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\Courses_Topics.cs">
+    <Compile Include="View\Admin\Courses_Topics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\Courses_Topics.Designer.cs">
+    <Compile Include="View\Admin\Courses_Topics.Designer.cs">
       <DependentUpon>Courses_Topics.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\Home.cs">
+    <Compile Include="View\Admin\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\Home.Designer.cs">
+    <Compile Include="View\Admin\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\Information.cs">
+    <Compile Include="View\Admin\Information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\Information.Designer.cs">
+    <Compile Include="View\Admin\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\LoginAdmin.cs">
+    <Compile Include="View\Admin\LoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\LoginAdmin.Designer.cs">
+    <Compile Include="View\Admin\LoginAdmin.Designer.cs">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\ManageInstractors.cs">
+    <Compile Include="View\Admin\ManageInstractors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\ManageInstractors.Designer.cs">
+    <Compile Include="View\Admin\ManageInstractors.Designer.cs">
       <DependentUpon>ManageInstractors.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\ManageStudents.cs">
+    <Compile Include="View\Admin\ManageStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\ManageStudents.Designer.cs">
+    <Compile Include="View\Admin\ManageStudents.Designer.cs">
       <DependentUpon>ManageStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\instractor\Courses.cs">
+    <Compile Include="View\Instractor\Courses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\instractor\Courses.Designer.cs">
+    <Compile Include="View\Instractor\Courses.Designer.cs">
       <DependentUpon>Courses.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\instractor\ExamStatus.cs">
+    <Compile Include="View\Instractor\ExamStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\instractor\ExamStatus.Designer.cs">
+    <Compile Include="View\Instractor\ExamStatus.Designer.cs">
       <DependentUpon>ExamStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\instractor\Home.cs">
+    <Compile Include="View\Instractor\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\instractor\Home.Designer.cs">
+    <Compile Include="View\Instractor\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\instractor\Information.cs">
+    <Compile Include="View\Instractor\Information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\instractor\Information.Designer.cs">
+    <Compile Include="View\Instractor\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\instractor\MakeExam.cs">
+    <Compile Include="View\Instractor\MakeExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\instractor\MakeExam.Designer.cs">
+    <Compile Include="View\Instractor\MakeExam.Designer.cs">
       <DependentUpon>MakeExam.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\instractor\ShowResult.cs">
+    <Compile Include="View\Instractor\ShowResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\instractor\ShowResult.Designer.cs">
+    <Compile Include="View\Instractor\ShowResult.Designer.cs">
       <DependentUpon>ShowResult.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Prompt.cs">
@@ -195,46 +201,46 @@
     <Compile Include="View\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\SignUpAdmin.cs">
+    <Compile Include="View\Admin\SignUpAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\admin\SignUpAdmin.Designer.cs">
+    <Compile Include="View\Admin\SignUpAdmin.Designer.cs">
       <DependentUpon>SignUpAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\student\ChoseExam.cs">
+    <Compile Include="View\Student\ChoseExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\student\ChoseExam.Designer.cs">
+    <Compile Include="View\Student\ChoseExam.Designer.cs">
       <DependentUpon>ChoseExam.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\student\Courses.cs">
+    <Compile Include="View\Student\Courses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\student\Courses.Designer.cs">
+    <Compile Include="View\Student\Courses.Designer.cs">
       <DependentUpon>Courses.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\student\Home.cs">
+    <Compile Include="View\Student\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\student\Home.Designer.cs">
+    <Compile Include="View\Student\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\student\Information.cs">
+    <Compile Include="View\Student\Information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\student\Information.Designer.cs">
+    <Compile Include="View\Student\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\student\ShowResult.cs">
+    <Compile Include="View\Student\ShowResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\student\ShowResult.Designer.cs">
+    <Compile Include="View\Student\ShowResult.Designer.cs">
       <DependentUpon>ShowResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\student\TakeExam.cs">
+    <Compile Include="View\Student\TakeExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\student\TakeExam.Designer.cs">
+    <Compile Include="View\Student\TakeExam.Designer.cs">
       <DependentUpon>TakeExam.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -246,52 +252,52 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\admin\Assign_Instractors.resx">
+    <EmbeddedResource Include="View\Admin\Assign_Instractors.resx">
       <DependentUpon>Assign_Instractors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\Assign_Students.resx">
+    <EmbeddedResource Include="View\Admin\Assign_Students.resx">
       <DependentUpon>Assign_Students.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\Branches_Tracks.resx">
+    <EmbeddedResource Include="View\Admin\Branches_Tracks.resx">
       <DependentUpon>Branches_Tracks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\Courses_Topics.resx">
+    <EmbeddedResource Include="View\Admin\Courses_Topics.resx">
       <DependentUpon>Courses_Topics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\Home.resx">
+    <EmbeddedResource Include="View\Admin\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\Information.resx">
+    <EmbeddedResource Include="View\Admin\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\LoginAdmin.resx">
+    <EmbeddedResource Include="View\Admin\LoginAdmin.resx">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\ManageInstractors.resx">
+    <EmbeddedResource Include="View\Admin\ManageInstractors.resx">
       <DependentUpon>ManageInstractors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\ManageStudents.resx">
+    <EmbeddedResource Include="View\Admin\ManageStudents.resx">
       <DependentUpon>ManageStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\SignUpAdmin.resx">
+    <EmbeddedResource Include="View\Admin\SignUpAdmin.resx">
       <DependentUpon>SignUpAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\instractor\Courses.resx">
+    <EmbeddedResource Include="View\Instractor\Courses.resx">
       <DependentUpon>Courses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\instractor\ExamStatus.resx">
+    <EmbeddedResource Include="View\Instractor\ExamStatus.resx">
       <DependentUpon>ExamStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\instractor\Home.resx">
+    <EmbeddedResource Include="View\Instractor\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\instractor\Information.resx">
+    <EmbeddedResource Include="View\Instractor\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\instractor\MakeExam.resx">
+    <EmbeddedResource Include="View\Instractor\MakeExam.resx">
       <DependentUpon>MakeExam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\instractor\ShowResult.resx">
+    <EmbeddedResource Include="View\Instractor\ShowResult.resx">
       <DependentUpon>ShowResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
@@ -303,22 +309,22 @@
     <EmbeddedResource Include="View\Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\student\ChoseExam.resx">
+    <EmbeddedResource Include="View\Student\ChoseExam.resx">
       <DependentUpon>ChoseExam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\student\Courses.resx">
+    <EmbeddedResource Include="View\Student\Courses.resx">
       <DependentUpon>Courses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\student\Home.resx">
+    <EmbeddedResource Include="View\Student\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\student\Information.resx">
+    <EmbeddedResource Include="View\Student\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\student\ShowResult.resx">
+    <EmbeddedResource Include="View\Student\ShowResult.resx">
       <DependentUpon>ShowResult.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\student\TakeExam.resx">
+    <EmbeddedResource Include="View\Student\TakeExam.resx">
       <DependentUpon>TakeExam.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -337,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iti-logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

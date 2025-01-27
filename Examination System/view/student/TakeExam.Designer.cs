@@ -45,112 +45,112 @@
             this.label3 = new System.Windows.Forms.Label();
             this.question1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.q1label4 = new System.Windows.Forms.Label();
             this.q1_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label8 = new System.Windows.Forms.Label();
+            this.q1label3 = new System.Windows.Forms.Label();
             this.q1_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
+            this.q1label2 = new System.Windows.Forms.Label();
             this.q1_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.q1label1 = new System.Windows.Forms.Label();
             this.q1_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.question2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.q2label4 = new System.Windows.Forms.Label();
             this.q2_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
+            this.q2label3 = new System.Windows.Forms.Label();
             this.q2_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label14 = new System.Windows.Forms.Label();
+            this.q2label2 = new System.Windows.Forms.Label();
             this.q2_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label15 = new System.Windows.Forms.Label();
+            this.q2label1 = new System.Windows.Forms.Label();
             this.q2_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label16 = new System.Windows.Forms.Label();
             this.question3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.q3label4 = new System.Windows.Forms.Label();
             this.q3_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label19 = new System.Windows.Forms.Label();
+            this.q3label3 = new System.Windows.Forms.Label();
             this.q3_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label20 = new System.Windows.Forms.Label();
+            this.q3label2 = new System.Windows.Forms.Label();
             this.q3_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label21 = new System.Windows.Forms.Label();
+            this.q3label1 = new System.Windows.Forms.Label();
             this.q3_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label22 = new System.Windows.Forms.Label();
             this.question4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
+            this.q4label4 = new System.Windows.Forms.Label();
             this.q4_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label25 = new System.Windows.Forms.Label();
+            this.q4label3 = new System.Windows.Forms.Label();
             this.q4_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label26 = new System.Windows.Forms.Label();
+            this.q4label2 = new System.Windows.Forms.Label();
             this.q4_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label27 = new System.Windows.Forms.Label();
+            this.q4label1 = new System.Windows.Forms.Label();
             this.q4_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label28 = new System.Windows.Forms.Label();
             this.question5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
+            this.q5label4 = new System.Windows.Forms.Label();
             this.q5_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label31 = new System.Windows.Forms.Label();
+            this.q5label3 = new System.Windows.Forms.Label();
             this.q5_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label32 = new System.Windows.Forms.Label();
+            this.q5label2 = new System.Windows.Forms.Label();
             this.q5_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label33 = new System.Windows.Forms.Label();
+            this.q5label1 = new System.Windows.Forms.Label();
             this.q5_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label34 = new System.Windows.Forms.Label();
             this.question6 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
+            this.q6label4 = new System.Windows.Forms.Label();
             this.q6_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label37 = new System.Windows.Forms.Label();
+            this.q6label3 = new System.Windows.Forms.Label();
             this.q6_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label38 = new System.Windows.Forms.Label();
+            this.q6label2 = new System.Windows.Forms.Label();
             this.q6_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label39 = new System.Windows.Forms.Label();
+            this.q6label1 = new System.Windows.Forms.Label();
             this.q6_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label40 = new System.Windows.Forms.Label();
             this.question7 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label42 = new System.Windows.Forms.Label();
+            this.q7label4 = new System.Windows.Forms.Label();
             this.q7_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label43 = new System.Windows.Forms.Label();
+            this.q7label3 = new System.Windows.Forms.Label();
             this.q7_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label44 = new System.Windows.Forms.Label();
+            this.q7label2 = new System.Windows.Forms.Label();
             this.q7_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label45 = new System.Windows.Forms.Label();
+            this.q7label1 = new System.Windows.Forms.Label();
             this.q7_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label46 = new System.Windows.Forms.Label();
             this.question8 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
+            this.q8label4 = new System.Windows.Forms.Label();
             this.q8_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label49 = new System.Windows.Forms.Label();
+            this.q8label3 = new System.Windows.Forms.Label();
             this.q8_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label50 = new System.Windows.Forms.Label();
+            this.q8label2 = new System.Windows.Forms.Label();
             this.q8_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label51 = new System.Windows.Forms.Label();
+            this.q8label1 = new System.Windows.Forms.Label();
             this.q8_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label52 = new System.Windows.Forms.Label();
             this.question9 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label54 = new System.Windows.Forms.Label();
+            this.q9label4 = new System.Windows.Forms.Label();
             this.q9_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label55 = new System.Windows.Forms.Label();
+            this.q9label3 = new System.Windows.Forms.Label();
             this.q9_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label56 = new System.Windows.Forms.Label();
+            this.q9label2 = new System.Windows.Forms.Label();
             this.q9_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label57 = new System.Windows.Forms.Label();
+            this.q9label1 = new System.Windows.Forms.Label();
             this.q9_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.label58 = new System.Windows.Forms.Label();
             this.question10 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
+            this.q10label4 = new System.Windows.Forms.Label();
             this.q10_c4_rbtn = new System.Windows.Forms.RadioButton();
-            this.label61 = new System.Windows.Forms.Label();
+            this.q10label3 = new System.Windows.Forms.Label();
             this.q10_c3_rbtn = new System.Windows.Forms.RadioButton();
-            this.label62 = new System.Windows.Forms.Label();
+            this.q10label2 = new System.Windows.Forms.Label();
             this.q10_c2_rbtn = new System.Windows.Forms.RadioButton();
-            this.label63 = new System.Windows.Forms.Label();
+            this.q10label1 = new System.Windows.Forms.Label();
             this.q10_c1_rbtn = new System.Windows.Forms.RadioButton();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -200,7 +200,7 @@
             // 
             // exit
             // 
-            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit.Cursor = System.Windows.Forms.Cursors.No;
             this.exit.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.exit.Location = new System.Drawing.Point(1535, 16);
@@ -351,29 +351,29 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.q1label4);
             this.panel4.Controls.Add(this.q1_c4_rbtn);
-            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.q1label3);
             this.panel4.Controls.Add(this.q1_c3_rbtn);
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.q1label2);
             this.panel4.Controls.Add(this.q1_c2_rbtn);
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.q1label1);
             this.panel4.Controls.Add(this.q1_c1_rbtn);
             this.panel4.Location = new System.Drawing.Point(3, 32);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1504, 99);
+            this.panel4.Size = new System.Drawing.Size(1504, 205);
             this.panel4.TabIndex = 98;
             // 
-            // label7
+            // q1label4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(829, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 29);
-            this.label7.TabIndex = 102;
-            this.label7.Text = "D)";
+            this.q1label4.AutoSize = true;
+            this.q1label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q1label4.ForeColor = System.Drawing.Color.Black;
+            this.q1label4.Location = new System.Drawing.Point(3, 132);
+            this.q1label4.Name = "q1label4";
+            this.q1label4.Size = new System.Drawing.Size(44, 29);
+            this.q1label4.TabIndex = 102;
+            this.q1label4.Text = "D)";
             // 
             // q1_c4_rbtn
             // 
@@ -381,24 +381,25 @@
             this.q1_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q1_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q1_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q1_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q1_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q1_c4_rbtn.Name = "q1_c4_rbtn";
             this.q1_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q1_c4_rbtn.TabIndex = 101;
             this.q1_c4_rbtn.TabStop = true;
             this.q1_c4_rbtn.Text = "choise 4";
             this.q1_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q1_c4_rbtn.CheckedChanged += new System.EventHandler(this.q1_c4_rbtn_CheckedChanged);
             // 
-            // label8
+            // q1label3
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(552, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 29);
-            this.label8.TabIndex = 100;
-            this.label8.Text = "C)";
+            this.q1label3.AutoSize = true;
+            this.q1label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q1label3.ForeColor = System.Drawing.Color.Black;
+            this.q1label3.Location = new System.Drawing.Point(3, 93);
+            this.q1label3.Name = "q1label3";
+            this.q1label3.Size = new System.Drawing.Size(42, 29);
+            this.q1label3.TabIndex = 100;
+            this.q1label3.Text = "C)";
             // 
             // q1_c3_rbtn
             // 
@@ -406,24 +407,25 @@
             this.q1_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q1_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q1_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q1_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q1_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q1_c3_rbtn.Name = "q1_c3_rbtn";
             this.q1_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q1_c3_rbtn.TabIndex = 99;
             this.q1_c3_rbtn.TabStop = true;
             this.q1_c3_rbtn.Text = "choise 3";
             this.q1_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q1_c3_rbtn.CheckedChanged += new System.EventHandler(this.q1_c3_rbtn_CheckedChanged);
             // 
-            // label6
+            // q1label2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(280, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 29);
-            this.label6.TabIndex = 98;
-            this.label6.Text = "B)";
+            this.q1label2.AutoSize = true;
+            this.q1label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q1label2.ForeColor = System.Drawing.Color.Black;
+            this.q1label2.Location = new System.Drawing.Point(3, 54);
+            this.q1label2.Name = "q1label2";
+            this.q1label2.Size = new System.Drawing.Size(42, 29);
+            this.q1label2.TabIndex = 98;
+            this.q1label2.Text = "B)";
             // 
             // q1_c2_rbtn
             // 
@@ -431,24 +433,25 @@
             this.q1_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q1_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q1_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q1_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q1_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q1_c2_rbtn.Name = "q1_c2_rbtn";
             this.q1_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q1_c2_rbtn.TabIndex = 97;
             this.q1_c2_rbtn.TabStop = true;
             this.q1_c2_rbtn.Text = "choise 2";
             this.q1_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q1_c2_rbtn.CheckedChanged += new System.EventHandler(this.q1_c2_rbtn_CheckedChanged);
             // 
-            // label5
+            // q1label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(3, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 29);
-            this.label5.TabIndex = 96;
-            this.label5.Text = "A)";
+            this.q1label1.AutoSize = true;
+            this.q1label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q1label1.ForeColor = System.Drawing.Color.Black;
+            this.q1label1.Location = new System.Drawing.Point(3, 15);
+            this.q1label1.Name = "q1label1";
+            this.q1label1.Size = new System.Drawing.Size(42, 29);
+            this.q1label1.TabIndex = 96;
+            this.q1label1.Text = "A)";
             // 
             // q1_c1_rbtn
             // 
@@ -463,13 +466,14 @@
             this.q1_c1_rbtn.TabStop = true;
             this.q1_c1_rbtn.Text = "choise 1";
             this.q1_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q1_c1_rbtn.CheckedChanged += new System.EventHandler(this.q1_c1_rbtn_CheckedChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(3, 134);
+            this.label9.Location = new System.Drawing.Point(3, 240);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 29);
             this.label9.TabIndex = 99;
@@ -480,7 +484,7 @@
             this.question2.AutoSize = true;
             this.question2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question2.ForeColor = System.Drawing.Color.Black;
-            this.question2.Location = new System.Drawing.Point(67, 134);
+            this.question2.Location = new System.Drawing.Point(67, 240);
             this.question2.Name = "question2";
             this.question2.Size = new System.Drawing.Size(148, 29);
             this.question2.TabIndex = 100;
@@ -488,29 +492,29 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.q2label4);
             this.panel5.Controls.Add(this.q2_c4_rbtn);
-            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.q2label3);
             this.panel5.Controls.Add(this.q2_c3_rbtn);
-            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.q2label2);
             this.panel5.Controls.Add(this.q2_c2_rbtn);
-            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.q2label1);
             this.panel5.Controls.Add(this.q2_c1_rbtn);
-            this.panel5.Location = new System.Drawing.Point(3, 166);
+            this.panel5.Location = new System.Drawing.Point(3, 272);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1504, 99);
+            this.panel5.Size = new System.Drawing.Size(1504, 205);
             this.panel5.TabIndex = 101;
             // 
-            // label12
+            // q2label4
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(829, 15);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 29);
-            this.label12.TabIndex = 102;
-            this.label12.Text = "D)";
+            this.q2label4.AutoSize = true;
+            this.q2label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q2label4.ForeColor = System.Drawing.Color.Black;
+            this.q2label4.Location = new System.Drawing.Point(3, 132);
+            this.q2label4.Name = "q2label4";
+            this.q2label4.Size = new System.Drawing.Size(44, 29);
+            this.q2label4.TabIndex = 102;
+            this.q2label4.Text = "D)";
             // 
             // q2_c4_rbtn
             // 
@@ -518,24 +522,25 @@
             this.q2_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q2_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q2_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q2_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q2_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q2_c4_rbtn.Name = "q2_c4_rbtn";
             this.q2_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q2_c4_rbtn.TabIndex = 101;
             this.q2_c4_rbtn.TabStop = true;
             this.q2_c4_rbtn.Text = "choise 4";
             this.q2_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q2_c4_rbtn.CheckedChanged += new System.EventHandler(this.q2_c4_rbtn_CheckedChanged);
             // 
-            // label13
+            // q2label3
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(552, 15);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(42, 29);
-            this.label13.TabIndex = 100;
-            this.label13.Text = "C)";
+            this.q2label3.AutoSize = true;
+            this.q2label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q2label3.ForeColor = System.Drawing.Color.Black;
+            this.q2label3.Location = new System.Drawing.Point(3, 93);
+            this.q2label3.Name = "q2label3";
+            this.q2label3.Size = new System.Drawing.Size(42, 29);
+            this.q2label3.TabIndex = 100;
+            this.q2label3.Text = "C)";
             // 
             // q2_c3_rbtn
             // 
@@ -543,24 +548,25 @@
             this.q2_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q2_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q2_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q2_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q2_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q2_c3_rbtn.Name = "q2_c3_rbtn";
             this.q2_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q2_c3_rbtn.TabIndex = 99;
             this.q2_c3_rbtn.TabStop = true;
             this.q2_c3_rbtn.Text = "choise 3";
             this.q2_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q2_c3_rbtn.CheckedChanged += new System.EventHandler(this.q2_c3_rbtn_CheckedChanged);
             // 
-            // label14
+            // q2label2
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(280, 15);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(42, 29);
-            this.label14.TabIndex = 98;
-            this.label14.Text = "B)";
+            this.q2label2.AutoSize = true;
+            this.q2label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q2label2.ForeColor = System.Drawing.Color.Black;
+            this.q2label2.Location = new System.Drawing.Point(3, 54);
+            this.q2label2.Name = "q2label2";
+            this.q2label2.Size = new System.Drawing.Size(42, 29);
+            this.q2label2.TabIndex = 98;
+            this.q2label2.Text = "B)";
             // 
             // q2_c2_rbtn
             // 
@@ -568,24 +574,25 @@
             this.q2_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q2_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q2_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q2_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q2_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q2_c2_rbtn.Name = "q2_c2_rbtn";
             this.q2_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q2_c2_rbtn.TabIndex = 97;
             this.q2_c2_rbtn.TabStop = true;
             this.q2_c2_rbtn.Text = "choise 2";
             this.q2_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q2_c2_rbtn.CheckedChanged += new System.EventHandler(this.q2_c2_rbtn_CheckedChanged);
             // 
-            // label15
+            // q2label1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(3, 15);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(42, 29);
-            this.label15.TabIndex = 96;
-            this.label15.Text = "A)";
+            this.q2label1.AutoSize = true;
+            this.q2label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q2label1.ForeColor = System.Drawing.Color.Black;
+            this.q2label1.Location = new System.Drawing.Point(3, 15);
+            this.q2label1.Name = "q2label1";
+            this.q2label1.Size = new System.Drawing.Size(42, 29);
+            this.q2label1.TabIndex = 96;
+            this.q2label1.Text = "A)";
             // 
             // q2_c1_rbtn
             // 
@@ -600,13 +607,14 @@
             this.q2_c1_rbtn.TabStop = true;
             this.q2_c1_rbtn.Text = "choise 1";
             this.q2_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q2_c1_rbtn.CheckedChanged += new System.EventHandler(this.q2_c1_rbtn_CheckedChanged);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(3, 268);
+            this.label16.Location = new System.Drawing.Point(3, 480);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(58, 29);
             this.label16.TabIndex = 102;
@@ -617,7 +625,7 @@
             this.question3.AutoSize = true;
             this.question3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question3.ForeColor = System.Drawing.Color.Black;
-            this.question3.Location = new System.Drawing.Point(67, 268);
+            this.question3.Location = new System.Drawing.Point(67, 480);
             this.question3.Name = "question3";
             this.question3.Size = new System.Drawing.Size(148, 29);
             this.question3.TabIndex = 103;
@@ -625,29 +633,29 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.q3label4);
             this.panel6.Controls.Add(this.q3_c4_rbtn);
-            this.panel6.Controls.Add(this.label19);
+            this.panel6.Controls.Add(this.q3label3);
             this.panel6.Controls.Add(this.q3_c3_rbtn);
-            this.panel6.Controls.Add(this.label20);
+            this.panel6.Controls.Add(this.q3label2);
             this.panel6.Controls.Add(this.q3_c2_rbtn);
-            this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.q3label1);
             this.panel6.Controls.Add(this.q3_c1_rbtn);
-            this.panel6.Location = new System.Drawing.Point(3, 300);
+            this.panel6.Location = new System.Drawing.Point(3, 512);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1504, 99);
+            this.panel6.Size = new System.Drawing.Size(1504, 205);
             this.panel6.TabIndex = 104;
             // 
-            // label18
+            // q3label4
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(829, 15);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(44, 29);
-            this.label18.TabIndex = 102;
-            this.label18.Text = "D)";
+            this.q3label4.AutoSize = true;
+            this.q3label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q3label4.ForeColor = System.Drawing.Color.Black;
+            this.q3label4.Location = new System.Drawing.Point(3, 132);
+            this.q3label4.Name = "q3label4";
+            this.q3label4.Size = new System.Drawing.Size(44, 29);
+            this.q3label4.TabIndex = 102;
+            this.q3label4.Text = "D)";
             // 
             // q3_c4_rbtn
             // 
@@ -655,24 +663,25 @@
             this.q3_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q3_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q3_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q3_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q3_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q3_c4_rbtn.Name = "q3_c4_rbtn";
             this.q3_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q3_c4_rbtn.TabIndex = 101;
             this.q3_c4_rbtn.TabStop = true;
             this.q3_c4_rbtn.Text = "choise 4";
             this.q3_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q3_c4_rbtn.CheckedChanged += new System.EventHandler(this.q3_c4_rbtn_CheckedChanged);
             // 
-            // label19
+            // q3label3
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(552, 15);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(42, 29);
-            this.label19.TabIndex = 100;
-            this.label19.Text = "C)";
+            this.q3label3.AutoSize = true;
+            this.q3label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q3label3.ForeColor = System.Drawing.Color.Black;
+            this.q3label3.Location = new System.Drawing.Point(3, 93);
+            this.q3label3.Name = "q3label3";
+            this.q3label3.Size = new System.Drawing.Size(42, 29);
+            this.q3label3.TabIndex = 100;
+            this.q3label3.Text = "C)";
             // 
             // q3_c3_rbtn
             // 
@@ -680,24 +689,25 @@
             this.q3_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q3_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q3_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q3_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q3_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q3_c3_rbtn.Name = "q3_c3_rbtn";
             this.q3_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q3_c3_rbtn.TabIndex = 99;
             this.q3_c3_rbtn.TabStop = true;
             this.q3_c3_rbtn.Text = "choise 3";
             this.q3_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q3_c3_rbtn.CheckedChanged += new System.EventHandler(this.q3_c3_rbtn_CheckedChanged);
             // 
-            // label20
+            // q3label2
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(280, 15);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(42, 29);
-            this.label20.TabIndex = 98;
-            this.label20.Text = "B)";
+            this.q3label2.AutoSize = true;
+            this.q3label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q3label2.ForeColor = System.Drawing.Color.Black;
+            this.q3label2.Location = new System.Drawing.Point(3, 54);
+            this.q3label2.Name = "q3label2";
+            this.q3label2.Size = new System.Drawing.Size(42, 29);
+            this.q3label2.TabIndex = 98;
+            this.q3label2.Text = "B)";
             // 
             // q3_c2_rbtn
             // 
@@ -705,24 +715,25 @@
             this.q3_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q3_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q3_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q3_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q3_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q3_c2_rbtn.Name = "q3_c2_rbtn";
             this.q3_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q3_c2_rbtn.TabIndex = 97;
             this.q3_c2_rbtn.TabStop = true;
             this.q3_c2_rbtn.Text = "choise 2";
             this.q3_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q3_c2_rbtn.CheckedChanged += new System.EventHandler(this.q3_c2_rbtn_CheckedChanged);
             // 
-            // label21
+            // q3label1
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(3, 15);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 29);
-            this.label21.TabIndex = 96;
-            this.label21.Text = "A)";
+            this.q3label1.AutoSize = true;
+            this.q3label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q3label1.ForeColor = System.Drawing.Color.Black;
+            this.q3label1.Location = new System.Drawing.Point(3, 15);
+            this.q3label1.Name = "q3label1";
+            this.q3label1.Size = new System.Drawing.Size(42, 29);
+            this.q3label1.TabIndex = 96;
+            this.q3label1.Text = "A)";
             // 
             // q3_c1_rbtn
             // 
@@ -737,13 +748,14 @@
             this.q3_c1_rbtn.TabStop = true;
             this.q3_c1_rbtn.Text = "choise 1";
             this.q3_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q3_c1_rbtn.CheckedChanged += new System.EventHandler(this.q3_c1_rbtn_CheckedChanged);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(3, 402);
+            this.label22.Location = new System.Drawing.Point(3, 720);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(58, 29);
             this.label22.TabIndex = 105;
@@ -754,7 +766,7 @@
             this.question4.AutoSize = true;
             this.question4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question4.ForeColor = System.Drawing.Color.Black;
-            this.question4.Location = new System.Drawing.Point(67, 402);
+            this.question4.Location = new System.Drawing.Point(67, 720);
             this.question4.Name = "question4";
             this.question4.Size = new System.Drawing.Size(148, 29);
             this.question4.TabIndex = 106;
@@ -762,29 +774,29 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.label24);
+            this.panel7.Controls.Add(this.q4label4);
             this.panel7.Controls.Add(this.q4_c4_rbtn);
-            this.panel7.Controls.Add(this.label25);
+            this.panel7.Controls.Add(this.q4label3);
             this.panel7.Controls.Add(this.q4_c3_rbtn);
-            this.panel7.Controls.Add(this.label26);
+            this.panel7.Controls.Add(this.q4label2);
             this.panel7.Controls.Add(this.q4_c2_rbtn);
-            this.panel7.Controls.Add(this.label27);
+            this.panel7.Controls.Add(this.q4label1);
             this.panel7.Controls.Add(this.q4_c1_rbtn);
-            this.panel7.Location = new System.Drawing.Point(3, 434);
+            this.panel7.Location = new System.Drawing.Point(3, 752);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1504, 99);
+            this.panel7.Size = new System.Drawing.Size(1504, 205);
             this.panel7.TabIndex = 107;
             // 
-            // label24
+            // q4label4
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(829, 15);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 29);
-            this.label24.TabIndex = 102;
-            this.label24.Text = "D)";
+            this.q4label4.AutoSize = true;
+            this.q4label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q4label4.ForeColor = System.Drawing.Color.Black;
+            this.q4label4.Location = new System.Drawing.Point(3, 132);
+            this.q4label4.Name = "q4label4";
+            this.q4label4.Size = new System.Drawing.Size(44, 29);
+            this.q4label4.TabIndex = 102;
+            this.q4label4.Text = "D)";
             // 
             // q4_c4_rbtn
             // 
@@ -792,24 +804,25 @@
             this.q4_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q4_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q4_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q4_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q4_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q4_c4_rbtn.Name = "q4_c4_rbtn";
             this.q4_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q4_c4_rbtn.TabIndex = 101;
             this.q4_c4_rbtn.TabStop = true;
             this.q4_c4_rbtn.Text = "choise 4";
             this.q4_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q4_c4_rbtn.CheckedChanged += new System.EventHandler(this.q4_c4_rbtn_CheckedChanged);
             // 
-            // label25
+            // q4label3
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(552, 15);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(42, 29);
-            this.label25.TabIndex = 100;
-            this.label25.Text = "C)";
+            this.q4label3.AutoSize = true;
+            this.q4label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q4label3.ForeColor = System.Drawing.Color.Black;
+            this.q4label3.Location = new System.Drawing.Point(3, 93);
+            this.q4label3.Name = "q4label3";
+            this.q4label3.Size = new System.Drawing.Size(42, 29);
+            this.q4label3.TabIndex = 100;
+            this.q4label3.Text = "C)";
             // 
             // q4_c3_rbtn
             // 
@@ -817,24 +830,25 @@
             this.q4_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q4_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q4_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q4_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q4_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q4_c3_rbtn.Name = "q4_c3_rbtn";
             this.q4_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q4_c3_rbtn.TabIndex = 99;
             this.q4_c3_rbtn.TabStop = true;
             this.q4_c3_rbtn.Text = "choise 3";
             this.q4_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q4_c3_rbtn.CheckedChanged += new System.EventHandler(this.q4_c3_rbtn_CheckedChanged);
             // 
-            // label26
+            // q4label2
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(280, 15);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(42, 29);
-            this.label26.TabIndex = 98;
-            this.label26.Text = "B)";
+            this.q4label2.AutoSize = true;
+            this.q4label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q4label2.ForeColor = System.Drawing.Color.Black;
+            this.q4label2.Location = new System.Drawing.Point(3, 54);
+            this.q4label2.Name = "q4label2";
+            this.q4label2.Size = new System.Drawing.Size(42, 29);
+            this.q4label2.TabIndex = 98;
+            this.q4label2.Text = "B)";
             // 
             // q4_c2_rbtn
             // 
@@ -842,24 +856,25 @@
             this.q4_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q4_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q4_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q4_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q4_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q4_c2_rbtn.Name = "q4_c2_rbtn";
             this.q4_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q4_c2_rbtn.TabIndex = 97;
             this.q4_c2_rbtn.TabStop = true;
             this.q4_c2_rbtn.Text = "choise 2";
             this.q4_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q4_c2_rbtn.CheckedChanged += new System.EventHandler(this.q4_c2_rbtn_CheckedChanged);
             // 
-            // label27
+            // q4label1
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(3, 15);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(42, 29);
-            this.label27.TabIndex = 96;
-            this.label27.Text = "A)";
+            this.q4label1.AutoSize = true;
+            this.q4label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q4label1.ForeColor = System.Drawing.Color.Black;
+            this.q4label1.Location = new System.Drawing.Point(3, 15);
+            this.q4label1.Name = "q4label1";
+            this.q4label1.Size = new System.Drawing.Size(42, 29);
+            this.q4label1.TabIndex = 96;
+            this.q4label1.Text = "A)";
             // 
             // q4_c1_rbtn
             // 
@@ -874,13 +889,14 @@
             this.q4_c1_rbtn.TabStop = true;
             this.q4_c1_rbtn.Text = "choise 1";
             this.q4_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q4_c1_rbtn.CheckedChanged += new System.EventHandler(this.q4_c1_rbtn_CheckedChanged);
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(3, 536);
+            this.label28.Location = new System.Drawing.Point(3, 960);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(58, 29);
             this.label28.TabIndex = 108;
@@ -891,7 +907,7 @@
             this.question5.AutoSize = true;
             this.question5.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question5.ForeColor = System.Drawing.Color.Black;
-            this.question5.Location = new System.Drawing.Point(67, 536);
+            this.question5.Location = new System.Drawing.Point(67, 960);
             this.question5.Name = "question5";
             this.question5.Size = new System.Drawing.Size(148, 29);
             this.question5.TabIndex = 109;
@@ -899,29 +915,29 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label30);
+            this.panel8.Controls.Add(this.q5label4);
             this.panel8.Controls.Add(this.q5_c4_rbtn);
-            this.panel8.Controls.Add(this.label31);
+            this.panel8.Controls.Add(this.q5label3);
             this.panel8.Controls.Add(this.q5_c3_rbtn);
-            this.panel8.Controls.Add(this.label32);
+            this.panel8.Controls.Add(this.q5label2);
             this.panel8.Controls.Add(this.q5_c2_rbtn);
-            this.panel8.Controls.Add(this.label33);
+            this.panel8.Controls.Add(this.q5label1);
             this.panel8.Controls.Add(this.q5_c1_rbtn);
-            this.panel8.Location = new System.Drawing.Point(3, 568);
+            this.panel8.Location = new System.Drawing.Point(3, 992);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1504, 99);
+            this.panel8.Size = new System.Drawing.Size(1504, 205);
             this.panel8.TabIndex = 110;
             // 
-            // label30
+            // q5label4
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(829, 15);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(44, 29);
-            this.label30.TabIndex = 102;
-            this.label30.Text = "D)";
+            this.q5label4.AutoSize = true;
+            this.q5label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q5label4.ForeColor = System.Drawing.Color.Black;
+            this.q5label4.Location = new System.Drawing.Point(3, 132);
+            this.q5label4.Name = "q5label4";
+            this.q5label4.Size = new System.Drawing.Size(44, 29);
+            this.q5label4.TabIndex = 102;
+            this.q5label4.Text = "D)";
             // 
             // q5_c4_rbtn
             // 
@@ -929,24 +945,25 @@
             this.q5_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q5_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q5_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q5_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q5_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q5_c4_rbtn.Name = "q5_c4_rbtn";
             this.q5_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q5_c4_rbtn.TabIndex = 101;
             this.q5_c4_rbtn.TabStop = true;
             this.q5_c4_rbtn.Text = "choise 4";
             this.q5_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q5_c4_rbtn.CheckedChanged += new System.EventHandler(this.q5_c4_rbtn_CheckedChanged);
             // 
-            // label31
+            // q5label3
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(552, 15);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(42, 29);
-            this.label31.TabIndex = 100;
-            this.label31.Text = "C)";
+            this.q5label3.AutoSize = true;
+            this.q5label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q5label3.ForeColor = System.Drawing.Color.Black;
+            this.q5label3.Location = new System.Drawing.Point(3, 93);
+            this.q5label3.Name = "q5label3";
+            this.q5label3.Size = new System.Drawing.Size(42, 29);
+            this.q5label3.TabIndex = 100;
+            this.q5label3.Text = "C)";
             // 
             // q5_c3_rbtn
             // 
@@ -954,24 +971,25 @@
             this.q5_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q5_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q5_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q5_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q5_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q5_c3_rbtn.Name = "q5_c3_rbtn";
             this.q5_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q5_c3_rbtn.TabIndex = 99;
             this.q5_c3_rbtn.TabStop = true;
             this.q5_c3_rbtn.Text = "choise 3";
             this.q5_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q5_c3_rbtn.CheckedChanged += new System.EventHandler(this.q5_c3_rbtn_CheckedChanged);
             // 
-            // label32
+            // q5label2
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(280, 15);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(42, 29);
-            this.label32.TabIndex = 98;
-            this.label32.Text = "B)";
+            this.q5label2.AutoSize = true;
+            this.q5label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q5label2.ForeColor = System.Drawing.Color.Black;
+            this.q5label2.Location = new System.Drawing.Point(3, 54);
+            this.q5label2.Name = "q5label2";
+            this.q5label2.Size = new System.Drawing.Size(42, 29);
+            this.q5label2.TabIndex = 98;
+            this.q5label2.Text = "B)";
             // 
             // q5_c2_rbtn
             // 
@@ -979,24 +997,25 @@
             this.q5_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q5_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q5_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q5_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q5_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q5_c2_rbtn.Name = "q5_c2_rbtn";
             this.q5_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q5_c2_rbtn.TabIndex = 97;
             this.q5_c2_rbtn.TabStop = true;
             this.q5_c2_rbtn.Text = "choise 2";
             this.q5_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q5_c2_rbtn.CheckedChanged += new System.EventHandler(this.q5_c2_rbtn_CheckedChanged);
             // 
-            // label33
+            // q5label1
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(3, 15);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(42, 29);
-            this.label33.TabIndex = 96;
-            this.label33.Text = "A)";
+            this.q5label1.AutoSize = true;
+            this.q5label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q5label1.ForeColor = System.Drawing.Color.Black;
+            this.q5label1.Location = new System.Drawing.Point(3, 15);
+            this.q5label1.Name = "q5label1";
+            this.q5label1.Size = new System.Drawing.Size(42, 29);
+            this.q5label1.TabIndex = 96;
+            this.q5label1.Text = "A)";
             // 
             // q5_c1_rbtn
             // 
@@ -1011,13 +1030,14 @@
             this.q5_c1_rbtn.TabStop = true;
             this.q5_c1_rbtn.Text = "choise 1";
             this.q5_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q5_c1_rbtn.CheckedChanged += new System.EventHandler(this.q5_c1_rbtn_CheckedChanged);
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(3, 670);
+            this.label34.Location = new System.Drawing.Point(3, 1200);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(58, 29);
             this.label34.TabIndex = 111;
@@ -1028,7 +1048,7 @@
             this.question6.AutoSize = true;
             this.question6.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question6.ForeColor = System.Drawing.Color.Black;
-            this.question6.Location = new System.Drawing.Point(67, 670);
+            this.question6.Location = new System.Drawing.Point(67, 1200);
             this.question6.Name = "question6";
             this.question6.Size = new System.Drawing.Size(148, 29);
             this.question6.TabIndex = 112;
@@ -1036,29 +1056,29 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.label36);
+            this.panel9.Controls.Add(this.q6label4);
             this.panel9.Controls.Add(this.q6_c4_rbtn);
-            this.panel9.Controls.Add(this.label37);
+            this.panel9.Controls.Add(this.q6label3);
             this.panel9.Controls.Add(this.q6_c3_rbtn);
-            this.panel9.Controls.Add(this.label38);
+            this.panel9.Controls.Add(this.q6label2);
             this.panel9.Controls.Add(this.q6_c2_rbtn);
-            this.panel9.Controls.Add(this.label39);
+            this.panel9.Controls.Add(this.q6label1);
             this.panel9.Controls.Add(this.q6_c1_rbtn);
-            this.panel9.Location = new System.Drawing.Point(3, 702);
+            this.panel9.Location = new System.Drawing.Point(3, 1232);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1504, 99);
+            this.panel9.Size = new System.Drawing.Size(1504, 205);
             this.panel9.TabIndex = 113;
             // 
-            // label36
+            // q6label4
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(829, 15);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(44, 29);
-            this.label36.TabIndex = 102;
-            this.label36.Text = "D)";
+            this.q6label4.AutoSize = true;
+            this.q6label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q6label4.ForeColor = System.Drawing.Color.Black;
+            this.q6label4.Location = new System.Drawing.Point(3, 132);
+            this.q6label4.Name = "q6label4";
+            this.q6label4.Size = new System.Drawing.Size(44, 29);
+            this.q6label4.TabIndex = 102;
+            this.q6label4.Text = "D)";
             // 
             // q6_c4_rbtn
             // 
@@ -1066,24 +1086,25 @@
             this.q6_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q6_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q6_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q6_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q6_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q6_c4_rbtn.Name = "q6_c4_rbtn";
             this.q6_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q6_c4_rbtn.TabIndex = 101;
             this.q6_c4_rbtn.TabStop = true;
             this.q6_c4_rbtn.Text = "choise 4";
             this.q6_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q6_c4_rbtn.CheckedChanged += new System.EventHandler(this.q6_c4_rbtn_CheckedChanged);
             // 
-            // label37
+            // q6label3
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(552, 15);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(42, 29);
-            this.label37.TabIndex = 100;
-            this.label37.Text = "C)";
+            this.q6label3.AutoSize = true;
+            this.q6label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q6label3.ForeColor = System.Drawing.Color.Black;
+            this.q6label3.Location = new System.Drawing.Point(3, 93);
+            this.q6label3.Name = "q6label3";
+            this.q6label3.Size = new System.Drawing.Size(42, 29);
+            this.q6label3.TabIndex = 100;
+            this.q6label3.Text = "C)";
             // 
             // q6_c3_rbtn
             // 
@@ -1091,24 +1112,25 @@
             this.q6_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q6_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q6_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q6_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q6_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q6_c3_rbtn.Name = "q6_c3_rbtn";
             this.q6_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q6_c3_rbtn.TabIndex = 99;
             this.q6_c3_rbtn.TabStop = true;
             this.q6_c3_rbtn.Text = "choise 3";
             this.q6_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q6_c3_rbtn.CheckedChanged += new System.EventHandler(this.q6_c3_rbtn_CheckedChanged);
             // 
-            // label38
+            // q6label2
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(280, 15);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(42, 29);
-            this.label38.TabIndex = 98;
-            this.label38.Text = "B)";
+            this.q6label2.AutoSize = true;
+            this.q6label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q6label2.ForeColor = System.Drawing.Color.Black;
+            this.q6label2.Location = new System.Drawing.Point(3, 54);
+            this.q6label2.Name = "q6label2";
+            this.q6label2.Size = new System.Drawing.Size(42, 29);
+            this.q6label2.TabIndex = 98;
+            this.q6label2.Text = "B)";
             // 
             // q6_c2_rbtn
             // 
@@ -1116,24 +1138,25 @@
             this.q6_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q6_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q6_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q6_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q6_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q6_c2_rbtn.Name = "q6_c2_rbtn";
             this.q6_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q6_c2_rbtn.TabIndex = 97;
             this.q6_c2_rbtn.TabStop = true;
             this.q6_c2_rbtn.Text = "choise 2";
             this.q6_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q6_c2_rbtn.CheckedChanged += new System.EventHandler(this.q6_c2_rbtn_CheckedChanged);
             // 
-            // label39
+            // q6label1
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(3, 15);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(42, 29);
-            this.label39.TabIndex = 96;
-            this.label39.Text = "A)";
+            this.q6label1.AutoSize = true;
+            this.q6label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q6label1.ForeColor = System.Drawing.Color.Black;
+            this.q6label1.Location = new System.Drawing.Point(3, 15);
+            this.q6label1.Name = "q6label1";
+            this.q6label1.Size = new System.Drawing.Size(42, 29);
+            this.q6label1.TabIndex = 96;
+            this.q6label1.Text = "A)";
             // 
             // q6_c1_rbtn
             // 
@@ -1148,13 +1171,14 @@
             this.q6_c1_rbtn.TabStop = true;
             this.q6_c1_rbtn.Text = "choise 1";
             this.q6_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q6_c1_rbtn.CheckedChanged += new System.EventHandler(this.q6_c1_rbtn_CheckedChanged);
             // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(3, 804);
+            this.label40.Location = new System.Drawing.Point(3, 1440);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(58, 29);
             this.label40.TabIndex = 114;
@@ -1165,7 +1189,7 @@
             this.question7.AutoSize = true;
             this.question7.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question7.ForeColor = System.Drawing.Color.Black;
-            this.question7.Location = new System.Drawing.Point(67, 804);
+            this.question7.Location = new System.Drawing.Point(67, 1440);
             this.question7.Name = "question7";
             this.question7.Size = new System.Drawing.Size(148, 29);
             this.question7.TabIndex = 115;
@@ -1173,29 +1197,29 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.label42);
+            this.panel10.Controls.Add(this.q7label4);
             this.panel10.Controls.Add(this.q7_c4_rbtn);
-            this.panel10.Controls.Add(this.label43);
+            this.panel10.Controls.Add(this.q7label3);
             this.panel10.Controls.Add(this.q7_c3_rbtn);
-            this.panel10.Controls.Add(this.label44);
+            this.panel10.Controls.Add(this.q7label2);
             this.panel10.Controls.Add(this.q7_c2_rbtn);
-            this.panel10.Controls.Add(this.label45);
+            this.panel10.Controls.Add(this.q7label1);
             this.panel10.Controls.Add(this.q7_c1_rbtn);
-            this.panel10.Location = new System.Drawing.Point(3, 836);
+            this.panel10.Location = new System.Drawing.Point(3, 1472);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1504, 99);
+            this.panel10.Size = new System.Drawing.Size(1504, 205);
             this.panel10.TabIndex = 116;
             // 
-            // label42
+            // q7label4
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(829, 15);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(44, 29);
-            this.label42.TabIndex = 102;
-            this.label42.Text = "D)";
+            this.q7label4.AutoSize = true;
+            this.q7label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q7label4.ForeColor = System.Drawing.Color.Black;
+            this.q7label4.Location = new System.Drawing.Point(3, 132);
+            this.q7label4.Name = "q7label4";
+            this.q7label4.Size = new System.Drawing.Size(44, 29);
+            this.q7label4.TabIndex = 102;
+            this.q7label4.Text = "D)";
             // 
             // q7_c4_rbtn
             // 
@@ -1203,24 +1227,25 @@
             this.q7_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q7_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q7_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q7_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q7_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q7_c4_rbtn.Name = "q7_c4_rbtn";
             this.q7_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q7_c4_rbtn.TabIndex = 101;
             this.q7_c4_rbtn.TabStop = true;
             this.q7_c4_rbtn.Text = "choise 4";
             this.q7_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q7_c4_rbtn.CheckedChanged += new System.EventHandler(this.q7_c4_rbtn_CheckedChanged);
             // 
-            // label43
+            // q7label3
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.Black;
-            this.label43.Location = new System.Drawing.Point(552, 15);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(42, 29);
-            this.label43.TabIndex = 100;
-            this.label43.Text = "C)";
+            this.q7label3.AutoSize = true;
+            this.q7label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q7label3.ForeColor = System.Drawing.Color.Black;
+            this.q7label3.Location = new System.Drawing.Point(3, 93);
+            this.q7label3.Name = "q7label3";
+            this.q7label3.Size = new System.Drawing.Size(42, 29);
+            this.q7label3.TabIndex = 100;
+            this.q7label3.Text = "C)";
             // 
             // q7_c3_rbtn
             // 
@@ -1228,24 +1253,25 @@
             this.q7_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q7_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q7_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q7_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q7_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q7_c3_rbtn.Name = "q7_c3_rbtn";
             this.q7_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q7_c3_rbtn.TabIndex = 99;
             this.q7_c3_rbtn.TabStop = true;
             this.q7_c3_rbtn.Text = "choise 3";
             this.q7_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q7_c3_rbtn.CheckedChanged += new System.EventHandler(this.q7_c3_rbtn_CheckedChanged);
             // 
-            // label44
+            // q7label2
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(280, 15);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(42, 29);
-            this.label44.TabIndex = 98;
-            this.label44.Text = "B)";
+            this.q7label2.AutoSize = true;
+            this.q7label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q7label2.ForeColor = System.Drawing.Color.Black;
+            this.q7label2.Location = new System.Drawing.Point(3, 54);
+            this.q7label2.Name = "q7label2";
+            this.q7label2.Size = new System.Drawing.Size(42, 29);
+            this.q7label2.TabIndex = 98;
+            this.q7label2.Text = "B)";
             // 
             // q7_c2_rbtn
             // 
@@ -1253,24 +1279,25 @@
             this.q7_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q7_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q7_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q7_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q7_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q7_c2_rbtn.Name = "q7_c2_rbtn";
             this.q7_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q7_c2_rbtn.TabIndex = 97;
             this.q7_c2_rbtn.TabStop = true;
             this.q7_c2_rbtn.Text = "choise 2";
             this.q7_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q7_c2_rbtn.CheckedChanged += new System.EventHandler(this.q7_c2_rbtn_CheckedChanged);
             // 
-            // label45
+            // q7label1
             // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(3, 15);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(42, 29);
-            this.label45.TabIndex = 96;
-            this.label45.Text = "A)";
+            this.q7label1.AutoSize = true;
+            this.q7label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q7label1.ForeColor = System.Drawing.Color.Black;
+            this.q7label1.Location = new System.Drawing.Point(3, 15);
+            this.q7label1.Name = "q7label1";
+            this.q7label1.Size = new System.Drawing.Size(42, 29);
+            this.q7label1.TabIndex = 96;
+            this.q7label1.Text = "A)";
             // 
             // q7_c1_rbtn
             // 
@@ -1285,13 +1312,14 @@
             this.q7_c1_rbtn.TabStop = true;
             this.q7_c1_rbtn.Text = "choise 1";
             this.q7_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q7_c1_rbtn.CheckedChanged += new System.EventHandler(this.q7_c1_rbtn_CheckedChanged);
             // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(3, 938);
+            this.label46.Location = new System.Drawing.Point(3, 1680);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(58, 29);
             this.label46.TabIndex = 117;
@@ -1302,7 +1330,7 @@
             this.question8.AutoSize = true;
             this.question8.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question8.ForeColor = System.Drawing.Color.Black;
-            this.question8.Location = new System.Drawing.Point(67, 938);
+            this.question8.Location = new System.Drawing.Point(67, 1680);
             this.question8.Name = "question8";
             this.question8.Size = new System.Drawing.Size(148, 29);
             this.question8.TabIndex = 118;
@@ -1310,29 +1338,29 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.label48);
+            this.panel11.Controls.Add(this.q8label4);
             this.panel11.Controls.Add(this.q8_c4_rbtn);
-            this.panel11.Controls.Add(this.label49);
+            this.panel11.Controls.Add(this.q8label3);
             this.panel11.Controls.Add(this.q8_c3_rbtn);
-            this.panel11.Controls.Add(this.label50);
+            this.panel11.Controls.Add(this.q8label2);
             this.panel11.Controls.Add(this.q8_c2_rbtn);
-            this.panel11.Controls.Add(this.label51);
+            this.panel11.Controls.Add(this.q8label1);
             this.panel11.Controls.Add(this.q8_c1_rbtn);
-            this.panel11.Location = new System.Drawing.Point(3, 970);
+            this.panel11.Location = new System.Drawing.Point(3, 1712);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1504, 99);
+            this.panel11.Size = new System.Drawing.Size(1504, 205);
             this.panel11.TabIndex = 119;
             // 
-            // label48
+            // q8label4
             // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(829, 15);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(44, 29);
-            this.label48.TabIndex = 102;
-            this.label48.Text = "D)";
+            this.q8label4.AutoSize = true;
+            this.q8label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q8label4.ForeColor = System.Drawing.Color.Black;
+            this.q8label4.Location = new System.Drawing.Point(3, 132);
+            this.q8label4.Name = "q8label4";
+            this.q8label4.Size = new System.Drawing.Size(44, 29);
+            this.q8label4.TabIndex = 102;
+            this.q8label4.Text = "D)";
             // 
             // q8_c4_rbtn
             // 
@@ -1340,24 +1368,25 @@
             this.q8_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q8_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q8_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q8_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q8_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q8_c4_rbtn.Name = "q8_c4_rbtn";
             this.q8_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q8_c4_rbtn.TabIndex = 101;
             this.q8_c4_rbtn.TabStop = true;
             this.q8_c4_rbtn.Text = "choise 4";
             this.q8_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q8_c4_rbtn.CheckedChanged += new System.EventHandler(this.q8_c4_rbtn_CheckedChanged);
             // 
-            // label49
+            // q8label3
             // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(552, 15);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(42, 29);
-            this.label49.TabIndex = 100;
-            this.label49.Text = "C)";
+            this.q8label3.AutoSize = true;
+            this.q8label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q8label3.ForeColor = System.Drawing.Color.Black;
+            this.q8label3.Location = new System.Drawing.Point(3, 93);
+            this.q8label3.Name = "q8label3";
+            this.q8label3.Size = new System.Drawing.Size(42, 29);
+            this.q8label3.TabIndex = 100;
+            this.q8label3.Text = "C)";
             // 
             // q8_c3_rbtn
             // 
@@ -1365,24 +1394,25 @@
             this.q8_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q8_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q8_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q8_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q8_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q8_c3_rbtn.Name = "q8_c3_rbtn";
             this.q8_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q8_c3_rbtn.TabIndex = 99;
             this.q8_c3_rbtn.TabStop = true;
             this.q8_c3_rbtn.Text = "choise 3";
             this.q8_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q8_c3_rbtn.CheckedChanged += new System.EventHandler(this.q8_c3_rbtn_CheckedChanged);
             // 
-            // label50
+            // q8label2
             // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(280, 15);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(42, 29);
-            this.label50.TabIndex = 98;
-            this.label50.Text = "B)";
+            this.q8label2.AutoSize = true;
+            this.q8label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q8label2.ForeColor = System.Drawing.Color.Black;
+            this.q8label2.Location = new System.Drawing.Point(3, 54);
+            this.q8label2.Name = "q8label2";
+            this.q8label2.Size = new System.Drawing.Size(42, 29);
+            this.q8label2.TabIndex = 98;
+            this.q8label2.Text = "B)";
             // 
             // q8_c2_rbtn
             // 
@@ -1390,24 +1420,25 @@
             this.q8_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q8_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q8_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q8_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q8_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q8_c2_rbtn.Name = "q8_c2_rbtn";
             this.q8_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q8_c2_rbtn.TabIndex = 97;
             this.q8_c2_rbtn.TabStop = true;
             this.q8_c2_rbtn.Text = "choise 2";
             this.q8_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q8_c2_rbtn.CheckedChanged += new System.EventHandler(this.q8_c2_rbtn_CheckedChanged);
             // 
-            // label51
+            // q8label1
             // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(3, 15);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(42, 29);
-            this.label51.TabIndex = 96;
-            this.label51.Text = "A)";
+            this.q8label1.AutoSize = true;
+            this.q8label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q8label1.ForeColor = System.Drawing.Color.Black;
+            this.q8label1.Location = new System.Drawing.Point(3, 15);
+            this.q8label1.Name = "q8label1";
+            this.q8label1.Size = new System.Drawing.Size(42, 29);
+            this.q8label1.TabIndex = 96;
+            this.q8label1.Text = "A)";
             // 
             // q8_c1_rbtn
             // 
@@ -1422,13 +1453,14 @@
             this.q8_c1_rbtn.TabStop = true;
             this.q8_c1_rbtn.Text = "choise 1";
             this.q8_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q8_c1_rbtn.CheckedChanged += new System.EventHandler(this.q8_c1_rbtn_CheckedChanged);
             // 
             // label52
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(3, 1072);
+            this.label52.Location = new System.Drawing.Point(3, 1920);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(58, 29);
             this.label52.TabIndex = 120;
@@ -1439,7 +1471,7 @@
             this.question9.AutoSize = true;
             this.question9.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question9.ForeColor = System.Drawing.Color.Black;
-            this.question9.Location = new System.Drawing.Point(67, 1072);
+            this.question9.Location = new System.Drawing.Point(67, 1920);
             this.question9.Name = "question9";
             this.question9.Size = new System.Drawing.Size(148, 29);
             this.question9.TabIndex = 121;
@@ -1447,29 +1479,29 @@
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.label54);
+            this.panel12.Controls.Add(this.q9label4);
             this.panel12.Controls.Add(this.q9_c4_rbtn);
-            this.panel12.Controls.Add(this.label55);
+            this.panel12.Controls.Add(this.q9label3);
             this.panel12.Controls.Add(this.q9_c3_rbtn);
-            this.panel12.Controls.Add(this.label56);
+            this.panel12.Controls.Add(this.q9label2);
             this.panel12.Controls.Add(this.q9_c2_rbtn);
-            this.panel12.Controls.Add(this.label57);
+            this.panel12.Controls.Add(this.q9label1);
             this.panel12.Controls.Add(this.q9_c1_rbtn);
-            this.panel12.Location = new System.Drawing.Point(3, 1104);
+            this.panel12.Location = new System.Drawing.Point(3, 1952);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1504, 99);
+            this.panel12.Size = new System.Drawing.Size(1504, 205);
             this.panel12.TabIndex = 122;
             // 
-            // label54
+            // q9label4
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(829, 15);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(44, 29);
-            this.label54.TabIndex = 102;
-            this.label54.Text = "D)";
+            this.q9label4.AutoSize = true;
+            this.q9label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q9label4.ForeColor = System.Drawing.Color.Black;
+            this.q9label4.Location = new System.Drawing.Point(3, 132);
+            this.q9label4.Name = "q9label4";
+            this.q9label4.Size = new System.Drawing.Size(44, 29);
+            this.q9label4.TabIndex = 102;
+            this.q9label4.Text = "D)";
             // 
             // q9_c4_rbtn
             // 
@@ -1477,24 +1509,25 @@
             this.q9_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q9_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q9_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q9_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q9_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q9_c4_rbtn.Name = "q9_c4_rbtn";
             this.q9_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q9_c4_rbtn.TabIndex = 101;
             this.q9_c4_rbtn.TabStop = true;
             this.q9_c4_rbtn.Text = "choise 4";
             this.q9_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q9_c4_rbtn.CheckedChanged += new System.EventHandler(this.q9_c4_rbtn_CheckedChanged);
             // 
-            // label55
+            // q9label3
             // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.Black;
-            this.label55.Location = new System.Drawing.Point(552, 15);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(42, 29);
-            this.label55.TabIndex = 100;
-            this.label55.Text = "C)";
+            this.q9label3.AutoSize = true;
+            this.q9label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q9label3.ForeColor = System.Drawing.Color.Black;
+            this.q9label3.Location = new System.Drawing.Point(3, 93);
+            this.q9label3.Name = "q9label3";
+            this.q9label3.Size = new System.Drawing.Size(42, 29);
+            this.q9label3.TabIndex = 100;
+            this.q9label3.Text = "C)";
             // 
             // q9_c3_rbtn
             // 
@@ -1502,24 +1535,25 @@
             this.q9_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q9_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q9_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q9_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q9_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q9_c3_rbtn.Name = "q9_c3_rbtn";
             this.q9_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q9_c3_rbtn.TabIndex = 99;
             this.q9_c3_rbtn.TabStop = true;
             this.q9_c3_rbtn.Text = "choise 3";
             this.q9_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q9_c3_rbtn.CheckedChanged += new System.EventHandler(this.q9_c3_rbtn_CheckedChanged);
             // 
-            // label56
+            // q9label2
             // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(280, 15);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(42, 29);
-            this.label56.TabIndex = 98;
-            this.label56.Text = "B)";
+            this.q9label2.AutoSize = true;
+            this.q9label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q9label2.ForeColor = System.Drawing.Color.Black;
+            this.q9label2.Location = new System.Drawing.Point(3, 54);
+            this.q9label2.Name = "q9label2";
+            this.q9label2.Size = new System.Drawing.Size(42, 29);
+            this.q9label2.TabIndex = 98;
+            this.q9label2.Text = "B)";
             // 
             // q9_c2_rbtn
             // 
@@ -1527,24 +1561,25 @@
             this.q9_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q9_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q9_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q9_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q9_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q9_c2_rbtn.Name = "q9_c2_rbtn";
             this.q9_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q9_c2_rbtn.TabIndex = 97;
             this.q9_c2_rbtn.TabStop = true;
             this.q9_c2_rbtn.Text = "choise 2";
             this.q9_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q9_c2_rbtn.CheckedChanged += new System.EventHandler(this.q9_c2_rbtn_CheckedChanged);
             // 
-            // label57
+            // q9label1
             // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(3, 15);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(42, 29);
-            this.label57.TabIndex = 96;
-            this.label57.Text = "A)";
+            this.q9label1.AutoSize = true;
+            this.q9label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q9label1.ForeColor = System.Drawing.Color.Black;
+            this.q9label1.Location = new System.Drawing.Point(3, 15);
+            this.q9label1.Name = "q9label1";
+            this.q9label1.Size = new System.Drawing.Size(42, 29);
+            this.q9label1.TabIndex = 96;
+            this.q9label1.Text = "A)";
             // 
             // q9_c1_rbtn
             // 
@@ -1559,13 +1594,14 @@
             this.q9_c1_rbtn.TabStop = true;
             this.q9_c1_rbtn.Text = "choise 1";
             this.q9_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q9_c1_rbtn.CheckedChanged += new System.EventHandler(this.q9_c1_rbtn_CheckedChanged);
             // 
             // label58
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.ForeColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(3, 1206);
+            this.label58.Location = new System.Drawing.Point(3, 2160);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(72, 29);
             this.label58.TabIndex = 123;
@@ -1576,7 +1612,7 @@
             this.question10.AutoSize = true;
             this.question10.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question10.ForeColor = System.Drawing.Color.Black;
-            this.question10.Location = new System.Drawing.Point(81, 1206);
+            this.question10.Location = new System.Drawing.Point(81, 2160);
             this.question10.Name = "question10";
             this.question10.Size = new System.Drawing.Size(162, 29);
             this.question10.TabIndex = 124;
@@ -1584,29 +1620,29 @@
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.label60);
+            this.panel13.Controls.Add(this.q10label4);
             this.panel13.Controls.Add(this.q10_c4_rbtn);
-            this.panel13.Controls.Add(this.label61);
+            this.panel13.Controls.Add(this.q10label3);
             this.panel13.Controls.Add(this.q10_c3_rbtn);
-            this.panel13.Controls.Add(this.label62);
+            this.panel13.Controls.Add(this.q10label2);
             this.panel13.Controls.Add(this.q10_c2_rbtn);
-            this.panel13.Controls.Add(this.label63);
+            this.panel13.Controls.Add(this.q10label1);
             this.panel13.Controls.Add(this.q10_c1_rbtn);
-            this.panel13.Location = new System.Drawing.Point(3, 1238);
+            this.panel13.Location = new System.Drawing.Point(3, 2192);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1504, 99);
+            this.panel13.Size = new System.Drawing.Size(1504, 205);
             this.panel13.TabIndex = 125;
             // 
-            // label60
+            // q10label4
             // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.Color.Black;
-            this.label60.Location = new System.Drawing.Point(829, 15);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(44, 29);
-            this.label60.TabIndex = 102;
-            this.label60.Text = "D)";
+            this.q10label4.AutoSize = true;
+            this.q10label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q10label4.ForeColor = System.Drawing.Color.Black;
+            this.q10label4.Location = new System.Drawing.Point(3, 132);
+            this.q10label4.Name = "q10label4";
+            this.q10label4.Size = new System.Drawing.Size(44, 29);
+            this.q10label4.TabIndex = 102;
+            this.q10label4.Text = "D)";
             // 
             // q10_c4_rbtn
             // 
@@ -1614,24 +1650,25 @@
             this.q10_c4_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q10_c4_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q10_c4_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q10_c4_rbtn.Location = new System.Drawing.Point(883, 15);
+            this.q10_c4_rbtn.Location = new System.Drawing.Point(57, 132);
             this.q10_c4_rbtn.Name = "q10_c4_rbtn";
             this.q10_c4_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q10_c4_rbtn.TabIndex = 101;
             this.q10_c4_rbtn.TabStop = true;
             this.q10_c4_rbtn.Text = "choise 4";
             this.q10_c4_rbtn.UseVisualStyleBackColor = true;
+            this.q10_c4_rbtn.CheckedChanged += new System.EventHandler(this.q10_c4_rbtn_CheckedChanged);
             // 
-            // label61
+            // q10label3
             // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.Color.Black;
-            this.label61.Location = new System.Drawing.Point(552, 15);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(42, 29);
-            this.label61.TabIndex = 100;
-            this.label61.Text = "C)";
+            this.q10label3.AutoSize = true;
+            this.q10label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q10label3.ForeColor = System.Drawing.Color.Black;
+            this.q10label3.Location = new System.Drawing.Point(3, 93);
+            this.q10label3.Name = "q10label3";
+            this.q10label3.Size = new System.Drawing.Size(42, 29);
+            this.q10label3.TabIndex = 100;
+            this.q10label3.Text = "C)";
             // 
             // q10_c3_rbtn
             // 
@@ -1639,24 +1676,25 @@
             this.q10_c3_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q10_c3_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q10_c3_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q10_c3_rbtn.Location = new System.Drawing.Point(606, 15);
+            this.q10_c3_rbtn.Location = new System.Drawing.Point(57, 93);
             this.q10_c3_rbtn.Name = "q10_c3_rbtn";
             this.q10_c3_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q10_c3_rbtn.TabIndex = 99;
             this.q10_c3_rbtn.TabStop = true;
             this.q10_c3_rbtn.Text = "choise 3";
             this.q10_c3_rbtn.UseVisualStyleBackColor = true;
+            this.q10_c3_rbtn.CheckedChanged += new System.EventHandler(this.q10_c3_rbtn_CheckedChanged);
             // 
-            // label62
+            // q10label2
             // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.Color.Black;
-            this.label62.Location = new System.Drawing.Point(280, 15);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(42, 29);
-            this.label62.TabIndex = 98;
-            this.label62.Text = "B)";
+            this.q10label2.AutoSize = true;
+            this.q10label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q10label2.ForeColor = System.Drawing.Color.Black;
+            this.q10label2.Location = new System.Drawing.Point(3, 54);
+            this.q10label2.Name = "q10label2";
+            this.q10label2.Size = new System.Drawing.Size(42, 29);
+            this.q10label2.TabIndex = 98;
+            this.q10label2.Text = "B)";
             // 
             // q10_c2_rbtn
             // 
@@ -1664,24 +1702,25 @@
             this.q10_c2_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.q10_c2_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q10_c2_rbtn.ForeColor = System.Drawing.Color.Black;
-            this.q10_c2_rbtn.Location = new System.Drawing.Point(334, 15);
+            this.q10_c2_rbtn.Location = new System.Drawing.Point(57, 54);
             this.q10_c2_rbtn.Name = "q10_c2_rbtn";
             this.q10_c2_rbtn.Size = new System.Drawing.Size(134, 33);
             this.q10_c2_rbtn.TabIndex = 97;
             this.q10_c2_rbtn.TabStop = true;
             this.q10_c2_rbtn.Text = "choise 2";
             this.q10_c2_rbtn.UseVisualStyleBackColor = true;
+            this.q10_c2_rbtn.CheckedChanged += new System.EventHandler(this.q10_c2_rbtn_CheckedChanged);
             // 
-            // label63
+            // q10label1
             // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.ForeColor = System.Drawing.Color.Black;
-            this.label63.Location = new System.Drawing.Point(3, 15);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(42, 29);
-            this.label63.TabIndex = 96;
-            this.label63.Text = "A)";
+            this.q10label1.AutoSize = true;
+            this.q10label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q10label1.ForeColor = System.Drawing.Color.Black;
+            this.q10label1.Location = new System.Drawing.Point(3, 15);
+            this.q10label1.Name = "q10label1";
+            this.q10label1.Size = new System.Drawing.Size(42, 29);
+            this.q10label1.TabIndex = 96;
+            this.q10label1.Text = "A)";
             // 
             // q10_c1_rbtn
             // 
@@ -1696,6 +1735,7 @@
             this.q10_c1_rbtn.TabStop = true;
             this.q10_c1_rbtn.Text = "choise 1";
             this.q10_c1_rbtn.UseVisualStyleBackColor = true;
+            this.q10_c1_rbtn.CheckedChanged += new System.EventHandler(this.q10_c1_rbtn_CheckedChanged);
             // 
             // timer
             // 
@@ -1769,112 +1809,112 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label question1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label q1label4;
         private System.Windows.Forms.RadioButton q1_c4_rbtn;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label q1label3;
         private System.Windows.Forms.RadioButton q1_c3_rbtn;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label q1label2;
         private System.Windows.Forms.RadioButton q1_c2_rbtn;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label q1label1;
         private System.Windows.Forms.RadioButton q1_c1_rbtn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label question2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label q2label4;
         private System.Windows.Forms.RadioButton q2_c4_rbtn;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label q2label3;
         private System.Windows.Forms.RadioButton q2_c3_rbtn;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label q2label2;
         private System.Windows.Forms.RadioButton q2_c2_rbtn;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label q2label1;
         private System.Windows.Forms.RadioButton q2_c1_rbtn;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label question3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label q3label4;
         private System.Windows.Forms.RadioButton q3_c4_rbtn;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label q3label3;
         private System.Windows.Forms.RadioButton q3_c3_rbtn;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label q3label2;
         private System.Windows.Forms.RadioButton q3_c2_rbtn;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label q3label1;
         private System.Windows.Forms.RadioButton q3_c1_rbtn;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label question4;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label q4label4;
         private System.Windows.Forms.RadioButton q4_c4_rbtn;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label q4label3;
         private System.Windows.Forms.RadioButton q4_c3_rbtn;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label q4label2;
         private System.Windows.Forms.RadioButton q4_c2_rbtn;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label q4label1;
         private System.Windows.Forms.RadioButton q4_c1_rbtn;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label question5;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label q5label4;
         private System.Windows.Forms.RadioButton q5_c4_rbtn;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label q5label3;
         private System.Windows.Forms.RadioButton q5_c3_rbtn;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label q5label2;
         private System.Windows.Forms.RadioButton q5_c2_rbtn;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label q5label1;
         private System.Windows.Forms.RadioButton q5_c1_rbtn;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label question6;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label q6label4;
         private System.Windows.Forms.RadioButton q6_c4_rbtn;
-        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label q6label3;
         private System.Windows.Forms.RadioButton q6_c3_rbtn;
-        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label q6label2;
         private System.Windows.Forms.RadioButton q6_c2_rbtn;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label q6label1;
         private System.Windows.Forms.RadioButton q6_c1_rbtn;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label question7;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label q7label4;
         private System.Windows.Forms.RadioButton q7_c4_rbtn;
-        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label q7label3;
         private System.Windows.Forms.RadioButton q7_c3_rbtn;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label q7label2;
         private System.Windows.Forms.RadioButton q7_c2_rbtn;
-        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label q7label1;
         private System.Windows.Forms.RadioButton q7_c1_rbtn;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label question8;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label q8label4;
         private System.Windows.Forms.RadioButton q8_c4_rbtn;
-        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label q8label3;
         private System.Windows.Forms.RadioButton q8_c3_rbtn;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label q8label2;
         private System.Windows.Forms.RadioButton q8_c2_rbtn;
-        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label q8label1;
         private System.Windows.Forms.RadioButton q8_c1_rbtn;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label question9;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label q9label4;
         private System.Windows.Forms.RadioButton q9_c4_rbtn;
-        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label q9label3;
         private System.Windows.Forms.RadioButton q9_c3_rbtn;
-        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label q9label2;
         private System.Windows.Forms.RadioButton q9_c2_rbtn;
-        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label q9label1;
         private System.Windows.Forms.RadioButton q9_c1_rbtn;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label question10;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label q10label4;
         private System.Windows.Forms.RadioButton q10_c4_rbtn;
-        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label q10label3;
         private System.Windows.Forms.RadioButton q10_c3_rbtn;
-        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label q10label2;
         private System.Windows.Forms.RadioButton q10_c2_rbtn;
-        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label q10label1;
         private System.Windows.Forms.RadioButton q10_c1_rbtn;
         private System.Windows.Forms.Timer timer;
     }

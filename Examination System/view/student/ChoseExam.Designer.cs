@@ -35,7 +35,7 @@
             this.exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.course = new System.Windows.Forms.ComboBox();
+            this.course_box = new System.Windows.Forms.ComboBox();
             this.next_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(220, 11);
+            this.label1.Location = new System.Drawing.Point(210, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(366, 39);
             this.label1.TabIndex = 0;
@@ -105,24 +105,24 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label3.Location = new System.Drawing.Point(319, 121);
+            this.label3.Location = new System.Drawing.Point(322, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 33);
             this.label3.TabIndex = 77;
             this.label3.Text = "Courses";
             // 
-            // course
+            // course_box
             // 
-            this.course.BackColor = System.Drawing.Color.White;
-            this.course.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.course.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.course.FormattingEnabled = true;
-            this.course.Location = new System.Drawing.Point(256, 160);
-            this.course.Name = "course";
-            this.course.Size = new System.Drawing.Size(266, 32);
-            this.course.TabIndex = 88;
-            this.course.Tag = "";
+            this.course_box.BackColor = System.Drawing.Color.White;
+            this.course_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.course_box.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.course_box.FormattingEnabled = true;
+            this.course_box.Location = new System.Drawing.Point(212, 163);
+            this.course_box.Name = "course_box";
+            this.course_box.Size = new System.Drawing.Size(359, 32);
+            this.course_box.TabIndex = 88;
+            this.course_box.Tag = "";
             // 
             // next_btn
             // 
@@ -146,7 +146,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.next_btn);
-            this.Controls.Add(this.course);
+            this.Controls.Add(this.course_box);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -169,7 +169,7 @@
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox course;
+        private System.Windows.Forms.ComboBox course_box;
         private System.Windows.Forms.Button next_btn;
     }
 }

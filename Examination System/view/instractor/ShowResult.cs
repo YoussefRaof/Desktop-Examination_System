@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Examination_System.controller;
+using Examination_System.Controller.InstructorController;
 
 
 namespace Examination_System.view.instractor
@@ -18,14 +19,17 @@ namespace Examination_System.view.instractor
     {
         private Form _Home;
         private string _email;
+        private IInstructorRepo instructorMethods;
 
         public ShowResult(Form home, string email)
         {
             InitializeComponent();
             _Home = home;
             _email = email;
+            search.Enabled = false;
 
-            TableData.getData("GradeIndView", "_name", search.Text, grades_table); //
+            instructorMethods = new InstructorMethods();
+            TableData.fillComboBoxAndTable(grades_table, "GetInstructorStudentGrades", "insid", instructorMethods.getID("instructor", _email));
         }
 
         private void exit_Click(object sender, EventArgs e)

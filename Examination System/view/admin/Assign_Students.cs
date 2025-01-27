@@ -31,11 +31,10 @@ namespace Examination_System.view.admin
             course = new Course();
             adminMethods = new AdminMethods();
 
-            TableData.getData("studentView", "stud_fname", search.Text, student_table);
-            TableData.getData("course", "crs_name", search.Text, course_table);
-            TableData.getData("Student_Register_Course", "SSN_FK", search.Text, stud_course_table);
+            TableData.getData("studentDetails", "[Full Name]", search.Text, student_table);
+            TableData.getData("courseView", "[Course Name]", search.Text, course_table);
+            TableData.getData("studentAssignCourse", "crs_name", "", stud_course_table);
             //TableData.search("", "", search.Text, );
-
         }
 
         private void setDisabledItems()
@@ -92,7 +91,7 @@ namespace Examination_System.view.admin
             if (r == 1)
             {
                 MessageBox.Show("Student successfully assigned to the course.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TableData.getData("Student_Register_Course", "SSN_FK", search.Text, stud_course_table);
+                TableData.getData("studentAssignCourse", "crs_name", "", stud_course_table);
 
             }
             else if (r == 0)
@@ -115,9 +114,9 @@ namespace Examination_System.view.admin
         private void search_TextChanged(object sender, EventArgs e)
         {
             if (student_rbtn.Checked)
-                TableData.getData("studentView", "stud_fname", search.Text, student_table);
+                TableData.getData("studentDetails", "[Full Name]", search.Text, student_table);
             else if (course_rbtn.Checked)
-                TableData.getData("Course", "crs_name", search.Text, course_table);
+                TableData.getData("courseView", "[Course Name]", search.Text, course_table);
         }
 
         private void unassign_btn_Click(object sender, EventArgs e)
@@ -142,7 +141,7 @@ namespace Examination_System.view.admin
             if (r == 1)
             {
                 MessageBox.Show("Student successfully Unassigned to the course.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TableData.getData("Student_Register_Course", "SSN_FK", search.Text, stud_course_table);
+                TableData.getData("studentAssignCourse", "crs_name", "", stud_course_table);
 
             }
             else

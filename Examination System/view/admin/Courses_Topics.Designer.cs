@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Courses_Topics));
-            this.ins_id = new System.Windows.Forms.TextBox();
+            this.course_id2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.track_name = new System.Windows.Forms.TextBox();
+            this.topic_name = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.track_id = new System.Windows.Forms.TextBox();
+            this.topic_id = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.topic_table = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,11 +48,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.track_id = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.course_name = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.course_id = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.search = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -66,14 +66,14 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ins_id
+            // course_id2
             // 
-            this.ins_id.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ins_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.ins_id.Location = new System.Drawing.Point(904, 220);
-            this.ins_id.Name = "ins_id";
-            this.ins_id.Size = new System.Drawing.Size(360, 32);
-            this.ins_id.TabIndex = 113;
+            this.course_id2.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_id2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.course_id2.Location = new System.Drawing.Point(904, 220);
+            this.course_id2.Name = "course_id2";
+            this.course_id2.Size = new System.Drawing.Size(360, 32);
+            this.course_id2.TabIndex = 113;
             // 
             // label9
             // 
@@ -82,18 +82,18 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.label9.Location = new System.Drawing.Point(721, 227);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 24);
+            this.label9.Size = new System.Drawing.Size(113, 24);
             this.label9.TabIndex = 112;
-            this.label9.Text = "Courses ID";
+            this.label9.Text = "Course ID";
             // 
-            // track_name
+            // topic_name
             // 
-            this.track_name.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.track_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.track_name.Location = new System.Drawing.Point(904, 171);
-            this.track_name.Name = "track_name";
-            this.track_name.Size = new System.Drawing.Size(360, 32);
-            this.track_name.TabIndex = 111;
+            this.topic_name.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topic_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.topic_name.Location = new System.Drawing.Point(904, 171);
+            this.topic_name.Name = "topic_name";
+            this.topic_name.Size = new System.Drawing.Size(360, 32);
+            this.topic_name.TabIndex = 111;
             // 
             // label6
             // 
@@ -106,14 +106,14 @@
             this.label6.TabIndex = 110;
             this.label6.Text = "Topic Name";
             // 
-            // track_id
+            // topic_id
             // 
-            this.track_id.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.track_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.track_id.Location = new System.Drawing.Point(904, 122);
-            this.track_id.Name = "track_id";
-            this.track_id.Size = new System.Drawing.Size(360, 32);
-            this.track_id.TabIndex = 109;
+            this.topic_id.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topic_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.topic_id.Location = new System.Drawing.Point(904, 122);
+            this.topic_id.Name = "topic_id";
+            this.topic_id.Size = new System.Drawing.Size(360, 32);
+            this.topic_id.TabIndex = 109;
             // 
             // label7
             // 
@@ -226,11 +226,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Schoolbook", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(362, 63);
+            this.label2.Location = new System.Drawing.Point(371, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(569, 39);
+            this.label2.Size = new System.Drawing.Size(534, 39);
             this.label2.TabIndex = 2;
-            this.label2.Text = "\" Manage Branches and Tracks \"";
+            this.label2.Text = "\" Manage Courses and Topics \"";
             // 
             // exit
             // 
@@ -287,14 +287,14 @@
             this.panel1.Size = new System.Drawing.Size(1465, 119);
             this.panel1.TabIndex = 95;
             // 
-            // textBox1
+            // track_id
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.textBox1.Location = new System.Drawing.Point(200, 220);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(360, 32);
-            this.textBox1.TabIndex = 119;
+            this.track_id.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.track_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.track_id.Location = new System.Drawing.Point(200, 220);
+            this.track_id.Name = "track_id";
+            this.track_id.Size = new System.Drawing.Size(360, 32);
+            this.track_id.TabIndex = 119;
             // 
             // label3
             // 
@@ -307,14 +307,14 @@
             this.label3.TabIndex = 118;
             this.label3.Text = "Track ID";
             // 
-            // textBox2
+            // course_name
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.textBox2.Location = new System.Drawing.Point(200, 171);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(360, 32);
-            this.textBox2.TabIndex = 117;
+            this.course_name.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.course_name.Location = new System.Drawing.Point(200, 171);
+            this.course_name.Name = "course_name";
+            this.course_name.Size = new System.Drawing.Size(360, 32);
+            this.course_name.TabIndex = 117;
             // 
             // label8
             // 
@@ -327,14 +327,14 @@
             this.label8.TabIndex = 116;
             this.label8.Text = "Course Name";
             // 
-            // textBox3
+            // course_id
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.textBox3.Location = new System.Drawing.Point(200, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(360, 32);
-            this.textBox3.TabIndex = 115;
+            this.course_id.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.course_id.Location = new System.Drawing.Point(200, 122);
+            this.course_id.Name = "course_id";
+            this.course_id.Size = new System.Drawing.Size(360, 32);
+            this.course_id.TabIndex = 115;
             // 
             // label10
             // 
@@ -351,7 +351,7 @@
             // 
             this.search.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.search.Location = new System.Drawing.Point(471, 662);
+            this.search.Location = new System.Drawing.Point(471, 669);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(429, 35);
             this.search.TabIndex = 120;
@@ -360,7 +360,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(414, 661);
+            this.pictureBox2.Location = new System.Drawing.Point(414, 668);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -371,9 +371,9 @@
             // 
             this.panel3.Controls.Add(this.topic_rbtn);
             this.panel3.Controls.Add(this.course_rbtn);
-            this.panel3.Location = new System.Drawing.Point(492, 704);
+            this.panel3.Location = new System.Drawing.Point(492, 711);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(383, 53);
+            this.panel3.Size = new System.Drawing.Size(383, 43);
             this.panel3.TabIndex = 122;
             // 
             // topic_rbtn
@@ -415,17 +415,17 @@
             this.Controls.Add(this.search);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.ins_id);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.track_name);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.track_id);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.course_name);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.course_id);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.course_id2);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.topic_name);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.topic_id);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.topic_table);
             this.Controls.Add(this.label4);
@@ -454,11 +454,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox ins_id;
+        private System.Windows.Forms.TextBox course_id2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox track_name;
+        private System.Windows.Forms.TextBox topic_name;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox track_id;
+        private System.Windows.Forms.TextBox topic_id;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView topic_table;
         private System.Windows.Forms.Label label4;
@@ -473,11 +473,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox track_id;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox course_name;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox course_id;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox search;
         private System.Windows.Forms.PictureBox pictureBox2;
