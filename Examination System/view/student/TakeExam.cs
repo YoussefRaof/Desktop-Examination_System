@@ -197,6 +197,19 @@ namespace Examination_System.view.student
             exam.Question.Answer = answer;
         }
 
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing && !flag)
+            {
+                e.Cancel = true;
+                MessageBox.Show("Closing the application is not allowed !!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            base.OnFormClosing(e);
+        }
+
+
         ////////////////////////////////////////////////////////////
 
 
@@ -221,6 +234,8 @@ namespace Examination_System.view.student
                 //examMethods.SaveStudentAnswers(studentAnswer);
                 examMethods.CorrectExam(studentSSN, examID);
 
+                flag = true;
+
                 this.Close();
                 _Home.Show();
 
@@ -241,6 +256,8 @@ namespace Examination_System.view.student
             else
             {
                 examMethods.CorrectExam(studentSSN, examID);
+                
+                flag = true;
 
                 this.Close();
                 _Home.Show();

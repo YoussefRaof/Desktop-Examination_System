@@ -59,7 +59,7 @@ namespace Examination_System.View.student
                         this.Close();
                     }
                     else
-                        MessageBox.Show("You have already taken this course!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("You have already taken this exam!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                     MessageBox.Show("Please select course!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
