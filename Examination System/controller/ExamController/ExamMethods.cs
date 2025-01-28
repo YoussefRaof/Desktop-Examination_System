@@ -113,6 +113,38 @@ namespace Examination_System.Controller
             HelperMethods.ExecuteDmlQuery("Student_Take_Exam_Has_Questions", "insert", columns, values, null, 0);
         }
 
+        public bool IsStudTakeExam(int ssn, string examName)
+        {
+            try
+            {
+                using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+                {
+                    using (SqlCommand command = new SqlCommand("isStudTakeExam", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@ssn", ssn);
+                        command.Parameters.AddWithValue("@crs_name", examName);
+
+                        SqlParameter resultParam = new SqlParameter("@result", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.Output
+                        };
+
+                        command.Parameters.Add(resultParam);
+                        command.ExecuteNonQuery();
+
+                        return (int)resultParam.Value == 1;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred: " + ex.Message, ex);
+            }
+        }
+
+
         public void InsertQuestion(Questions question)
         {
 
@@ -127,5 +159,6 @@ namespace Examination_System.Controller
         {
             return false;
         }
+
     }
 }

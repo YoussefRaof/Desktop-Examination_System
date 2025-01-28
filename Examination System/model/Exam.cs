@@ -14,7 +14,18 @@ namespace Examination_System.model
         private DateTime examDate;
         private int courseId;
 
-        public Exam() { }
+        private Student_Exam_Questions _Question;
+
+        public Exam() 
+        {
+            _Question = new Student_Exam_Questions();
+        }
+
+        public Student_Exam_Questions Question
+        {
+            get { return _Question; }
+            set { _Question = value; }
+        }
 
         public int ExamId
         {
