@@ -13,7 +13,8 @@ namespace Examination_System.controller
         void Insert(Admin admin);
         void Update(Admin admin);
         bool Login(Admin admin);
-
+       
+      
         int AssginInstructorToCourse(Instructor instructor , Course course);
         int AssginStudentToCourse(Student student, Course course);
         int getID(string table, string email);

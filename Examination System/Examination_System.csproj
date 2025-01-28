@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AdminMethods.cs" />
+    <Compile Include="Controller\BranchController\BranchMethods.cs" />
+    <Compile Include="Controller\BranchController\IBranchRepo.cs" />
     <Compile Include="Controller\DatabaseConnection.cs" />
     <Compile Include="Controller\ExamController\ExamMethods.cs" />
     <Compile Include="Controller\HelperMethods.cs" />

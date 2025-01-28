@@ -10,6 +10,9 @@ namespace Examination_System.model
     {
         private int branchId;
         private string branchName;
+        private int admin_id_FK;
+
+
 
         public Branch() { }
 
@@ -23,6 +26,11 @@ namespace Examination_System.model
         {
             get { return branchName; }
             set { branchName = value; }
+        }
+        public int Admin_id_FK
+        {
+            get { return admin_id_FK; }
+            set { admin_id_FK = value; }
         }
     }
 }
