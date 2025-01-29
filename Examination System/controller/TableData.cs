@@ -86,12 +86,13 @@ namespace Examination_System.controller
         }
 
 
-        public static void generateReport(DataGridView table)
+        public static void generateReport(DataGridView table, int flag)
         {
             SaveFileDialog sfd = new SaveFileDialog
             {
                 Filter = "PDF file|*.pdf",
-                FileName = "Students_Grades.pdf"
+                FileName = flag == 1 ? "Students_Grades.pdf" : 
+                           flag == 2 ? "Pass_Persentage.pdf" : ".pdf"
             };
 
 
@@ -108,7 +109,10 @@ namespace Examination_System.controller
 
 
                         iTextSharp.text.Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14);
-                        Paragraph title = new Paragraph("Students Grades", titleFont)
+                        Paragraph title = new Paragraph(
+                            flag == 1 ? "Students Grades" :
+                            flag == 2 ? "Pass Persentage" : "", 
+                        titleFont)
                         {
                             Alignment = Element.ALIGN_CENTER
                         };

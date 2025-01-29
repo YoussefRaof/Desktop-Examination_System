@@ -30,6 +30,7 @@ namespace Examination_System.view.instractor
 
             instructorMethods = new InstructorMethods();
             TableData.fillComboBoxAndTable(grades_table, "GetInstructorStudentGrades", "insid", instructorMethods.getID("instructor", _email));
+            TableData.fillComboBoxAndTable(pass_count_table, "GetInstructorStudentGrades", "insid", instructorMethods.getID("instructor", _email));
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -46,7 +47,8 @@ namespace Examination_System.view.instractor
 
         private void report_btn_Click(object sender, EventArgs e)
         {
-            TableData.generateReport(grades_table);
+            TableData.generateReport(grades_table, 1);
+            TableData.generateReport(pass_count_table, 2);
         }
 
         private void search_TextChanged(object sender, EventArgs e)

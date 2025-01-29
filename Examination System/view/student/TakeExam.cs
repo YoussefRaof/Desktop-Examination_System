@@ -16,7 +16,7 @@ namespace Examination_System.view.student
     public partial class TakeExam : Form
     {
         private bool flag = false; //
-        private int totalSeconds = 10 * 60;
+        private int totalSeconds = 10 * 60; //
         private Form _Home;
         private string _email;
 
@@ -96,6 +96,12 @@ namespace Examination_System.view.student
                 {6, question6}, {7, question7}, {8, question8}, {9, question9}, {10, question10}
             };
 
+            Dictionary<int, Panel> questionPanel = new Dictionary<int, Panel>
+            {
+                {1, panel_q1}, {2, panel_q2}, {3, panel_q3}, {4, panel_q4}, {5, panel_q5},
+                {6, panel_q6}, {7, panel_q7}, {8, panel_q8}, {9, panel_q9}, {10, panel_q10}
+            };
+
             Dictionary<int, RadioButton[]> choiceRadioButtons = new Dictionary<int, RadioButton[]>
             {
                 {1, new RadioButton[] {q1_c1_rbtn, q1_c2_rbtn, q1_c3_rbtn, q1_c4_rbtn}},
@@ -116,6 +122,10 @@ namespace Examination_System.view.student
                 if (examData.Rows.Count > i)
                 {
                     questionText[i + 1].Text = examData.Rows[i]["QuestionText"].ToString();
+
+                    questionPanel[i + 1].Size = new Size(1150, 175);
+                    questionPanel[i + 1].BorderStyle = BorderStyle.FixedSingle;
+
 
                     if (examData.Rows[i]["Choice1"] != DBNull.Value)
                     {
@@ -158,6 +168,8 @@ namespace Examination_System.view.student
                     {
                         choiceRadioButtons[i + 1][2].Visible = false;
                         questionLabels[i + 1][2].Visible = false;
+
+                        questionPanel[i + 1].Size = new Size(1150, 107);
                     }
 
                     if (examData.Rows[i]["Choice4"] != DBNull.Value)
@@ -171,6 +183,8 @@ namespace Examination_System.view.student
                     {
                         choiceRadioButtons[i + 1][3].Visible = false;
                         questionLabels[i + 1][3].Visible = false;
+
+                        questionPanel[i + 1].Size = new Size(1150, 107);
                     }
                 }
             }

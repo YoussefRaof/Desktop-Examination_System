@@ -117,6 +117,12 @@
     <Compile Include="View\Admin\Courses_Topics.Designer.cs">
       <DependentUpon>Courses_Topics.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Admin\GenerateReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin\GenerateReports.Designer.cs">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Admin\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\Courses_Topics.resx">
       <DependentUpon>Courses_Topics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\GenerateReports.resx">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

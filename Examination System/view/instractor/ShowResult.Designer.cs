@@ -40,15 +40,17 @@
             this.search = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.report_btn = new System.Windows.Forms.Button();
+            this.pass_count_table = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grades_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pass_count_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.panel2.Location = new System.Drawing.Point(-9, 863);
+            this.panel2.Location = new System.Drawing.Point(-9, 870);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1217, 35);
             this.panel2.TabIndex = 70;
@@ -124,7 +126,7 @@
             this.grades_table.ReadOnly = true;
             this.grades_table.RowHeadersWidth = 51;
             this.grades_table.RowTemplate.Height = 24;
-            this.grades_table.Size = new System.Drawing.Size(1180, 577);
+            this.grades_table.Size = new System.Drawing.Size(1180, 507);
             this.grades_table.TabIndex = 72;
             // 
             // label3
@@ -142,7 +144,7 @@
             // 
             this.search.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.search.Location = new System.Drawing.Point(323, 763);
+            this.search.Location = new System.Drawing.Point(564, 739);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(623, 35);
             this.search.TabIndex = 73;
@@ -151,7 +153,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(266, 762);
+            this.pictureBox2.Location = new System.Drawing.Point(508, 738);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -165,13 +167,27 @@
             this.report_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.report_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.report_btn.ForeColor = System.Drawing.Color.White;
-            this.report_btn.Location = new System.Drawing.Point(457, 811);
+            this.report_btn.Location = new System.Drawing.Point(692, 798);
             this.report_btn.Name = "report_btn";
             this.report_btn.Size = new System.Drawing.Size(340, 42);
             this.report_btn.TabIndex = 75;
-            this.report_btn.Text = "Generate Report";
+            this.report_btn.Text = "Generate Reports";
             this.report_btn.UseVisualStyleBackColor = false;
             this.report_btn.Click += new System.EventHandler(this.report_btn_Click);
+            // 
+            // pass_count_table
+            // 
+            this.pass_count_table.AllowUserToAddRows = false;
+            this.pass_count_table.AllowUserToDeleteRows = false;
+            this.pass_count_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.pass_count_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pass_count_table.Location = new System.Drawing.Point(9, 685);
+            this.pass_count_table.Name = "pass_count_table";
+            this.pass_count_table.ReadOnly = true;
+            this.pass_count_table.RowHeadersWidth = 51;
+            this.pass_count_table.RowTemplate.Height = 24;
+            this.pass_count_table.Size = new System.Drawing.Size(478, 176);
+            this.pass_count_table.TabIndex = 76;
             // 
             // ShowResult
             // 
@@ -179,6 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 895);
+            this.Controls.Add(this.pass_count_table);
             this.Controls.Add(this.report_btn);
             this.Controls.Add(this.search);
             this.Controls.Add(this.pictureBox2);
@@ -195,6 +212,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grades_table)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pass_count_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,5 +231,6 @@
         private System.Windows.Forms.TextBox search;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button report_btn;
+        private System.Windows.Forms.DataGridView pass_count_table;
     }
 }

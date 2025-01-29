@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examination_System.View.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -71,6 +72,12 @@ namespace Examination_System.view.admin
         {
             this.Visible = false;
             new Assign_Students(this, _email).Show();
+        }
+
+        private void reports_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new GenerateReports(this, _email).Show();
         }
     }
 }

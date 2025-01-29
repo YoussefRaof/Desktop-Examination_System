@@ -48,6 +48,8 @@
             this.courseTopic_btn = new System.Windows.Forms.Button();
             this.assignInstractor_btn = new System.Windows.Forms.Button();
             this.assignStudent_btn = new System.Windows.Forms.Button();
+            this.reports_btn = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -57,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // exit
@@ -76,6 +79,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox6);
@@ -86,7 +90,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-7, -7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(139, 764);
+            this.panel1.Size = new System.Drawing.Size(139, 856);
             this.panel1.TabIndex = 23;
             // 
             // pictureBox8
@@ -162,7 +166,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 700);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 779);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(54, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,7 +204,7 @@
             this.logout_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logout_btn.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout_btn.ForeColor = System.Drawing.Color.White;
-            this.logout_btn.Location = new System.Drawing.Point(156, 693);
+            this.logout_btn.Location = new System.Drawing.Point(156, 772);
             this.logout_btn.Name = "logout_btn";
             this.logout_btn.Size = new System.Drawing.Size(400, 49);
             this.logout_btn.TabIndex = 24;
@@ -292,12 +296,37 @@
             this.assignStudent_btn.UseVisualStyleBackColor = false;
             this.assignStudent_btn.Click += new System.EventHandler(this.button3_Click);
             // 
+            // reports_btn
+            // 
+            this.reports_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.reports_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reports_btn.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reports_btn.ForeColor = System.Drawing.Color.White;
+            this.reports_btn.Location = new System.Drawing.Point(156, 693);
+            this.reports_btn.Name = "reports_btn";
+            this.reports_btn.Size = new System.Drawing.Size(400, 49);
+            this.reports_btn.TabIndex = 32;
+            this.reports_btn.Text = "Generate Reports";
+            this.reports_btn.UseVisualStyleBackColor = false;
+            this.reports_btn.Click += new System.EventHandler(this.reports_btn_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(47, 700);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(54, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(580, 755);
+            this.ClientSize = new System.Drawing.Size(580, 843);
+            this.Controls.Add(this.reports_btn);
             this.Controls.Add(this.assignStudent_btn);
             this.Controls.Add(this.assignInstractor_btn);
             this.Controls.Add(this.courseTopic_btn);
@@ -323,6 +352,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,5 +379,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button reports_btn;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
