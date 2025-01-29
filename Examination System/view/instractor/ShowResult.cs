@@ -30,7 +30,7 @@ namespace Examination_System.view.instractor
 
             instructorMethods = new InstructorMethods();
             TableData.fillComboBoxAndTable(grades_table, "GetInstructorStudentGrades", "insid", instructorMethods.getID("instructor", _email));
-            TableData.fillComboBoxAndTable(pass_count_table, "GetInstructorStudentGrades", "insid", instructorMethods.getID("instructor", _email));
+            TableData.fillComboBoxAndTable(pass_count_table, "course_insights", "id", instructorMethods.getID("instructor", _email));
         }
 
         private void exit_Click(object sender, EventArgs e)
