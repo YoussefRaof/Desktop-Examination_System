@@ -124,13 +124,13 @@ namespace Examination_System.view.student
 
                         questionLabels[i + 1][0].Enabled = true;
                     }
-                    else
-                    {
-                        choiceRadioButtons[i + 1][0].Text = "Not Allowed";
-                        choiceRadioButtons[i + 1][0].Enabled = false;
+                    //else
+                    //{
+                    //    choiceRadioButtons[i + 1][0].Text = "Not Allowed";
+                    //    choiceRadioButtons[i + 1][0].Enabled = false;
 
-                        questionLabels[i + 1][0].Enabled = false;
-                    }
+                    //    questionLabels[i + 1][0].Enabled = false;
+                    //}
 
                     if (examData.Rows[i]["Choice2"] != DBNull.Value)
                     {
@@ -139,42 +139,38 @@ namespace Examination_System.view.student
 
                         questionLabels[i + 1][1].Enabled = true;
                     }
-                    else
-                    {
-                        choiceRadioButtons[i + 1][1].Text = "Not Allowed";
-                        choiceRadioButtons[i + 1][1].Enabled = false;
+                    //else
+                    //{
+                    //    choiceRadioButtons[i + 1][1].Text = "Not Allowed";
+                    //    choiceRadioButtons[i + 1][1].Enabled = false;
 
-                        questionLabels[i + 1][1].Enabled = false;
-                    }
+                    //    questionLabels[i + 1][1].Enabled = false;
+                    //}
 
                     if (examData.Rows[i]["Choice3"] != DBNull.Value)
                     {
                         choiceRadioButtons[i + 1][2].Text = examData.Rows[i]["Choice3"].ToString();
-                        choiceRadioButtons[i + 1][2].Enabled = true;
 
-                        questionLabels[i + 1][2].Enabled = true;
+                        choiceRadioButtons[i + 1][2].Visible = true;
+                        questionLabels[i + 1][2].Visible = true;
                     }
                     else
                     {
-                        choiceRadioButtons[i + 1][2].Text = "Not Allowed";
-                        choiceRadioButtons[i + 1][2].Enabled = false;
-
-                        questionLabels[i + 1][2].Enabled = false;
+                        choiceRadioButtons[i + 1][2].Visible = false;
+                        questionLabels[i + 1][2].Visible = false;
                     }
 
                     if (examData.Rows[i]["Choice4"] != DBNull.Value)
                     {
                         choiceRadioButtons[i + 1][3].Text = examData.Rows[i]["Choice4"].ToString();
-                        choiceRadioButtons[i + 1][3].Enabled = true;
 
-                        questionLabels[i + 1][3].Enabled = true;
+                        choiceRadioButtons[i + 1][3].Visible = true;
+                        questionLabels[i + 1][3].Visible = true;
                     }
                     else
                     {
-                        choiceRadioButtons[i + 1][3].Text = "Not Allowed";
-                        choiceRadioButtons[i + 1][3].Enabled = false;
-
-                        questionLabels[i + 1][3].Enabled = false;
+                        choiceRadioButtons[i + 1][3].Visible = false;
+                        questionLabels[i + 1][3].Visible = false;
                     }
                 }
             }

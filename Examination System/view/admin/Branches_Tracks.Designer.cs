@@ -181,12 +181,12 @@
             this.branch_table.AllowUserToDeleteRows = false;
             this.branch_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.branch_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.branch_table.Location = new System.Drawing.Point(12, 300);
+            this.branch_table.Location = new System.Drawing.Point(12, 333);
             this.branch_table.Name = "branch_table";
             this.branch_table.ReadOnly = true;
             this.branch_table.RowHeadersWidth = 51;
             this.branch_table.RowTemplate.Height = 24;
-            this.branch_table.Size = new System.Drawing.Size(611, 379);
+            this.branch_table.Size = new System.Drawing.Size(611, 346);
             this.branch_table.TabIndex = 77;
             // 
             // label4
@@ -205,7 +205,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label5.Location = new System.Drawing.Point(235, 268);
+            this.label5.Location = new System.Drawing.Point(235, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 29);
             this.label5.TabIndex = 81;
@@ -215,7 +215,7 @@
             // 
             this.branch_name.Font = new System.Drawing.Font("Century Schoolbook", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.branch_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.branch_name.Location = new System.Drawing.Point(12, 193);
+            this.branch_name.Location = new System.Drawing.Point(127, 210);
             this.branch_name.Name = "branch_name";
             this.branch_name.Size = new System.Drawing.Size(360, 47);
             this.branch_name.TabIndex = 86;
@@ -225,7 +225,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label3.Location = new System.Drawing.Point(6, 143);
+            this.label3.Location = new System.Drawing.Point(184, 167);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(231, 35);
             this.label3.TabIndex = 85;

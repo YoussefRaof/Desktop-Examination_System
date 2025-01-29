@@ -227,7 +227,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label10.Location = new System.Drawing.Point(1356, 116);
+            this.label10.Location = new System.Drawing.Point(1356, 118);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(127, 35);
             this.label10.TabIndex = 87;
@@ -252,7 +252,7 @@
             this.timer_txt.AutoSize = true;
             this.timer_txt.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timer_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.timer_txt.Location = new System.Drawing.Point(1493, 116);
+            this.timer_txt.Location = new System.Drawing.Point(1493, 118);
             this.timer_txt.Name = "timer_txt";
             this.timer_txt.Size = new System.Drawing.Size(92, 35);
             this.timer_txt.TabIndex = 89;
@@ -263,7 +263,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label4.Location = new System.Drawing.Point(12, 116);
+            this.label4.Location = new System.Drawing.Point(12, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(239, 35);
             this.label4.TabIndex = 90;
@@ -274,7 +274,7 @@
             this.course_name.AutoSize = true;
             this.course_name.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.course_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.course_name.Location = new System.Drawing.Point(266, 116);
+            this.course_name.Location = new System.Drawing.Point(266, 118);
             this.course_name.Name = "course_name";
             this.course_name.Size = new System.Drawing.Size(215, 35);
             this.course_name.TabIndex = 91;
