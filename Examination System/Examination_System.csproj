@@ -64,6 +64,8 @@
     <Compile Include="Controller\AdminMethods.cs" />
     <Compile Include="Controller\BranchController\BranchMethods.cs" />
     <Compile Include="Controller\BranchController\IBranchRepo.cs" />
+    <Compile Include="Controller\BranchTrackController\BranchTrackMethods.cs" />
+    <Compile Include="Controller\BranchTrackController\IBranchTrackRepo.cs" />
     <Compile Include="Controller\DatabaseConnection.cs" />
     <Compile Include="Controller\ExamController\ExamMethods.cs" />
     <Compile Include="Controller\HelperMethods.cs" />
@@ -74,6 +76,8 @@
     <Compile Include="Controller\StudentController\IStudentRepo.cs" />
     <Compile Include="Controller\StudentController\StudentMethods.cs" />
     <Compile Include="Controller\TableData.cs" />
+    <Compile Include="Controller\TrackController\ITrackRepo.cs" />
+    <Compile Include="Controller\TrackController\TrackMethods.cs" />
     <Compile Include="Model\Admin.cs" />
     <Compile Include="Model\Branch.cs" />
     <Compile Include="Model\Branch_Track.cs" />
