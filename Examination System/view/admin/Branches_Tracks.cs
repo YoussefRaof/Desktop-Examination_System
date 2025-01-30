@@ -39,6 +39,8 @@ namespace Examination_System.view.admin
 
             TableData.getData("branchView", "[Branch Name]", search.Text, branch_table);
             TableData.getData("trackView", "[Track Name]", search.Text, track_table);
+
+            //TableData.getData("", "", "", assigned_table);
         }
 
         private void setDisabledItems()
@@ -71,40 +73,40 @@ namespace Examination_System.view.admin
         private void insert_btn_Click(object sender, EventArgs e)
         {
             //Check Which Table To Insert 
-            var r = CheckTableToInsertInto();
-            if (r == "Branch")
-            {
-                branch.BranchName = branch_name.Text;
-                branch.Admin_id_FK = adminMethods.getID("Admin", Home._email);
-                branchMethods.Insert(branch);
-                TableData.getData("branchView", "[Branch Name]", search.Text, branch_table);
-                branch_name.Text = string.Empty;
-                MessageBox.Show("Branch Added Successfuly !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            //var r = CheckTableToInsertInto();
+            //if (r == "Branch")
+            //{
+            //    branch.BranchName = branch_name.Text;
+            //    branch.Admin_id_FK = adminMethods.getID("Admin", Home._email);
+            //    branchMethods.Insert(branch);
+            //    TableData.getData("branchView", "[Branch Name]", search.Text, branch_table);
+            //    branch_name.Text = string.Empty;
+            //    MessageBox.Show("Branch Added Successfuly !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
         }
 
-        private string CheckTableToInsertInto()
-        {
-            if ((track_id.Text == string.Empty ||
-                track_name.Text == string.Empty ||
-                ins_id.Text == string.Empty ||
-                branch_id2.Text == string.Empty) &&
-                branch_name.Text != string.Empty)
-            {
-                return "Branch";
+        //private string CheckTableToInsertInto()
+        //{
+        //    if ((track_id.Text == string.Empty ||
+        //        track_name.Text == string.Empty ||
+        //        ins_id.Text == string.Empty ||
+        //        branch_id2.Text == string.Empty) &&
+        //        branch_name.Text != string.Empty)
+        //    {
+        //        return "Branch";
 
-            }
-            else if (branch_name.Text == string.Empty && ((track_id.Text != string.Empty &&
-                track_name.Text != string.Empty &&
-                ins_id.Text != string.Empty &&
-                branch_id2.Text != string.Empty)))
-                return "Track";
-            else
-                MessageBox.Show("Classify Which Table To Insert Into");
+        //    }
+        //    else if (branch_name.Text == string.Empty && ((track_id.Text != string.Empty &&
+        //        track_name.Text != string.Empty &&
+        //        ins_id.Text != string.Empty &&
+        //        branch_id2.Text != string.Empty)))
+        //        return "Track";
+        //    else
+        //        MessageBox.Show("Classify Which Table To Insert Into");
 
-            return string.Empty;
+        //    return string.Empty;
 
-        }
+        //}
 
         private void update_btn_Click(object sender, EventArgs e)
         {

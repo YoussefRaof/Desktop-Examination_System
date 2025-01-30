@@ -127,6 +127,10 @@ namespace Examination_System.view.instractor
         private void exam_course_SelectedIndexChanged(object sender, EventArgs e)
         {
             inputChanges();
+
+            //if (question_type.Text ==
+            //
+            TableData.fillQuesTable(question_table, "GetInstructorCourseQuestions", instructorMethods.getID("instructor", _email), course_exam.Text);
         }
 
         private void insert_btn_Click(object sender, EventArgs e)

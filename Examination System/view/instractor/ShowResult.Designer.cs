@@ -144,16 +144,16 @@
             // 
             this.search.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.search.Location = new System.Drawing.Point(564, 739);
+            this.search.Location = new System.Drawing.Point(698, 734);
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(623, 35);
+            this.search.Size = new System.Drawing.Size(485, 35);
             this.search.TabIndex = 73;
             this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(508, 738);
+            this.pictureBox2.Location = new System.Drawing.Point(646, 734);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -167,7 +167,7 @@
             this.report_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.report_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.report_btn.ForeColor = System.Drawing.Color.White;
-            this.report_btn.Location = new System.Drawing.Point(692, 798);
+            this.report_btn.Location = new System.Drawing.Point(771, 795);
             this.report_btn.Name = "report_btn";
             this.report_btn.Size = new System.Drawing.Size(340, 42);
             this.report_btn.TabIndex = 75;
@@ -186,7 +186,7 @@
             this.pass_count_table.ReadOnly = true;
             this.pass_count_table.RowHeadersWidth = 51;
             this.pass_count_table.RowTemplate.Height = 24;
-            this.pass_count_table.Size = new System.Drawing.Size(478, 176);
+            this.pass_count_table.Size = new System.Drawing.Size(618, 176);
             this.pass_count_table.TabIndex = 76;
             // 
             // ShowResult

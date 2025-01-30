@@ -123,20 +123,21 @@
             this.report_box.BackColor = System.Drawing.Color.White;
             this.report_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.report_box.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.report_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.report_box.ForeColor = System.Drawing.Color.Black;
             this.report_box.FormattingEnabled = true;
             this.report_box.Items.AddRange(new object[] {
-            "Students Information (dept_id)",
-            "Student Grades (stud_id)",
-            "Courses that Instructor Teaches (instructor_id)",
-            "Topics in Courses (course_id)",
-            "Exam Questions (exam_id)",
-            "Atudent Answers in Exam (exam_id, stud_id)"});
-            this.report_box.Location = new System.Drawing.Point(236, 129);
+            "Students Information (Track ID)",
+            "Student Grades (Student ID)",
+            "Courses that Instructor Teaches (Instructor ID)",
+            "Topics in Courses (Course ID)",
+            "Exam Questions (Exam ID)",
+            "Student Answers in Exam (Exam ID, Student ID)"});
+            this.report_box.Location = new System.Drawing.Point(232, 129);
             this.report_box.Name = "report_box";
-            this.report_box.Size = new System.Drawing.Size(552, 32);
+            this.report_box.Size = new System.Drawing.Size(556, 32);
             this.report_box.TabIndex = 92;
             this.report_box.Tag = "";
+            this.report_box.SelectedIndexChanged += new System.EventHandler(this.report_box_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -175,7 +176,7 @@
             // 
             this.param1.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.param1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.param1.Location = new System.Drawing.Point(236, 201);
+            this.param1.Location = new System.Drawing.Point(232, 204);
             this.param1.Name = "param1";
             this.param1.Size = new System.Drawing.Size(286, 35);
             this.param1.TabIndex = 96;
@@ -184,7 +185,7 @@
             // 
             this.param2.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.param2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.param2.Location = new System.Drawing.Point(236, 255);
+            this.param2.Location = new System.Drawing.Point(232, 258);
             this.param2.Name = "param2";
             this.param2.Size = new System.Drawing.Size(286, 35);
             this.param2.TabIndex = 97;

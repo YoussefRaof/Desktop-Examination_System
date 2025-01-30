@@ -45,10 +45,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.track_name = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.track_id = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.branch_id2 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.ins_id = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.track_table = new System.Windows.Forms.DataGridView();
@@ -57,11 +53,16 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.track_rbtn = new System.Windows.Forms.RadioButton();
             this.branch_rbtn = new System.Windows.Forms.RadioButton();
+            this.assigned_table = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.unassign_btn = new System.Windows.Forms.Button();
+            this.assign_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.branch_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.assigned_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -138,7 +139,7 @@
             this.insert_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.insert_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insert_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.insert_btn.Location = new System.Drawing.Point(439, 773);
+            this.insert_btn.Location = new System.Drawing.Point(87, 773);
             this.insert_btn.Name = "insert_btn";
             this.insert_btn.Size = new System.Drawing.Size(240, 42);
             this.insert_btn.TabIndex = 70;
@@ -153,7 +154,7 @@
             this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_btn.Location = new System.Drawing.Point(548, 821);
+            this.delete_btn.Location = new System.Drawing.Point(196, 821);
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.Size = new System.Drawing.Size(266, 42);
             this.delete_btn.TabIndex = 72;
@@ -167,7 +168,7 @@
             this.update_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.update_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.update_btn.Location = new System.Drawing.Point(685, 773);
+            this.update_btn.Location = new System.Drawing.Point(333, 773);
             this.update_btn.Name = "update_btn";
             this.update_btn.Size = new System.Drawing.Size(240, 42);
             this.update_btn.TabIndex = 71;
@@ -181,12 +182,12 @@
             this.branch_table.AllowUserToDeleteRows = false;
             this.branch_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.branch_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.branch_table.Location = new System.Drawing.Point(12, 333);
+            this.branch_table.Location = new System.Drawing.Point(12, 260);
             this.branch_table.Name = "branch_table";
             this.branch_table.ReadOnly = true;
             this.branch_table.RowHeadersWidth = 51;
             this.branch_table.RowTemplate.Height = 24;
-            this.branch_table.Size = new System.Drawing.Size(611, 346);
+            this.branch_table.Size = new System.Drawing.Size(611, 418);
             this.branch_table.TabIndex = 77;
             // 
             // label4
@@ -194,7 +195,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label4.Location = new System.Drawing.Point(977, 300);
+            this.label4.Location = new System.Drawing.Point(977, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 29);
             this.label4.TabIndex = 80;
@@ -205,7 +206,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label5.Location = new System.Drawing.Point(235, 300);
+            this.label5.Location = new System.Drawing.Point(241, 228);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 29);
             this.label5.TabIndex = 81;
@@ -215,7 +216,7 @@
             // 
             this.branch_name.Font = new System.Drawing.Font("Century Schoolbook", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.branch_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.branch_name.Location = new System.Drawing.Point(127, 210);
+            this.branch_name.Location = new System.Drawing.Point(263, 135);
             this.branch_name.Name = "branch_name";
             this.branch_name.Size = new System.Drawing.Size(360, 47);
             this.branch_name.TabIndex = 86;
@@ -225,7 +226,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label3.Location = new System.Drawing.Point(184, 167);
+            this.label3.Location = new System.Drawing.Point(6, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(231, 35);
             this.label3.TabIndex = 85;
@@ -235,7 +236,7 @@
             // 
             this.track_name.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.track_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.track_name.Location = new System.Drawing.Point(904, 164);
+            this.track_name.Location = new System.Drawing.Point(904, 129);
             this.track_name.Name = "track_name";
             this.track_name.Size = new System.Drawing.Size(360, 32);
             this.track_name.TabIndex = 90;
@@ -245,57 +246,17 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label6.Location = new System.Drawing.Point(721, 171);
+            this.label6.Location = new System.Drawing.Point(721, 136);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 24);
             this.label6.TabIndex = 89;
             this.label6.Text = "Track Name";
             // 
-            // track_id
-            // 
-            this.track_id.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.track_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.track_id.Location = new System.Drawing.Point(904, 119);
-            this.track_id.Name = "track_id";
-            this.track_id.Size = new System.Drawing.Size(360, 32);
-            this.track_id.TabIndex = 88;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label7.Location = new System.Drawing.Point(721, 126);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 24);
-            this.label7.TabIndex = 87;
-            this.label7.Text = "Track ID";
-            // 
-            // branch_id2
-            // 
-            this.branch_id2.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.branch_id2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.branch_id2.Location = new System.Drawing.Point(904, 255);
-            this.branch_id2.Name = "branch_id2";
-            this.branch_id2.Size = new System.Drawing.Size(360, 32);
-            this.branch_id2.TabIndex = 94;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label8.Location = new System.Drawing.Point(721, 262);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 24);
-            this.label8.TabIndex = 93;
-            this.label8.Text = "Branch ID";
-            // 
             // ins_id
             // 
             this.ins_id.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ins_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.ins_id.Location = new System.Drawing.Point(904, 209);
+            this.ins_id.Location = new System.Drawing.Point(904, 174);
             this.ins_id.Name = "ins_id";
             this.ins_id.Size = new System.Drawing.Size(360, 32);
             this.ins_id.TabIndex = 92;
@@ -305,7 +266,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label9.Location = new System.Drawing.Point(721, 216);
+            this.label9.Location = new System.Drawing.Point(721, 181);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(148, 24);
             this.label9.TabIndex = 91;
@@ -317,19 +278,19 @@
             this.track_table.AllowUserToDeleteRows = false;
             this.track_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.track_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.track_table.Location = new System.Drawing.Point(725, 333);
+            this.track_table.Location = new System.Drawing.Point(725, 260);
             this.track_table.Name = "track_table";
             this.track_table.ReadOnly = true;
             this.track_table.RowHeadersWidth = 51;
             this.track_table.RowTemplate.Height = 24;
-            this.track_table.Size = new System.Drawing.Size(604, 346);
+            this.track_table.Size = new System.Drawing.Size(604, 273);
             this.track_table.TabIndex = 82;
             // 
             // search
             // 
             this.search.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.search.Location = new System.Drawing.Point(473, 695);
+            this.search.Location = new System.Drawing.Point(121, 695);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(429, 35);
             this.search.TabIndex = 95;
@@ -338,7 +299,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(416, 694);
+            this.pictureBox2.Location = new System.Drawing.Point(64, 694);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -349,7 +310,7 @@
             // 
             this.panel3.Controls.Add(this.track_rbtn);
             this.panel3.Controls.Add(this.branch_rbtn);
-            this.panel3.Location = new System.Drawing.Point(494, 732);
+            this.panel3.Location = new System.Drawing.Point(142, 732);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(383, 40);
             this.panel3.TabIndex = 97;
@@ -384,22 +345,74 @@
             this.branch_rbtn.UseVisualStyleBackColor = true;
             this.branch_rbtn.CheckedChanged += new System.EventHandler(this.branch_rbtn_CheckedChanged);
             // 
+            // assigned_table
+            // 
+            this.assigned_table.AllowUserToAddRows = false;
+            this.assigned_table.AllowUserToDeleteRows = false;
+            this.assigned_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.assigned_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.assigned_table.Location = new System.Drawing.Point(725, 583);
+            this.assigned_table.Name = "assigned_table";
+            this.assigned_table.ReadOnly = true;
+            this.assigned_table.RowHeadersWidth = 51;
+            this.assigned_table.RowTemplate.Height = 24;
+            this.assigned_table.Size = new System.Drawing.Size(604, 219);
+            this.assigned_table.TabIndex = 98;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.label7.Location = new System.Drawing.Point(977, 551);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 29);
+            this.label7.TabIndex = 135;
+            this.label7.Text = "Assigned";
+            // 
+            // unassign_btn
+            // 
+            this.unassign_btn.BackColor = System.Drawing.Color.White;
+            this.unassign_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.unassign_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unassign_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.unassign_btn.Location = new System.Drawing.Point(1034, 817);
+            this.unassign_btn.Name = "unassign_btn";
+            this.unassign_btn.Size = new System.Drawing.Size(210, 43);
+            this.unassign_btn.TabIndex = 138;
+            this.unassign_btn.Text = "Unassign";
+            this.unassign_btn.UseVisualStyleBackColor = false;
+            // 
+            // assign_btn
+            // 
+            this.assign_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.assign_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.assign_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.assign_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assign_btn.ForeColor = System.Drawing.Color.White;
+            this.assign_btn.Location = new System.Drawing.Point(815, 817);
+            this.assign_btn.Name = "assign_btn";
+            this.assign_btn.Size = new System.Drawing.Size(210, 43);
+            this.assign_btn.TabIndex = 137;
+            this.assign_btn.Text = "Assign";
+            this.assign_btn.UseVisualStyleBackColor = false;
+            // 
             // Branches_Tracks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1342, 890);
+            this.Controls.Add(this.unassign_btn);
+            this.Controls.Add(this.assign_btn);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.assigned_table);
             this.Controls.Add(this.search);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.branch_id2);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.ins_id);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.track_name);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.track_id);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.branch_name);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.track_table);
@@ -424,6 +437,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.assigned_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -446,10 +460,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox track_name;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox track_id;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox branch_id2;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox ins_id;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView track_table;
@@ -458,5 +468,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton track_rbtn;
         private System.Windows.Forms.RadioButton branch_rbtn;
+        private System.Windows.Forms.DataGridView assigned_table;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button unassign_btn;
+        private System.Windows.Forms.Button assign_btn;
     }
 }

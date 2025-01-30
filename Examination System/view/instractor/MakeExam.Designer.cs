@@ -56,12 +56,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.a_rbtn = new System.Windows.Forms.RadioButton();
-            this.b_rbtn = new System.Windows.Forms.RadioButton();
-            this.c_rbtn = new System.Windows.Forms.RadioButton();
             this.d_rbtn = new System.Windows.Forms.RadioButton();
+            this.c_rbtn = new System.Windows.Forms.RadioButton();
+            this.b_rbtn = new System.Windows.Forms.RadioButton();
+            this.a_rbtn = new System.Windows.Forms.RadioButton();
+            this.question_table = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.question_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -152,7 +154,7 @@
             "10)"});
             this.question_no.Location = new System.Drawing.Point(195, 174);
             this.question_no.Name = "question_no";
-            this.question_no.Size = new System.Drawing.Size(196, 32);
+            this.question_no.Size = new System.Drawing.Size(225, 32);
             this.question_no.TabIndex = 70;
             this.question_no.Tag = "";
             this.question_no.SelectedIndexChanged += new System.EventHandler(this.quesion_no_SelectedIndexChanged);
@@ -180,7 +182,7 @@
             "T/F"});
             this.question_type.Location = new System.Drawing.Point(195, 224);
             this.question_type.Name = "question_type";
-            this.question_type.Size = new System.Drawing.Size(196, 32);
+            this.question_type.Size = new System.Drawing.Size(225, 32);
             this.question_type.TabIndex = 72;
             this.question_type.Tag = "";
             this.question_type.SelectedIndexChanged += new System.EventHandler(this.question_type_SelectedIndexChanged);
@@ -201,7 +203,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label4.Location = new System.Drawing.Point(13, 290);
+            this.label4.Location = new System.Drawing.Point(13, 310);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 24);
             this.label4.TabIndex = 73;
@@ -211,7 +213,7 @@
             // 
             this.question.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question.ForeColor = System.Drawing.Color.Black;
-            this.question.Location = new System.Drawing.Point(17, 327);
+            this.question.Location = new System.Drawing.Point(17, 347);
             this.question.Multiline = true;
             this.question.Name = "question";
             this.question.Size = new System.Drawing.Size(1579, 149);
@@ -353,7 +355,7 @@
             this.course_exam.FormattingEnabled = true;
             this.course_exam.Location = new System.Drawing.Point(195, 125);
             this.course_exam.Name = "course_exam";
-            this.course_exam.Size = new System.Drawing.Size(196, 32);
+            this.course_exam.Size = new System.Drawing.Size(225, 32);
             this.course_exam.TabIndex = 87;
             this.course_exam.Tag = "";
             this.course_exam.SelectedIndexChanged += new System.EventHandler(this.exam_course_SelectedIndexChanged);
@@ -391,33 +393,19 @@
             this.panel3.Size = new System.Drawing.Size(353, 40);
             this.panel3.TabIndex = 89;
             // 
-            // a_rbtn
+            // d_rbtn
             // 
-            this.a_rbtn.AutoSize = true;
-            this.a_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.a_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.a_rbtn.Location = new System.Drawing.Point(7, 3);
-            this.a_rbtn.Name = "a_rbtn";
-            this.a_rbtn.Size = new System.Drawing.Size(46, 28);
-            this.a_rbtn.TabIndex = 0;
-            this.a_rbtn.TabStop = true;
-            this.a_rbtn.Text = "A";
-            this.a_rbtn.UseVisualStyleBackColor = true;
-            // 
-            // b_rbtn
-            // 
-            this.b_rbtn.AutoSize = true;
-            this.b_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.b_rbtn.Location = new System.Drawing.Point(81, 3);
-            this.b_rbtn.Name = "b_rbtn";
-            this.b_rbtn.Size = new System.Drawing.Size(46, 28);
-            this.b_rbtn.TabIndex = 1;
-            this.b_rbtn.TabStop = true;
-            this.b_rbtn.Text = "B";
-            this.b_rbtn.UseVisualStyleBackColor = true;
+            this.d_rbtn.AutoSize = true;
+            this.d_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.d_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.d_rbtn.Location = new System.Drawing.Point(233, 3);
+            this.d_rbtn.Name = "d_rbtn";
+            this.d_rbtn.Size = new System.Drawing.Size(48, 28);
+            this.d_rbtn.TabIndex = 3;
+            this.d_rbtn.TabStop = true;
+            this.d_rbtn.Text = "D";
+            this.d_rbtn.UseVisualStyleBackColor = true;
             // 
             // c_rbtn
             // 
@@ -433,19 +421,47 @@
             this.c_rbtn.Text = "C";
             this.c_rbtn.UseVisualStyleBackColor = true;
             // 
-            // d_rbtn
+            // b_rbtn
             // 
-            this.d_rbtn.AutoSize = true;
-            this.d_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.d_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.d_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.d_rbtn.Location = new System.Drawing.Point(233, 3);
-            this.d_rbtn.Name = "d_rbtn";
-            this.d_rbtn.Size = new System.Drawing.Size(48, 28);
-            this.d_rbtn.TabIndex = 3;
-            this.d_rbtn.TabStop = true;
-            this.d_rbtn.Text = "D";
-            this.d_rbtn.UseVisualStyleBackColor = true;
+            this.b_rbtn.AutoSize = true;
+            this.b_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.b_rbtn.Location = new System.Drawing.Point(81, 3);
+            this.b_rbtn.Name = "b_rbtn";
+            this.b_rbtn.Size = new System.Drawing.Size(46, 28);
+            this.b_rbtn.TabIndex = 1;
+            this.b_rbtn.TabStop = true;
+            this.b_rbtn.Text = "B";
+            this.b_rbtn.UseVisualStyleBackColor = true;
+            // 
+            // a_rbtn
+            // 
+            this.a_rbtn.AutoSize = true;
+            this.a_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.a_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.a_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.a_rbtn.Location = new System.Drawing.Point(7, 3);
+            this.a_rbtn.Name = "a_rbtn";
+            this.a_rbtn.Size = new System.Drawing.Size(46, 28);
+            this.a_rbtn.TabIndex = 0;
+            this.a_rbtn.TabStop = true;
+            this.a_rbtn.Text = "A";
+            this.a_rbtn.UseVisualStyleBackColor = true;
+            // 
+            // question_table
+            // 
+            this.question_table.AllowUserToAddRows = false;
+            this.question_table.AllowUserToDeleteRows = false;
+            this.question_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.question_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.question_table.Location = new System.Drawing.Point(481, 125);
+            this.question_table.Name = "question_table";
+            this.question_table.ReadOnly = true;
+            this.question_table.RowHeadersWidth = 51;
+            this.question_table.RowTemplate.Height = 24;
+            this.question_table.Size = new System.Drawing.Size(1115, 209);
+            this.question_table.TabIndex = 90;
             // 
             // MakeExam
             // 
@@ -453,6 +469,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1612, 860);
+            this.Controls.Add(this.question_table);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.course_exam);
@@ -485,6 +502,7 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.question_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,5 +541,6 @@
         private System.Windows.Forms.RadioButton d_rbtn;
         private System.Windows.Forms.RadioButton c_rbtn;
         private System.Windows.Forms.RadioButton b_rbtn;
+        private System.Windows.Forms.DataGridView question_table;
     }
 }

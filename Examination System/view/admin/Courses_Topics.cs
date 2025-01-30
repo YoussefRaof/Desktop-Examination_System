@@ -27,9 +27,8 @@ namespace Examination_System.view.admin
             TableData.getData("courseView", "[Course Name]", search.Text, course_table);
             TableData.getData("topicsDetails", "[Topic Name]", search.Text, topic_table);
 
-            topic_id.Enabled = false;
-            topic_name.Enabled = false;
-            course_id2.Enabled = false;
+            //TableData.getData("", "", "", track_table);
+            //TableData.getData("", "", "", assigned_table);
         }
 
         private void setDisabledItems()

@@ -86,15 +86,52 @@ namespace Examination_System.controller
         }
 
 
+        public static bool fillQuesTable(DataGridView table, string stName, int id, string crs_name)
+        {
+            try
+            {
+                using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+                {
+                    using (SqlCommand command = new SqlCommand(stName, connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("ins_id", id);
+                        command.Parameters.AddWithValue("course_name", crs_name);
+
+                        SqlParameter resultParam = new SqlParameter("@result", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.Output
+                        };
+                        command.Parameters.Add(resultParam);
+
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            var dataTable = new DataTable();
+                            dataTable.Load(reader);
+                            table.DataSource = dataTable;
+                        }
+
+                        return (int)resultParam.Value == 1;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+
         public static void generateReport(DataGridView table, int flag)
         {
             SaveFileDialog sfd = new SaveFileDialog
             {
                 Filter = "PDF file|*.pdf",
-                FileName = flag == 1 ? "Students_Grades.pdf" : 
+                FileName = flag == 1 ? "Students_Grades.pdf" :
                            flag == 2 ? "Pass_Persentage.pdf" : ".pdf"
             };
-
 
             if (sfd.ShowDialog() == DialogResult.OK)
             {
@@ -107,11 +144,10 @@ namespace Examination_System.controller
 
                         document.Open();
 
-
                         iTextSharp.text.Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14);
                         Paragraph title = new Paragraph(
                             flag == 1 ? "Students Grades" :
-                            flag == 2 ? "Pass Persentage" : "", 
+                            flag == 2 ? "Pass Persentage" : "",
                         titleFont)
                         {
                             Alignment = Element.ALIGN_CENTER
@@ -121,17 +157,23 @@ namespace Examination_System.controller
                         document.Add(new Paragraph("\n"));
 
                         PdfPTable pdfTable = new PdfPTable(table.Columns.Count);
+                        pdfTable.WidthPercentage = 100; 
+
 
                         foreach (DataGridViewColumn column in table.Columns)
                         {
                             PdfPCell headerCell = new PdfPCell(new Phrase(column.HeaderText))
                             {
                                 HorizontalAlignment = Element.ALIGN_CENTER,
-                                BackgroundColor = new BaseColor(192, 192, 192)
+                                BackgroundColor = new BaseColor(192, 192, 192),
+                                PaddingTop = 10f,
+                                PaddingBottom = 10f,
+                                PaddingLeft = 8f,
+                                PaddingRight = 8f
                             };
-
                             pdfTable.AddCell(headerCell);
                         }
+
 
                         foreach (DataGridViewRow row in table.Rows)
                         {
@@ -139,13 +181,20 @@ namespace Examination_System.controller
                             {
                                 foreach (DataGridViewCell cell in row.Cells)
                                 {
-                                    pdfTable.AddCell(new Phrase(cell.Value?.ToString() ?? ""));
+                                    PdfPCell dataCell = new PdfPCell(new Phrase(cell.Value?.ToString() ?? ""))
+                                    {
+                                        PaddingTop = 8f,
+                                        PaddingBottom = 8f,
+                                        PaddingLeft = 5f,
+                                        PaddingRight = 5f,
+                                        HorizontalAlignment = Element.ALIGN_CENTER
+                                    };
+                                    pdfTable.AddCell(dataCell);
                                 }
                             }
                         }
 
                         document.Add(pdfTable);
-
                         document.Close();
                         writer.Close();
                     }
