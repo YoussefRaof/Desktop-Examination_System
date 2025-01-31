@@ -120,6 +120,11 @@ namespace Examination_System.view
                 this.Close();
                 new LoginAdmin().Show();
             }
+            else
+                MessageBox.Show("Make Sure Email Contains @!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+
 
         }
     }

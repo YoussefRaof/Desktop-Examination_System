@@ -65,7 +65,7 @@ namespace Examination_System.view.admin
                 else
                     MessageBox.Show("Student Created failed !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                clearData();
+                //clearData();
             }
             else
             {

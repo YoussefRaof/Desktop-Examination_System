@@ -78,8 +78,8 @@ namespace Examination_System.view.admin
         {
             if (checkData())
             {
-                
 
+                setData();
 
                 instructorMethods.Insert(instructor);
                 TableData.getData("instructorView", "ins_name", search.Text, instractors_table);
