@@ -62,7 +62,13 @@ namespace Examination_System.view.admin
         private void setData()
         {
             instructor.Name = name.Text;
-            instructor.Email = email.Text;
+            
+            
+
+                instructor.Email = email.Text;
+                     
+
+            
             instructor.Phone = phone.Text;
             instructor.Salary = Convert.ToInt32(salary.Text);
             instructor.AdminId = adminMethods.getID("admin", _adminEmail);
@@ -72,7 +78,8 @@ namespace Examination_System.view.admin
         {
             if (checkData())
             {
-                setData();
+                
+
 
                 instructorMethods.Insert(instructor);
                 TableData.getData("instructorView", "ins_name", search.Text, instractors_table);
@@ -82,16 +89,19 @@ namespace Examination_System.view.admin
             }
             else
             {
-                MessageBox.Show("Please Enter Instructor Data!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please Enter Instructor Data Correctly!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
 
         private bool checkData()
         {
-            if (name.Text != string.Empty && email.Text != string.Empty && phone.Text != string.Empty && salary.Text != string.Empty)
+            if (name.Text != string.Empty && (email.Text != string.Empty && email.Text.Contains("@")) && phone.Text != string.Empty && salary.Text != string.Empty)
                 return true;
-
+            
+            if(!email.Text.Contains("@"))
+                MessageBox.Show("Make Sure Email Conatins @ !", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            
             return false;
         }
 

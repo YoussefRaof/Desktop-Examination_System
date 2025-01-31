@@ -91,7 +91,19 @@ namespace Examination_System.view.admin
             student.SSN = Convert.ToInt32(ssn.Text);
             student.FName = fname.Text;
             student.LName = lname.Text;
-            student.Email = email.Text;
+            if (email.Text.Contains("@"))
+            {
+
+                student.Email = email.Text;
+            }
+            else
+            {
+                MessageBox.Show("Make Sure Email Conatins @ !", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                clearData();
+                return;
+
+            }
+
             student.Phone = phone.Text;
             student.Address = address.Text;
             student.Gender = (Gender)Enum.Parse(typeof(Gender), gender.Text);

@@ -51,7 +51,7 @@ namespace Examination_System.view
 
         private bool checkData()
         {
-            if (username.Text != string.Empty && email.Text != string.Empty && password.Text != string.Empty && confirmPassword.Text != string.Empty)
+            if (username.Text != string.Empty && (email.Text != string.Empty && email.Text.Contains("@")) && password.Text != string.Empty && confirmPassword.Text != string.Empty)
                 return true;
 
             return false;
