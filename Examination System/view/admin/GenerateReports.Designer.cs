@@ -117,6 +117,7 @@
             this.generate_btn.TabIndex = 93;
             this.generate_btn.Text = "Generate";
             this.generate_btn.UseVisualStyleBackColor = false;
+            this.generate_btn.Click += new System.EventHandler(this.generate_btn_Click);
             // 
             // report_box
             // 

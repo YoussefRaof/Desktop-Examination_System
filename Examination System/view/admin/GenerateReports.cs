@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examination_System.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -71,58 +72,69 @@ namespace Examination_System.View.Admin
 
         private void report_box_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (report_box.Text != string.Empty)
+            if (!string.IsNullOrEmpty(report_box.Text))
             {
                 setEnabledItems();
-                if (report_box.SelectedIndex == 0)
+
+                param1.Enabled = false;
+                param2.Enabled = false;
+
+                switch (report_box.SelectedIndex)
                 {
-                    param1.Enabled = true;
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        param1.Enabled = true;
+                        break;
+                    case 5:
+                        param1.Enabled = true;
+                        param2.Enabled = true;
+                        break;
                 }
-                else
-                    param2.Enabled = false;
-
-
-                if (report_box.SelectedIndex == 1)
-                {
-                    param1.Enabled = true;
-                }
-                else
-                    param2.Enabled = false;
-
-
-                if (report_box.SelectedIndex == 2)
-                {
-                    param1.Enabled = true;
-                }
-                else
-                    param2.Enabled = false;
-
-
-                if (report_box.SelectedIndex == 3)
-                {
-                    param1.Enabled = true;
-                }
-                else
-                    param2.Enabled = false;
-
-
-                if (report_box.SelectedIndex == 4)
-                {
-                    param1.Enabled = true;
-                }
-                else
-                    param2.Enabled = false;
-
-                
-                if (report_box.SelectedIndex == 5)
-                {
-                    param1.Enabled = true;
-                    param2.Enabled = true;
-                }
-
             }
             else
                 setDisabledItems();
         }
+
+        private void generate_btn_Click(object sender, EventArgs e)
+        {
+            int parameter1, parameter2;
+
+            if (int.TryParse(param1.Text, out parameter1))
+            {
+                switch (report_box.SelectedIndex)
+                {
+                    case 0:
+                        TableData.PrintReports("GetStudentInfoByTracks", parameter1);
+                        return;
+                    case 1:
+                        TableData.PrintReports("GetStudentGrades", parameter1);
+                        return;
+                    case 2:
+                        TableData.PrintReports("GetInsCourse", parameter1);
+                        return;
+                    case 3:
+                        TableData.PrintReports("GetCourseTopics", parameter1);
+                        return;
+                    case 4:
+                        TableData.PrintReports("GetExamQuestionsAndChoices", parameter1);
+                        return;
+                }
+            }
+
+
+            if (report_box.SelectedIndex == 5 && int.TryParse(param1.Text, out parameter1)
+                && int.TryParse(param2.Text, out parameter2))
+            {
+                TableData.PrintFreeformReport("GetStudentExamReport", parameter1, parameter2);
+                return;
+            }
+
+            MessageBox.Show("Please enter valid numeric values.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+
     }
 }
