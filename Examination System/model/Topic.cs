@@ -11,8 +11,16 @@ namespace Examination_System.model
         private int topicId;
         private string topicName;
         private int courseId;
+        private int admin_id_FK;
+
 
         public Topic() { }
+
+        public int Admin_id_FK
+        {
+            get { return admin_id_FK; }
+            set { admin_id_FK = value; }
+        }
 
         public int TopicId
         {

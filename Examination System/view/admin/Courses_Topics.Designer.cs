@@ -385,6 +385,7 @@
             this.unassign_btn.TabIndex = 136;
             this.unassign_btn.Text = "Unassign";
             this.unassign_btn.UseVisualStyleBackColor = false;
+            this.unassign_btn.Click += new System.EventHandler(this.unassign_btn_Click);
             // 
             // assign_btn
             // 
@@ -399,6 +400,7 @@
             this.assign_btn.TabIndex = 135;
             this.assign_btn.Text = "Assign";
             this.assign_btn.UseVisualStyleBackColor = false;
+            this.assign_btn.Click += new System.EventHandler(this.assign_btn_Click);
             // 
             // track_table
             // 

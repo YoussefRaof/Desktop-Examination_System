@@ -88,6 +88,30 @@ namespace Examination_System.controller
         }
 
 
+        public int AssignTrackToBranch(Branch branch , Track track)
+        {
+            return AssignOrUnassignTrackToBranchQuery(track.TrackId, branch.BranchId, "insert");
+        }
+
+        public int UnAssignTrackToBranch(Branch branch, Track track)
+        {
+
+            return AssignOrUnassignTrackToBranchQuery(track.TrackId, branch.BranchId, "delete");
+        }
+
+
+        public int AssginCourseToTrack(Course course, Track track)
+        {
+            return AssignOrUnassignCourseToTrackQuery(course.CourseId, track.TrackId, "insert");
+
+        }
+        public int UnAssginCourseToTrack(Course course, Track track)
+        {
+            return AssignOrUnassignCourseToTrackQuery(course.CourseId, track.TrackId, "delete");
+        }
+
+
+
         public int getID(string table, string email)
         {
             using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
@@ -250,9 +274,93 @@ namespace Examination_System.controller
 
         }
 
-      
+        private int AssignOrUnassignTrackToBranchQuery(int trackId, int branchId, string operation)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
 
-     
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("assignTrackToBranch", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        
+                        command.Parameters.AddWithValue("@track_id", trackId);
+                        command.Parameters.AddWithValue("@branch_id", branchId);
+                        command.Parameters.AddWithValue("@operation", operation);
+
+                        SqlParameter resultParam = new SqlParameter("@result", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.Output
+                        };
+                        command.Parameters.Add(resultParam);
+
+                        
+                        command.ExecuteNonQuery();
+
+                        
+                        int returnValue = (int)resultParam.Value;
+                        return returnValue;
+                    }
+                }
+                catch (SqlException ex) when (ex.Number == 50000)
+                {
+                    throw new Exception(ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred while processing the operation: " + ex.Message);
+                }
+            }
+        }
+        private int AssignOrUnassignCourseToTrackQuery(int courseId, int trackId, string operation)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("assignCourseToTrack", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                      
+                        command.Parameters.AddWithValue("@course_id", courseId);
+                        command.Parameters.AddWithValue("@track_id", trackId);
+                        command.Parameters.AddWithValue("@operation", operation);
+
+                        // Output parameter for the result
+                        SqlParameter resultParam = new SqlParameter("@result", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.Output
+                        };
+                        command.Parameters.Add(resultParam);
+
+                        // Execute the stored procedure
+                        command.ExecuteNonQuery();
+
+                        // Retrieve and return the result
+                        int returnValue = (int)resultParam.Value;
+                        return returnValue;
+                    }
+                }
+                catch (SqlException ex) when (ex.Number == 50000)
+                {
+                    throw new Exception(ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred while processing the operation: " + ex.Message);
+                }
+            }
+        }
+
+        
     }
 }
 

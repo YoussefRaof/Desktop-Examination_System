@@ -21,7 +21,7 @@ namespace Examination_System.Controller.BranchController
             else
             {
 
-                MessageBox.Show("Branch not found. Please Choose a valid Student SSN.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Branch not found. Please Choose a valid Branch Id.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

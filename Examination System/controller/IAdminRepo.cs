@@ -21,5 +21,9 @@ namespace Examination_System.controller
         bool checkPassword(string password, string table, string email);
         int UnAssignInstructorToCourse(Instructor instructor, Course course);
         int UnAssignStudentToCourse(Student student, Course course);
+        int AssignTrackToBranch(Branch branch, Track track);
+        int UnAssignTrackToBranch(Branch branch, Track track);
+        int AssginCourseToTrack(Course course, Track track);
+        int UnAssginCourseToTrack(Course course, Track track);
     }
 }
