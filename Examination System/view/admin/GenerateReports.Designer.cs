@@ -147,9 +147,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.label3.Location = new System.Drawing.Point(9, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 33);
+            this.label3.Size = new System.Drawing.Size(220, 33);
             this.label3.TabIndex = 91;
-            this.label3.Text = "Chose Report";
+            this.label3.Text = "Choose Report";
             // 
             // label4
             // 
