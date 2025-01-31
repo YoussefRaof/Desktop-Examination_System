@@ -16,9 +16,5 @@ namespace Examination_System.Controller
         void CorrectExam(int ssn, int exam_id);
         void SaveStudentAnswers(Student_Exam_Questions studentAnswer);
         bool IsStudTakeExam(int ssn, string examName);
-
-        void InsertQuestion(Questions question);
-        void UpdateQuestion(Questions question);
-        bool LoginQuestion(Questions question);
     }
 }

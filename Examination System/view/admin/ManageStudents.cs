@@ -118,7 +118,7 @@ namespace Examination_System.view.admin
 
         private void update_btn_Click(object sender, EventArgs e)
         {
-            if (students_table.SelectedRows.Count > 0)
+            if (students_table.SelectedRows.Count == 1)
             {
 
                 DataGridViewRow selectedRow = students_table.SelectedRows[0];
@@ -127,7 +127,7 @@ namespace Examination_System.view.admin
                 if (selectedRow.Cells["SSN"] != null && int.TryParse(selectedRow.Cells["SSN"].Value.ToString(), out int studentSSN))
                 {
 
-                    student.SSN= studentSSN;
+                    student.SSN = studentSSN;
                     if (fname.Text == string.Empty)
                     {
                         student.FName = selectedRow.Cells["stud_fname"].Value.ToString();
@@ -182,23 +182,31 @@ namespace Examination_System.view.admin
                     //Gender
                     if (gender.Text == string.Empty)
                     {
-                        student.Gender = (Gender) Enum.Parse(typeof(Gender), selectedRow.Cells["stud_gender"].Value.ToString());
+                        student.Gender = (Gender)Enum.Parse(typeof(Gender), selectedRow.Cells["stud_gender"].Value.ToString());
                     }
                     else
                     {
-                        student.Gender= (Gender)Enum.Parse(typeof(Gender), gender.Text);
+                        student.Gender = (Gender)Enum.Parse(typeof(Gender), gender.Text);
                     }
+
+
+                    student.BirthDate = birthdate.Value.ToString("yyyy-MM-dd");
+
+
+                    //DataGridViewRow row = students_table.SelectedRows[0];
+                    //student.BirthDate = row.Cells["stud_birthdate"].Value?.ToString();
+
 
                     //Bdate
 
-                    if (birthdate.Text == string.Empty)
-                    {
-                        student.BirthDate= selectedRow.Cells["stud_birthdate"].Value.ToString();
-                    }
-                    else
-                    {
-                        student.BirthDate= birthdate.Value.ToString("yyyy-MM-dd");
-                    }
+                    //if (birthdate.Text == string.Empty)
+                    //{
+                    //    student.BirthDate= selectedRow.Cells["stud_birthdate"].Value.ToString();
+                    //}
+                    //else
+                    //{
+                    //    student.BirthDate= birthdate.Value.ToString("yyyy-MM-dd");
+                    //}
 
                     //TrackId
 
@@ -208,17 +216,17 @@ namespace Examination_System.view.admin
                     }
                     else
                     {
-                        student.TrackId= Convert.ToInt32(track_id.Text);
+                        student.TrackId = Convert.ToInt32(track_id.Text);
                     }
 
-                    student.TrackId= int.TryParse(track_id.Text, out int TrackValue) ? TrackValue : Convert.ToInt32(selectedRow.Cells["track_id_FK"].Value.ToString());
+                    student.TrackId = int.TryParse(track_id.Text, out int TrackValue) ? TrackValue : Convert.ToInt32(selectedRow.Cells["track_id_FK"].Value.ToString());
 
 
-                    student.Gender = Enum.TryParse(gender.Text, out Gender Value) ? Value : (Gender)Enum.Parse(typeof(Gender),(selectedRow.Cells["stud_gender"].Value.ToString()));
+                    student.Gender = Enum.TryParse(gender.Text, out Gender Value) ? Value : (Gender)Enum.Parse(typeof(Gender), (selectedRow.Cells["stud_gender"].Value.ToString()));
 
 
 
-                    
+
                     var confirmation = MessageBox.Show($"Are you sure you want to update Student with SSN {studentSSN}?",
                                                        "Confirmation",
                                                        MessageBoxButtons.YesNo,
@@ -250,7 +258,7 @@ namespace Examination_System.view.admin
 
         private void delete_btn_Click(object sender, EventArgs e)
         {
-            if (students_table.SelectedRows.Count > 0)
+            if (students_table.SelectedRows.Count == 1)
             {
 
                 DataGridViewRow selectedRow = students_table.SelectedRows[0];
@@ -292,6 +300,20 @@ namespace Examination_System.view.admin
         private void search_TextChanged(object sender, EventArgs e)
         {
             TableData.getData("studentView", "stud_fname", search.Text, students_table);
+        }
+
+
+        private void students_table_SelectionChanged(object sender, EventArgs e)
+        {
+            if (students_table.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = students_table.SelectedRows[0];
+                DateTime existingBirthDate;
+                if (DateTime.TryParse(row.Cells["stud_birthdate"].Value?.ToString(), out existingBirthDate))
+                {
+                    birthdate.Value = existingBirthDate;
+                }
+            }
         }
 
     }

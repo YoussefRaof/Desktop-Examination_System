@@ -35,9 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.question_no = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.question_type = new System.Windows.Forms.ComboBox();
+            this.question_type_box = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.question = new System.Windows.Forms.TextBox();
@@ -49,10 +47,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.option_d = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.delete_btn = new System.Windows.Forms.Button();
+            this.clear_btn = new System.Windows.Forms.Button();
             this.update_btn = new System.Windows.Forms.Button();
             this.insert_btn = new System.Windows.Forms.Button();
-            this.course_exam = new System.Windows.Forms.ComboBox();
+            this.course_exam_box = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -134,65 +132,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Examination System";
             // 
-            // question_no
+            // question_type_box
             // 
-            this.question_no.BackColor = System.Drawing.Color.White;
-            this.question_no.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.question_no.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question_no.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.question_no.FormattingEnabled = true;
-            this.question_no.Items.AddRange(new object[] {
-            "1)",
-            "2)",
-            "3)",
-            "4)",
-            "5)",
-            "6)",
-            "7)",
-            "8)",
-            "9)",
-            "10)"});
-            this.question_no.Location = new System.Drawing.Point(195, 174);
-            this.question_no.Name = "question_no";
-            this.question_no.Size = new System.Drawing.Size(225, 32);
-            this.question_no.TabIndex = 70;
-            this.question_no.Tag = "";
-            this.question_no.SelectedIndexChanged += new System.EventHandler(this.quesion_no_SelectedIndexChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label9.Location = new System.Drawing.Point(13, 179);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(142, 24);
-            this.label9.TabIndex = 69;
-            this.label9.Text = "Question No.";
-            // 
-            // question_type
-            // 
-            this.question_type.BackColor = System.Drawing.Color.White;
-            this.question_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.question_type.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question_type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.question_type.FormattingEnabled = true;
-            this.question_type.Items.AddRange(new object[] {
+            this.question_type_box.BackColor = System.Drawing.Color.White;
+            this.question_type_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.question_type_box.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.question_type_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.question_type_box.FormattingEnabled = true;
+            this.question_type_box.Items.AddRange(new object[] {
             "MCQ",
             "T/F"});
-            this.question_type.Location = new System.Drawing.Point(195, 224);
-            this.question_type.Name = "question_type";
-            this.question_type.Size = new System.Drawing.Size(225, 32);
-            this.question_type.TabIndex = 72;
-            this.question_type.Tag = "";
-            this.question_type.SelectedIndexChanged += new System.EventHandler(this.question_type_SelectedIndexChanged);
+            this.question_type_box.Location = new System.Drawing.Point(195, 181);
+            this.question_type_box.Name = "question_type_box";
+            this.question_type_box.Size = new System.Drawing.Size(275, 32);
+            this.question_type_box.TabIndex = 72;
+            this.question_type_box.Tag = "";
+            this.question_type_box.SelectedIndexChanged += new System.EventHandler(this.question_type_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label3.Location = new System.Drawing.Point(13, 229);
+            this.label3.Location = new System.Drawing.Point(13, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 24);
             this.label3.TabIndex = 71;
@@ -203,7 +165,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label4.Location = new System.Drawing.Point(13, 310);
+            this.label4.Location = new System.Drawing.Point(13, 346);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 24);
             this.label4.TabIndex = 73;
@@ -213,7 +175,7 @@
             // 
             this.question.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question.ForeColor = System.Drawing.Color.Black;
-            this.question.Location = new System.Drawing.Point(17, 347);
+            this.question.Location = new System.Drawing.Point(17, 377);
             this.question.Multiline = true;
             this.question.Name = "question";
             this.question.Size = new System.Drawing.Size(1579, 149);
@@ -224,7 +186,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label5.Location = new System.Drawing.Point(15, 511);
+            this.label5.Location = new System.Drawing.Point(15, 538);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 24);
             this.label5.TabIndex = 75;
@@ -234,20 +196,20 @@
             // 
             this.option_a.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option_a.ForeColor = System.Drawing.Color.Black;
-            this.option_a.Location = new System.Drawing.Point(17, 542);
+            this.option_a.Location = new System.Drawing.Point(17, 567);
             this.option_a.Multiline = true;
             this.option_a.Name = "option_a";
-            this.option_a.Size = new System.Drawing.Size(350, 156);
+            this.option_a.Size = new System.Drawing.Size(350, 141);
             this.option_a.TabIndex = 76;
             // 
             // option_b
             // 
             this.option_b.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option_b.ForeColor = System.Drawing.Color.Black;
-            this.option_b.Location = new System.Drawing.Point(424, 542);
+            this.option_b.Location = new System.Drawing.Point(424, 567);
             this.option_b.Multiline = true;
             this.option_b.Name = "option_b";
-            this.option_b.Size = new System.Drawing.Size(350, 156);
+            this.option_b.Size = new System.Drawing.Size(350, 141);
             this.option_b.TabIndex = 78;
             // 
             // label6
@@ -255,7 +217,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label6.Location = new System.Drawing.Point(422, 511);
+            this.label6.Location = new System.Drawing.Point(422, 538);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 24);
             this.label6.TabIndex = 77;
@@ -265,10 +227,10 @@
             // 
             this.option_c.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option_c.ForeColor = System.Drawing.Color.Black;
-            this.option_c.Location = new System.Drawing.Point(836, 542);
+            this.option_c.Location = new System.Drawing.Point(836, 567);
             this.option_c.Multiline = true;
             this.option_c.Name = "option_c";
-            this.option_c.Size = new System.Drawing.Size(350, 156);
+            this.option_c.Size = new System.Drawing.Size(350, 141);
             this.option_c.TabIndex = 80;
             // 
             // label7
@@ -276,7 +238,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label7.Location = new System.Drawing.Point(834, 511);
+            this.label7.Location = new System.Drawing.Point(834, 538);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 24);
             this.label7.TabIndex = 79;
@@ -286,10 +248,10 @@
             // 
             this.option_d.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option_d.ForeColor = System.Drawing.Color.Black;
-            this.option_d.Location = new System.Drawing.Point(1246, 542);
+            this.option_d.Location = new System.Drawing.Point(1246, 567);
             this.option_d.Multiline = true;
             this.option_d.Name = "option_d";
-            this.option_d.Size = new System.Drawing.Size(350, 156);
+            this.option_d.Size = new System.Drawing.Size(350, 141);
             this.option_d.TabIndex = 82;
             // 
             // label8
@@ -297,26 +259,26 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label8.Location = new System.Drawing.Point(1244, 511);
+            this.label8.Location = new System.Drawing.Point(1244, 538);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 24);
             this.label8.TabIndex = 81;
             this.label8.Text = "Option D";
             // 
-            // delete_btn
+            // clear_btn
             // 
-            this.delete_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_btn.Location = new System.Drawing.Point(670, 784);
-            this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(266, 42);
-            this.delete_btn.TabIndex = 85;
-            this.delete_btn.Text = "Delete";
-            this.delete_btn.UseVisualStyleBackColor = false;
-            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
+            this.clear_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.clear_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clear_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_btn.ForeColor = System.Drawing.Color.White;
+            this.clear_btn.Location = new System.Drawing.Point(670, 784);
+            this.clear_btn.Name = "clear_btn";
+            this.clear_btn.Size = new System.Drawing.Size(266, 42);
+            this.clear_btn.TabIndex = 85;
+            this.clear_btn.Text = "Clear";
+            this.clear_btn.UseVisualStyleBackColor = false;
+            this.clear_btn.Click += new System.EventHandler(this.clear_btn_Click);
             // 
             // update_btn
             // 
@@ -346,26 +308,26 @@
             this.insert_btn.UseVisualStyleBackColor = false;
             this.insert_btn.Click += new System.EventHandler(this.insert_btn_Click);
             // 
-            // course_exam
+            // course_exam_box
             // 
-            this.course_exam.BackColor = System.Drawing.Color.White;
-            this.course_exam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.course_exam.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.course_exam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.course_exam.FormattingEnabled = true;
-            this.course_exam.Location = new System.Drawing.Point(195, 125);
-            this.course_exam.Name = "course_exam";
-            this.course_exam.Size = new System.Drawing.Size(225, 32);
-            this.course_exam.TabIndex = 87;
-            this.course_exam.Tag = "";
-            this.course_exam.SelectedIndexChanged += new System.EventHandler(this.exam_course_SelectedIndexChanged);
+            this.course_exam_box.BackColor = System.Drawing.Color.White;
+            this.course_exam_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.course_exam_box.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_exam_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.course_exam_box.FormattingEnabled = true;
+            this.course_exam_box.Location = new System.Drawing.Point(195, 127);
+            this.course_exam_box.Name = "course_exam_box";
+            this.course_exam_box.Size = new System.Drawing.Size(275, 32);
+            this.course_exam_box.TabIndex = 87;
+            this.course_exam_box.Tag = "";
+            this.course_exam_box.SelectedIndexChanged += new System.EventHandler(this.exam_course_SelectedIndexChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label10.Location = new System.Drawing.Point(15, 131);
+            this.label10.Location = new System.Drawing.Point(15, 133);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(146, 24);
             this.label10.TabIndex = 86;
@@ -460,8 +422,9 @@
             this.question_table.ReadOnly = true;
             this.question_table.RowHeadersWidth = 51;
             this.question_table.RowTemplate.Height = 24;
-            this.question_table.Size = new System.Drawing.Size(1115, 209);
+            this.question_table.Size = new System.Drawing.Size(1115, 236);
             this.question_table.TabIndex = 90;
+            this.question_table.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.question_table_CellClick);
             // 
             // MakeExam
             // 
@@ -472,9 +435,9 @@
             this.Controls.Add(this.question_table);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.course_exam);
+            this.Controls.Add(this.course_exam_box);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.delete_btn);
+            this.Controls.Add(this.clear_btn);
             this.Controls.Add(this.update_btn);
             this.Controls.Add(this.insert_btn);
             this.Controls.Add(this.option_d);
@@ -487,10 +450,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.question);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.question_type);
+            this.Controls.Add(this.question_type_box);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.question_no);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -516,9 +477,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox question_no;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox question_type;
+        private System.Windows.Forms.ComboBox question_type_box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox question;
@@ -530,10 +489,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox option_d;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button delete_btn;
+        private System.Windows.Forms.Button clear_btn;
         private System.Windows.Forms.Button update_btn;
         private System.Windows.Forms.Button insert_btn;
-        private System.Windows.Forms.ComboBox course_exam;
+        private System.Windows.Forms.ComboBox course_exam_box;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel3;

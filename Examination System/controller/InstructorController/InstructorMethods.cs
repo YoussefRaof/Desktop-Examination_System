@@ -15,10 +15,9 @@ namespace Examination_System.Controller.InstructorController
     internal class InstructorMethods : IInstructorRepo
     {
         public InstructorMethods() { }
+
         public void Delete(Instructor instructor)
         {
-           
-
             if (instructor.Id > 0)
             {
                 
@@ -89,7 +88,7 @@ namespace Examination_System.Controller.InstructorController
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@table", table);
-                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@param", email);
 
                         var result = command.ExecuteScalar();
 

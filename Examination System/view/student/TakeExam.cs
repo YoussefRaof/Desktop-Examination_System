@@ -201,10 +201,10 @@ namespace Examination_System.view.student
 
         private void setStudentAnswer(int questionID, string answer)
         {
-            exam.Question.StudentId = studentSSN;
-            exam.Question.ExamId = examID;
-            exam.Question.QuestionId = questionID; //
-            exam.Question.Answer = answer;
+            exam.StudentAnswer.StudentId = studentSSN;
+            exam.StudentAnswer.ExamId = examID;
+            exam.StudentAnswer.QuestionId = questionID; //
+            exam.StudentAnswer.Answer = answer;
         }
 
 
@@ -285,7 +285,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -304,7 +304,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -323,7 +323,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -342,7 +342,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[0]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -361,7 +361,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -380,7 +380,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -399,7 +399,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -418,7 +418,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[1]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -437,7 +437,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -456,7 +456,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -475,7 +475,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -494,7 +494,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[2]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -513,7 +513,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -532,7 +532,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -551,7 +551,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -570,7 +570,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[3]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -589,7 +589,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -608,7 +608,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -627,7 +627,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -646,7 +646,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[4]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -665,7 +665,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -684,7 +684,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -703,7 +703,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -722,7 +722,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[5]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -741,7 +741,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -760,7 +760,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -779,7 +779,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -798,7 +798,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[6]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -817,7 +817,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -836,7 +836,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -855,7 +855,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -874,7 +874,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[7]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -893,7 +893,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -912,7 +912,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -931,7 +931,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -950,7 +950,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[8]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -969,7 +969,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -988,7 +988,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -1007,7 +1007,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }
@@ -1026,7 +1026,7 @@ namespace Examination_System.view.student
                 if (int.TryParse(examData.Rows[9]["ques_id"].ToString(), out int questionId))
                 {
                     setStudentAnswer(questionId, answer);
-                    examMethods.SaveStudentAnswers(exam.Question);
+                    examMethods.SaveStudentAnswers(exam.StudentAnswer);
 
                     ActiveControl = null;
                 }

@@ -14,18 +14,35 @@ namespace Examination_System.model
         private DateTime examDate;
         private int courseId;
 
-        private Student_Exam_Questions _Question;
+        private Questions _question;
+        private Student_Exam_Questions _studentAnswer;
+        private Exam_Questions _examQuestions;
 
         public Exam() 
         {
-            _Question = new Student_Exam_Questions();
+            _question = new Questions();
+            _studentAnswer = new Student_Exam_Questions();
+            _examQuestions = new Exam_Questions();
         }
 
-        public Student_Exam_Questions Question
-        {
-            get { return _Question; }
-            set { _Question = value; }
+        public Questions Question
+        { 
+            get { return _question; }
+            set { _question = value; }
         }
+
+        public Student_Exam_Questions StudentAnswer
+        {
+            get { return _studentAnswer; }
+            set { _studentAnswer = value; }
+        }
+
+        public Exam_Questions ExamQuestion
+        {
+            get { return _examQuestions; }
+            set { _examQuestions = value; }
+       }
+
 
         public int ExamId
         {

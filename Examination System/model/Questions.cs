@@ -14,6 +14,11 @@ namespace Examination_System.model
         private string modelAnswer;
         private int courseId;
 
+        private string choise1;
+        private string choise2;
+        private string choise3;
+        private string choise4;
+
         public Questions() { }
 
         public int QuestionId
@@ -44,6 +49,30 @@ namespace Examination_System.model
         {
             get { return courseId; }
             set { courseId = value; }
+        }
+
+        public string Choise1
+        {
+            get { return choise1; }
+            set { choise1 = value; }
+        }
+
+        public string Choise2
+        {
+            get { return choise2; }
+            set { choise2 = value; }
+        }
+
+        public string Choise3
+        {
+            get { return choise3; }
+            set { choise3 = value; }
+        }
+
+        public string Choise4
+        {
+            get { return choise4; }
+            set { choise4 = value; }
         }
 
     }

@@ -97,7 +97,7 @@ namespace Examination_System.view.admin
 
         private void update_btn_Click(object sender, EventArgs e)
         {
-            if (instractors_table.SelectedRows.Count > 0)
+            if (instractors_table.SelectedRows.Count == 1)
             {
                 
                 DataGridViewRow selectedRow = instractors_table.SelectedRows[0];
@@ -195,7 +195,7 @@ namespace Examination_System.view.admin
 
         private void delete_btn_Click(object sender, EventArgs e)
         {
-            if (instractors_table.SelectedRows.Count > 0)
+            if (instractors_table.SelectedRows.Count == 1)
             {
                 
                 DataGridViewRow selectedRow = instractors_table.SelectedRows[0];

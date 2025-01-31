@@ -112,7 +112,8 @@ namespace Examination_System.controller
                             table.DataSource = dataTable;
                         }
 
-                        return (int)resultParam.Value == 1;
+                        int result = (int)resultParam.Value;
+                        return result == 1;
                     }
                 }
             }

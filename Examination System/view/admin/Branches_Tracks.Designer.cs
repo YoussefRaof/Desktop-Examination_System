@@ -195,7 +195,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label4.Location = new System.Drawing.Point(977, 228);
+            this.label4.Location = new System.Drawing.Point(976, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 29);
             this.label4.TabIndex = 80;
@@ -214,21 +214,21 @@
             // 
             // branch_name
             // 
-            this.branch_name.Font = new System.Drawing.Font("Century Schoolbook", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.branch_name.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.branch_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.branch_name.Location = new System.Drawing.Point(263, 135);
+            this.branch_name.Location = new System.Drawing.Point(231, 148);
             this.branch_name.Name = "branch_name";
-            this.branch_name.Size = new System.Drawing.Size(360, 47);
+            this.branch_name.Size = new System.Drawing.Size(360, 38);
             this.branch_name.TabIndex = 86;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label3.Location = new System.Drawing.Point(6, 141);
+            this.label3.Location = new System.Drawing.Point(10, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 35);
+            this.label3.Size = new System.Drawing.Size(191, 29);
             this.label3.TabIndex = 85;
             this.label3.Text = "Branch Name";
             // 
@@ -364,7 +364,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Schoolbook", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.label7.Location = new System.Drawing.Point(977, 551);
+            this.label7.Location = new System.Drawing.Point(963, 551);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 29);
             this.label7.TabIndex = 135;
@@ -376,7 +376,7 @@
             this.unassign_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.unassign_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unassign_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.unassign_btn.Location = new System.Drawing.Point(1034, 817);
+            this.unassign_btn.Location = new System.Drawing.Point(1037, 817);
             this.unassign_btn.Name = "unassign_btn";
             this.unassign_btn.Size = new System.Drawing.Size(210, 43);
             this.unassign_btn.TabIndex = 138;
@@ -390,7 +390,7 @@
             this.assign_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.assign_btn.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.assign_btn.ForeColor = System.Drawing.Color.White;
-            this.assign_btn.Location = new System.Drawing.Point(815, 817);
+            this.assign_btn.Location = new System.Drawing.Point(818, 817);
             this.assign_btn.Name = "assign_btn";
             this.assign_btn.Size = new System.Drawing.Size(210, 43);
             this.assign_btn.TabIndex = 137;

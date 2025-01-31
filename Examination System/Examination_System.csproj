@@ -65,12 +65,14 @@
     <Compile Include="Controller\BranchController\BranchMethods.cs" />
     <Compile Include="Controller\BranchController\IBranchRepo.cs" />
     <Compile Include="Controller\DatabaseConnection.cs" />
-    <Compile Include="Controller\ExamController\ExamMethods.cs" />
+    <Compile Include="Controller\ExamQuestionController\ExamMethods.cs" />
     <Compile Include="Controller\HelperMethods.cs" />
     <Compile Include="Controller\IAdminRepo.cs" />
-    <Compile Include="Controller\ExamController\IExamRepo.cs" />
+    <Compile Include="Controller\ExamQuestionController\IExamRepo.cs" />
     <Compile Include="Controller\InstructorController\IInstructorRepo.cs" />
     <Compile Include="Controller\InstructorController\InstructorMethods.cs" />
+    <Compile Include="Controller\ExamQuestionController\IQuestionRepo.cs" />
+    <Compile Include="Controller\ExamQuestionController\QuestionMethods.cs" />
     <Compile Include="Controller\StudentController\IStudentRepo.cs" />
     <Compile Include="Controller\StudentController\StudentMethods.cs" />
     <Compile Include="Controller\TableData.cs" />

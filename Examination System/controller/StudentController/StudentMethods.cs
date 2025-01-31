@@ -13,6 +13,8 @@ namespace Examination_System.Controller.StudentController
 {
     internal class StudentMethods : IStudentRepo
     {
+        public StudentMethods() { }
+
         public void Delete(Student student)
         {
             if (student.SSN >= 0)
@@ -130,7 +132,7 @@ namespace Examination_System.Controller.StudentController
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@table", table);
-                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@param", email);
 
                         var result = command.ExecuteScalar();
 

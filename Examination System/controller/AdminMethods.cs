@@ -101,7 +101,7 @@ namespace Examination_System.controller
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@table", table);
-                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@param", email);
 
                         var result = command.ExecuteScalar();
 

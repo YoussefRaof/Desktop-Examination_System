@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Examination_System.View.Admin
 {
@@ -42,6 +43,18 @@ namespace Examination_System.View.Admin
         }
 
 
+        private bool checkData(int flag)
+        {
+            if (param1.Text != string.Empty && flag == 1)
+                return true;
+
+            else if (param1.Text != string.Empty && param2.Text != string.Empty && flag == 2)
+                return true;
+
+            return false;
+        }
+
+
         ///////////////////////////////////////////////////////////
 
 
@@ -66,15 +79,15 @@ namespace Examination_System.View.Admin
                     param1.Enabled = true;
                 }
                 else
-                    param2.Enabled= false;
+                    param2.Enabled = false;
 
 
                 if (report_box.SelectedIndex == 1)
                 {
                     param1.Enabled = true;
                 }
-                else 
-                    param2.Enabled= false;
+                else
+                    param2.Enabled = false;
 
 
                 if (report_box.SelectedIndex == 2)
@@ -82,7 +95,7 @@ namespace Examination_System.View.Admin
                     param1.Enabled = true;
                 }
                 else
-                    param2.Enabled= false;
+                    param2.Enabled = false;
 
 
                 if (report_box.SelectedIndex == 3)
@@ -98,19 +111,18 @@ namespace Examination_System.View.Admin
                     param1.Enabled = true;
                 }
                 else
-                    param2.Enabled= false;
+                    param2.Enabled = false;
 
-
+                
                 if (report_box.SelectedIndex == 5)
                 {
                     param1.Enabled = true;
-                    param2.Enabled= true;
+                    param2.Enabled = true;
                 }
+
             }
             else
-            {
                 setDisabledItems();
-            }
         }
     }
 }

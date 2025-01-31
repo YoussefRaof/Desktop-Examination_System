@@ -57,9 +57,9 @@ namespace Examination_System.View.student
                     {
                         new TakeExam(_Home, _email, course_box.Text).Show();
                         this.Close();
-                }
-                else
-                    MessageBox.Show("You have already taken this exam!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                        MessageBox.Show("You have already taken this exam!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                     MessageBox.Show("Please select course!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);

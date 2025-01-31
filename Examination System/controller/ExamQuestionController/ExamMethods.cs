@@ -89,7 +89,7 @@ namespace Examination_System.Controller
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@table", table);
-                        command.Parameters.AddWithValue("@Email", examName);
+                        command.Parameters.AddWithValue("@param", examName);
 
                         var result = command.ExecuteScalar();
 
@@ -142,22 +142,6 @@ namespace Examination_System.Controller
             {
                 throw new Exception("An error occurred: " + ex.Message, ex);
             }
-        }
-
-
-        public void InsertQuestion(Questions question)
-        {
-
-        }
-
-        public void UpdateQuestion(Questions question)
-        {
-
-        }
-
-        public bool LoginQuestion(Questions question)
-        {
-            return false;
         }
 
     }
