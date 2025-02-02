@@ -119,7 +119,7 @@ namespace Examination_System.View.Admin
                         TableData.PrintReports("GetCourseTopics", parameter1);
                         return;
                     case 4:
-                        TableData.PrintReports("GetExamQuestionsAndChoices", parameter1);
+                        TableData.PrintFreeformReport("GetExamQuestionsAndChoices", parameter1);
                         return;
                 }
             }

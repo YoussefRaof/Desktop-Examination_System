@@ -388,12 +388,14 @@ namespace Examination_System.controller
             }
         }
 
-        public static void PrintFreeformReport(string storedName, int examId, int studentId)
+        public static void PrintFreeformReport(string storedName, int examId, int? studentId = null)
         {
             SaveFileDialog sfd = new SaveFileDialog
             {
                 Filter = "PDF file|*.pdf",
-                FileName = $"StudentExamReport_Exam{examId}_Student{studentId}.pdf"
+                FileName = studentId.HasValue
+                    ? $"StudentExamReport_Exam{examId}_Student{studentId}.pdf"
+                    : $"ExamQuestionsReport_Exam{examId}.pdf"
             };
 
             if (sfd.ShowDialog() == DialogResult.OK)
@@ -406,7 +408,10 @@ namespace Examination_System.controller
                         {
                             cmd.CommandType = CommandType.StoredProcedure;
                             cmd.Parameters.AddWithValue("@examId", examId);
-                            cmd.Parameters.AddWithValue("@studentId", studentId);
+                            if (studentId.HasValue)
+                            {
+                                cmd.Parameters.AddWithValue("@studentId", studentId.Value);
+                            }
 
                             SqlDataAdapter da = new SqlDataAdapter(cmd);
                             DataTable dt = new DataTable();
@@ -414,7 +419,7 @@ namespace Examination_System.controller
 
                             if (dt.Rows.Count == 0)
                             {
-                                MessageBox.Show("No data found for the selected exam and student.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                MessageBox.Show("No data found for the selected criteria.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 return;
                             }
 
@@ -425,17 +430,18 @@ namespace Examination_System.controller
                                 document.Open();
 
                                 // Title Styling
-                                Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, new BaseColor(0, 51, 153)); // Dark Blue
-                                Paragraph title = new Paragraph($"📘 Student Exam Report", titleFont)
+                                Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, new BaseColor(0, 51, 153));
+                                string titleText = studentId.HasValue ? "📘 Student Exam Report" : "📘 Exam Questions Report";
+                                Paragraph title = new Paragraph(titleText, titleFont)
                                 {
                                     Alignment = Element.ALIGN_CENTER,
                                     SpacingAfter = 10
                                 };
                                 document.Add(title);
 
-                                // Subtitle Styling
+                                // Exam Name
                                 string examName = dt.Rows[0]["ExamName"].ToString();
-                                Font subtitleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14, new BaseColor(80, 80, 80)); // Dark Gray
+                                Font subtitleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14, new BaseColor(80, 80, 80));
                                 Paragraph subtitle = new Paragraph($"Exam: {examName} (ID: {examId})", subtitleFont)
                                 {
                                     Alignment = Element.ALIGN_CENTER,
@@ -443,86 +449,105 @@ namespace Examination_System.controller
                                 };
                                 document.Add(subtitle);
 
-                                // Student Information
-                                string studentName = dt.Rows[0]["StudentFullName"].ToString();
-                                Font studentFont = FontFactory.GetFont(FontFactory.HELVETICA, 12, BaseColor.DARK_GRAY);
-                                Paragraph studentInfo = new Paragraph($"Student: {studentName} (ID: {studentId})", studentFont)
+                                if (studentId.HasValue)
                                 {
-                                    Alignment = Element.ALIGN_CENTER,
-                                    SpacingAfter = 10
-                                };
-                                document.Add(studentInfo);
+                                    // Student Information
+                                    string studentName = dt.Rows[0]["StudentFullName"].ToString();
+                                    Font studentFont = FontFactory.GetFont(FontFactory.HELVETICA, 12, BaseColor.DARK_GRAY);
+                                    Paragraph studentInfo = new Paragraph($"Student: {studentName} (ID: {studentId})", studentFont)
+                                    {
+                                        Alignment = Element.ALIGN_CENTER,
+                                        SpacingAfter = 10
+                                    };
+                                    document.Add(studentInfo);
 
-                                // Summary Section
-                                Font summaryFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
-                                Paragraph summary = new Paragraph
-                                {
-                                    Alignment = Element.ALIGN_CENTER,
-                                    SpacingAfter = 20
-                                };
-                                summary.Add(new Chunk($"Total Questions: {dt.Rows[0]["TotalQuestions"]}\n", summaryFont));
-                                summary.Add(new Chunk($"Correct Answers: {dt.Rows[0]["CorrectAnswers"]}\n", summaryFont));
-                                summary.Add(new Chunk($"Percentage: {Math.Round(Convert.ToDouble(dt.Rows[0]["Percentage"]), 2)}%\n", summaryFont));
+                                    // Summary Section
+                                    Font summaryFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
+                                    Paragraph summary = new Paragraph
+                                    {
+                                        Alignment = Element.ALIGN_CENTER,
+                                        SpacingAfter = 20
+                                    };
+                                    summary.Add(new Chunk($"Total Questions: {dt.Rows[0]["TotalQuestions"]}\n", summaryFont));
+                                    summary.Add(new Chunk($"Correct Answers: {dt.Rows[0]["CorrectAnswers"]}\n", summaryFont));
+                                    summary.Add(new Chunk($"Percentage: {Math.Round(Convert.ToDouble(dt.Rows[0]["Percentage"]), 2)}%\n", summaryFont));
 
-                                // Pass/Fail Status with Color
-                                string resultStatus = dt.Rows[0]["ResultStatus"].ToString();
-                                Font resultFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12,
-                                    resultStatus == "Pass" ? BaseColor.GREEN : BaseColor.RED);
-                                summary.Add(new Chunk($"Result: {resultStatus}", resultFont));
-
-                                document.Add(summary);
+                                    // Pass/Fail Status with Color
+                                    string resultStatus = dt.Rows[0]["ResultStatus"].ToString();
+                                    Font resultFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12,
+                                        resultStatus == "Pass" ? BaseColor.GREEN : BaseColor.RED);
+                                    summary.Add(new Chunk($"Result: {resultStatus}", resultFont));
+                                    document.Add(summary);
+                                }
 
                                 // Loop through Questions
                                 Font questionFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
-                                Font answerFont = FontFactory.GetFont(FontFactory.HELVETICA, 12, BaseColor.BLACK);
-                                Font correctAnswerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, new BaseColor(59, 89, 152)); // Green for correct
-                                Font wrongAnswerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.RED); // Red for wrong
-
+                                Font choiceFont = FontFactory.GetFont(FontFactory.HELVETICA, 12, BaseColor.BLACK);
                                 int questionNumber = 1;
                                 foreach (DataRow row in dt.Rows)
                                 {
                                     string questionText = row["QuestionText"].ToString();
-                                    string studentAnswer = row["StudentAnswer"] != DBNull.Value ? row["StudentAnswer"].ToString() : "(No Answer)";
-                                    string correctAnswer = row["CorrectAnswer"].ToString();
-                                    string answerStatus = row["AnswerStatus"].ToString();
 
-                                    // Background color for the question
-                                    PdfPTable questionTable = new PdfPTable(1);
-                                    questionTable.WidthPercentage = 100;
+                                    // Add Question Header
+                                    PdfPTable questionTable = new PdfPTable(1)
+                                    {
+                                        WidthPercentage = 100
+                                    };
                                     PdfPCell questionCell = new PdfPCell(new Phrase($"{questionNumber}) {questionText}", questionFont))
                                     {
-                                        BackgroundColor = new BaseColor(230, 230, 230), // Light Gray
+                                        BackgroundColor = new BaseColor(230, 230, 230),
                                         Padding = 8,
                                         Border = Rectangle.NO_BORDER
                                     };
                                     questionTable.AddCell(questionCell);
                                     document.Add(questionTable);
 
-                                    // Answer Styling
-                                    Paragraph answer = new Paragraph("Answer: ", answerFont)
+                                    if (studentId.HasValue)
                                     {
-                                        IndentationLeft = 20,
-                                        SpacingBefore = 5
-                                    };
-                                    document.Add(answer);
+                                        // Student Answer
+                                        Font correctAnswerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, new BaseColor(59, 89, 152));
+                                        Font wrongAnswerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.RED);
+                                        string studentAnswer = row["StudentAnswer"] != DBNull.Value ? row["StudentAnswer"].ToString() : "(No Answer)";
+                                        string correctAnswer = row["CorrectAnswer"].ToString();
+                                        string answerStatus = row["AnswerStatus"].ToString();
 
-                                    // Student Answer
-                                    Paragraph answerText = new Paragraph(studentAnswer,
-                                        answerStatus == "Right" ? correctAnswerFont : wrongAnswerFont)
+                                        Paragraph answerText = new Paragraph(studentAnswer,
+                                            answerStatus == "Right" ? correctAnswerFont : wrongAnswerFont)
+                                        {
+                                            IndentationLeft = 40,
+                                            SpacingAfter = 5
+                                        };
+                                        document.Add(answerText);
+
+                                        Paragraph correctAnswerText = new Paragraph($"Correct Answer: {correctAnswer}", correctAnswerFont)
+                                        {
+                                            IndentationLeft = 40,
+                                            SpacingAfter = 10
+                                        };
+                                        document.Add(correctAnswerText);
+                                    }
+                                    else
                                     {
-                                        IndentationLeft = 40,
-                                        SpacingAfter = 5
-                                    };
-                                    document.Add(answerText);
+                                        // Display choices as A, B, C, or D
+                                        for (int i = 1; i <= 4; i++)
+                                        {
+                                            if (row[$"Choice_{i}"] != DBNull.Value)
+                                            {
+                                                string choiceLabel = ((char)(64 + i)).ToString(); // A, B, C, or D
+                                                string choiceText = row[$"Choice_{i}"].ToString();
 
-                                    // Correct Answer
-                                    Paragraph correctAnswerText = new Paragraph($"Correct Answer: {correctAnswer}", correctAnswerFont)
-                                    {
-                                        IndentationLeft = 40,
-                                        SpacingAfter = 10
-                                    };
-                                    document.Add(correctAnswerText);
+                                                Paragraph choiceParagraph = new Paragraph($"{choiceLabel}. {choiceText}", choiceFont)
+                                                {
+                                                    IndentationLeft = 40,
+                                                    SpacingAfter = 5
+                                                };
+                                                document.Add(choiceParagraph);
+                                            }
+                                        }
+                                    }
 
+                                    // Add spacing between questions
+                                    document.Add(new Paragraph(" "));
                                     questionNumber++;
                                 }
 
