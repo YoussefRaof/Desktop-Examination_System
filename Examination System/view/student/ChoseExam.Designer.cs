@@ -118,9 +118,9 @@
             this.course_box.Font = new System.Drawing.Font("Century Schoolbook", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.course_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.course_box.FormattingEnabled = true;
-            this.course_box.Location = new System.Drawing.Point(212, 163);
+            this.course_box.Location = new System.Drawing.Point(179, 163);
             this.course_box.Name = "course_box";
-            this.course_box.Size = new System.Drawing.Size(359, 32);
+            this.course_box.Size = new System.Drawing.Size(428, 32);
             this.course_box.TabIndex = 88;
             this.course_box.Tag = "";
             // 

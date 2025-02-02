@@ -47,6 +47,7 @@
             this.search = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.track_rbtn = new System.Windows.Forms.RadioButton();
             this.topic_rbtn = new System.Windows.Forms.RadioButton();
             this.course_rbtn = new System.Windows.Forms.RadioButton();
             this.topic_id = new System.Windows.Forms.TextBox();
@@ -271,6 +272,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.track_rbtn);
             this.panel3.Controls.Add(this.topic_rbtn);
             this.panel3.Controls.Add(this.course_rbtn);
             this.panel3.Location = new System.Drawing.Point(101, 711);
@@ -278,13 +280,28 @@
             this.panel3.Size = new System.Drawing.Size(383, 43);
             this.panel3.TabIndex = 122;
             // 
+            // track_rbtn
+            // 
+            this.track_rbtn.AutoSize = true;
+            this.track_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.track_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.track_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.track_rbtn.Location = new System.Drawing.Point(272, 3);
+            this.track_rbtn.Name = "track_rbtn";
+            this.track_rbtn.Size = new System.Drawing.Size(101, 31);
+            this.track_rbtn.TabIndex = 2;
+            this.track_rbtn.TabStop = true;
+            this.track_rbtn.Text = "Track";
+            this.track_rbtn.UseVisualStyleBackColor = true;
+            this.track_rbtn.CheckedChanged += new System.EventHandler(this.track_rbtn_CheckedChanged);
+            // 
             // topic_rbtn
             // 
             this.topic_rbtn.AutoSize = true;
             this.topic_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.topic_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topic_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.topic_rbtn.Location = new System.Drawing.Point(78, 3);
+            this.topic_rbtn.Location = new System.Drawing.Point(18, 3);
             this.topic_rbtn.Name = "topic_rbtn";
             this.topic_rbtn.Size = new System.Drawing.Size(97, 31);
             this.topic_rbtn.TabIndex = 1;
@@ -299,7 +316,7 @@
             this.course_rbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.course_rbtn.Font = new System.Drawing.Font("Century Schoolbook", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.course_rbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.course_rbtn.Location = new System.Drawing.Point(196, 3);
+            this.course_rbtn.Location = new System.Drawing.Point(137, 3);
             this.course_rbtn.Name = "course_rbtn";
             this.course_rbtn.Size = new System.Drawing.Size(111, 31);
             this.course_rbtn.TabIndex = 0;
@@ -507,5 +524,6 @@
         private System.Windows.Forms.Button assign_btn;
         private System.Windows.Forms.DataGridView track_table;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton track_rbtn;
     }
 }

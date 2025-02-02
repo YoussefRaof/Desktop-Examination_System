@@ -82,7 +82,7 @@ namespace Examination_System.view.admin
                 }
 
                 else
-                    MessageBox.Show("Faild to Login!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Faild to Login!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {

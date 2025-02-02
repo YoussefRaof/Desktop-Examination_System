@@ -52,7 +52,8 @@ namespace Examination_System.view
         private bool checkData()
         {
             if (username.Text != string.Empty && (email.Text != string.Empty && email.Text.Contains("@")) && password.Text != string.Empty && confirmPassword.Text != string.Empty)
-                return true;
+                if (password.Text == confirmPassword.Text)
+                    return true;
 
             return false;
         }
@@ -121,11 +122,7 @@ namespace Examination_System.view
                 new LoginAdmin().Show();
             }
             else
-                MessageBox.Show("Make Sure Email Contains @!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-
-
-
+                MessageBox.Show("Please check your data!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

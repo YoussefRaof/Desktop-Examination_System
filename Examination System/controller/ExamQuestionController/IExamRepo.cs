@@ -12,6 +12,7 @@ namespace Examination_System.Controller
     internal interface IExamRepo
     {
         DataTable GetExamData(int ssn, string course_name);
+        void Insert(Exam exam, Course course);
         int GetExamID(string table, string examName);
         void CorrectExam(int ssn, int exam_id);
         void SaveStudentAnswers(Student_Exam_Questions studentAnswer);

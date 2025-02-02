@@ -105,7 +105,7 @@ namespace Examination_System.view
 
                 }
                 else
-                    MessageBox.Show("Invalid Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Invalid Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
 
@@ -121,7 +121,7 @@ namespace Examination_System.view
                     new student.Home(student.Email).Show();
                 }
                 else
-                    MessageBox.Show("Invalid Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Invalid Login !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
             else

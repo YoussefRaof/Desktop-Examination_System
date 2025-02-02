@@ -130,12 +130,12 @@
             "Students Information (Track ID)",
             "Student Grades (Student ID)",
             "Courses that Instructor Teaches (Instructor ID)",
-            "Topics in Courses (Course ID)",
+            "Courses in Topic (Topic ID)",
             "Exam Questions (Exam ID)",
             "Student Answers in Exam (Exam ID, Student ID)"});
-            this.report_box.Location = new System.Drawing.Point(232, 129);
+            this.report_box.Location = new System.Drawing.Point(256, 125);
             this.report_box.Name = "report_box";
-            this.report_box.Size = new System.Drawing.Size(556, 32);
+            this.report_box.Size = new System.Drawing.Size(532, 32);
             this.report_box.TabIndex = 92;
             this.report_box.Tag = "";
             this.report_box.SelectedIndexChanged += new System.EventHandler(this.report_box_SelectedIndexChanged);
@@ -177,18 +177,18 @@
             // 
             this.param1.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.param1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.param1.Location = new System.Drawing.Point(232, 204);
+            this.param1.Location = new System.Drawing.Point(256, 204);
             this.param1.Name = "param1";
-            this.param1.Size = new System.Drawing.Size(286, 35);
+            this.param1.Size = new System.Drawing.Size(266, 35);
             this.param1.TabIndex = 96;
             // 
             // param2
             // 
             this.param2.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.param2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.param2.Location = new System.Drawing.Point(232, 258);
+            this.param2.Location = new System.Drawing.Point(256, 258);
             this.param2.Name = "param2";
-            this.param2.Size = new System.Drawing.Size(286, 35);
+            this.param2.Size = new System.Drawing.Size(266, 35);
             this.param2.TabIndex = 97;
             // 
             // GenerateReports

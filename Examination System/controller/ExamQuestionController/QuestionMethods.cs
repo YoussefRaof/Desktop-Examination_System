@@ -49,12 +49,22 @@ namespace Examination_System.Controller.QuestionController
 
         public void Update(Questions question)
         {
-            string columns = $"ques_name = '{question.QuestionName}', ques_type = '{question.Type}', choice_1 = '{question.Choise1}', choice_2 = '{question.Choise2}', " +
+            if (question.Choise3 != null || question.Choise4 != null)
+            {
+                string columns = $"ques_name = '{question.QuestionName}', ques_type = '{question.Type}', choice_1 = '{question.Choise1}', choice_2 = '{question.Choise2}', " +
                 $"choice_3 = '{question.Choise3}', choice_4 = '{question.Choise4}', ques_model_answer = '{question.ModelAnswer}', crs_id_fk = '{question.CourseId}'";
             
-            string condition = $"ques_id = {question.QuestionId}";
+                string condition = $"ques_id = {question.QuestionId}";
+                HelperMethods.ExecuteDmlQuery("Questions", "update", columns, null, condition);
+            }
+            else
+            {
+                string columns = $"ques_name = '{question.QuestionName}', ques_type = '{question.Type}', choice_1 = '{question.Choise1}', choice_2 = '{question.Choise2}', " +
+                $"ques_model_answer = '{question.ModelAnswer}', crs_id_fk = '{question.CourseId}'";
 
-            HelperMethods.ExecuteDmlQuery("Questions", "update", columns, null, condition);
+                string condition = $"ques_id = {question.QuestionId}";
+                HelperMethods.ExecuteDmlQuery("Questions", "update", columns, null, condition);
+            }
         }
 
 
@@ -109,7 +119,7 @@ namespace Examination_System.Controller.QuestionController
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@table", table);
-                        command.Parameters.AddWithValue("@Email", quesName);
+                        command.Parameters.AddWithValue("@param", quesName);
 
                         var result = command.ExecuteScalar();
 

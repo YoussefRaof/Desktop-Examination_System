@@ -156,7 +156,7 @@
             this.instractor_rbtn.Size = new System.Drawing.Size(164, 33);
             this.instractor_rbtn.TabIndex = 0;
             this.instractor_rbtn.TabStop = true;
-            this.instractor_rbtn.Text = "Instractor";
+            this.instractor_rbtn.Text = "Instructor";
             this.instractor_rbtn.UseVisualStyleBackColor = true;
             this.instractor_rbtn.CheckedChanged += new System.EventHandler(this.instractor_rbtn_CheckedChanged);
             // 

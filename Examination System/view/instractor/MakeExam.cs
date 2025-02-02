@@ -178,6 +178,8 @@ namespace Examination_System.view.instractor
             {
                 exam.Question.Choise1 = option_a.Text;
                 exam.Question.Choise2 = option_b.Text;
+                exam.Question.Choise3 = null;
+                exam.Question.Choise4 = null;
             }
 
 
@@ -225,13 +227,36 @@ namespace Examination_System.view.instractor
 
         private void exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            bool canInsert = TableData.fillQuesTable(question_table, "GetInstructorCourseQuestions", _ins_id, course_exam_box.Text);
+
+            if (course_exam_box.Text != string.Empty && canInsert)
+            {
+                var confirmation = MessageBox.Show($"You haven't added 10 questions in {course_exam_box.Text} course yet. \n\nAre you sure you want exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (confirmation == DialogResult.Yes)
+                    Application.Exit();
+            }
+            else
+                Application.Exit();
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            this.Close();
-            _Home.Show();
+            bool canInsert = TableData.fillQuesTable(question_table, "GetInstructorCourseQuestions", _ins_id, course_exam_box.Text);
+
+            if (course_exam_box.Text != string.Empty && canInsert)
+            {
+                var confirmation = MessageBox.Show($"You haven't added 10 questions in course {course_exam_box.Text} course yet. \n\nAre you sure you want back to home?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (confirmation == DialogResult.Yes)
+                {
+                    this.Close();
+                    _Home.Show();
+                }
+            }
+            else
+            {
+                this.Close();
+                _Home.Show();
+            }
         }
 
         private void quesion_no_SelectedIndexChanged(object sender, EventArgs e)
@@ -331,8 +356,13 @@ namespace Examination_System.view.instractor
                 {
                     question_type_box.Text = "T/f";
 
-                    option_a.Enabled = true;
-                    option_b.Enabled = true;
+                    option_c.Text = null;
+                    option_d.Text = null;
+
+                    option_a.Enabled = false;
+                    option_b.Enabled = false;
+                    option_c.Enabled = false;
+                    option_d.Enabled = false;
                 }
             }
             catch

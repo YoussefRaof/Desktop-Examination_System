@@ -1,6 +1,8 @@
 ﻿using Examination_System.model;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,5 +46,36 @@ namespace Examination_System.Controller.CourseController
                 HelperMethods.ExecuteDmlQuery("Course", "update", formattedColumns, null, condition, 0);
             }
         }
+
+        public int GetCourseID(string table, string courseName)
+        {
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    throw new Exception("Database connection failed.");
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("get_id", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@table", table);
+                        command.Parameters.AddWithValue("@param", courseName);
+
+                        var result = command.ExecuteScalar();
+
+                        if (result == DBNull.Value)
+                            return -1;
+
+                        return Convert.ToInt32(result);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred: " + ex.Message, ex);
+                }
+            }
+        }
+
     }
 }

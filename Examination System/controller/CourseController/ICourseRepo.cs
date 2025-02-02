@@ -12,5 +12,6 @@ namespace Examination_System.Controller.CourseController
         void Insert(Course course);
         void Delete(Course course);
         void Update(Course course);
+        int GetCourseID(string table, string examName);
     }
 }

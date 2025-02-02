@@ -46,10 +46,7 @@ namespace Examination_System.view.admin
             TableData.getData("branchView", "[Branch Name]", search.Text, branch_table);
             TableData.getData("trackView", "[Track Name]", search.Text, track_table);
 
-           
             TableData.getData("branchAssignTrackView", "Track_Name", "", assigned_table);
-
-
         }
 
         private void setDisabledItems()

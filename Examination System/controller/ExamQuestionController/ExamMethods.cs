@@ -14,6 +14,13 @@ namespace Examination_System.Controller
     {
         public ExamMethods() { }
 
+        public void Insert(Exam exam, Course course)
+        {
+            string columns = "exam_name, crs_id_fk";
+            string values = $"'{exam.ExamName}', {course.CourseId}";
+            HelperMethods.ExecuteDmlQuery("Exam", "insert", columns, values, null, 0);
+        }
+
         public DataTable GetExamData(int ssn, string course_name)
         {
             DataTable examData = new DataTable();
@@ -108,10 +115,41 @@ namespace Examination_System.Controller
 
         public void SaveStudentAnswers(Student_Exam_Questions studentAnswer)
         {
-            string columns = "SSN_FK, exam_id_FK, ques_id_FK, answer";
-            string values = $"'{studentAnswer.StudentId}', '{studentAnswer.ExamId}', '{studentAnswer.QuestionId}', '{studentAnswer.Answer}'";
-            HelperMethods.ExecuteDmlQuery("Student_Take_Exam_Has_Questions", "insert", columns, values, null, 0);
+            using (SqlConnection connection = controller.DatabaseConnection.GetConnection())
+            {
+                if (connection == null)
+                    return;
+
+                try
+                {
+                    using (SqlCommand command = new SqlCommand("Insert_Student_Answers", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@st_id", studentAnswer.StudentId);
+                        command.Parameters.AddWithValue("@exam_id", studentAnswer.ExamId);
+                        command.Parameters.AddWithValue("@ques_id", studentAnswer.QuestionId);
+                        command.Parameters.AddWithValue("@answer", studentAnswer.Answer);
+
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
+
+
+        //public void SaveStudentAnswers2(Student_Exam_Questions studentAnswer)
+        //{
+        //    string columns = "SSN_FK, exam_id_FK, ques_id_FK, answer";
+        //    string values = $"'{studentAnswer.StudentId}', '{studentAnswer.ExamId}', '{studentAnswer.QuestionId}', '{studentAnswer.Answer}'";
+        //    HelperMethods.ExecuteDmlQuery("Student_Take_Exam_Has_Questions", "insert", columns, values, null, 0);
+        //}
+
 
         public bool IsStudTakeExam(int ssn, string examName)
         {

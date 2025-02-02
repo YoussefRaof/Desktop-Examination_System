@@ -273,7 +273,7 @@ namespace Examination_System.controller
                                     cmd.Parameters.AddWithValue("@insId", param1);
                                     break;
                                 case "GetCourseTopics":
-                                    cmd.Parameters.AddWithValue("@courseId", param1);
+                                    cmd.Parameters.AddWithValue("@topicId", param1);
                                     break;
                                 case "GetExamQuestionsAndChoices":
                                     cmd.Parameters.AddWithValue("@examId", param1);
@@ -443,16 +443,48 @@ namespace Examination_System.controller
                                 };
                                 document.Add(subtitle);
 
+                                // Student Information
+                                string studentName = dt.Rows[0]["StudentFullName"].ToString();
+                                Font studentFont = FontFactory.GetFont(FontFactory.HELVETICA, 12, BaseColor.DARK_GRAY);
+                                Paragraph studentInfo = new Paragraph($"Student: {studentName} (ID: {studentId})", studentFont)
+                                {
+                                    Alignment = Element.ALIGN_CENTER,
+                                    SpacingAfter = 10
+                                };
+                                document.Add(studentInfo);
+
+                                // Summary Section
+                                Font summaryFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
+                                Paragraph summary = new Paragraph
+                                {
+                                    Alignment = Element.ALIGN_CENTER,
+                                    SpacingAfter = 20
+                                };
+                                summary.Add(new Chunk($"Total Questions: {dt.Rows[0]["TotalQuestions"]}\n", summaryFont));
+                                summary.Add(new Chunk($"Correct Answers: {dt.Rows[0]["CorrectAnswers"]}\n", summaryFont));
+                                summary.Add(new Chunk($"Percentage: {Math.Round(Convert.ToDouble(dt.Rows[0]["Percentage"]), 2)}%\n", summaryFont));
+
+                                // Pass/Fail Status with Color
+                                string resultStatus = dt.Rows[0]["ResultStatus"].ToString();
+                                Font resultFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12,
+                                    resultStatus == "Pass" ? BaseColor.GREEN : BaseColor.RED);
+                                summary.Add(new Chunk($"Result: {resultStatus}", resultFont));
+
+                                document.Add(summary);
+
                                 // Loop through Questions
                                 Font questionFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
-                                Font answerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, new BaseColor(0, 102, 204)); // Blue
-                                Font noAnswerFont = FontFactory.GetFont(FontFactory.HELVETICA_OBLIQUE, 12, BaseColor.RED); // Red Italic for no answer
+                                Font answerFont = FontFactory.GetFont(FontFactory.HELVETICA, 12, BaseColor.BLACK);
+                                Font correctAnswerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, new BaseColor(59, 89, 152)); // Green for correct
+                                Font wrongAnswerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.RED); // Red for wrong
 
                                 int questionNumber = 1;
                                 foreach (DataRow row in dt.Rows)
                                 {
                                     string questionText = row["QuestionText"].ToString();
                                     string studentAnswer = row["StudentAnswer"] != DBNull.Value ? row["StudentAnswer"].ToString() : "(No Answer)";
+                                    string correctAnswer = row["CorrectAnswer"].ToString();
+                                    string answerStatus = row["AnswerStatus"].ToString();
 
                                     // Background color for the question
                                     PdfPTable questionTable = new PdfPTable(1);
@@ -474,12 +506,22 @@ namespace Examination_System.controller
                                     };
                                     document.Add(answer);
 
-                                    Paragraph answerText = new Paragraph(studentAnswer, studentAnswer == "(No Answer)" ? noAnswerFont : answerFont)
+                                    // Student Answer
+                                    Paragraph answerText = new Paragraph(studentAnswer,
+                                        answerStatus == "Right" ? correctAnswerFont : wrongAnswerFont)
+                                    {
+                                        IndentationLeft = 40,
+                                        SpacingAfter = 5
+                                    };
+                                    document.Add(answerText);
+
+                                    // Correct Answer
+                                    Paragraph correctAnswerText = new Paragraph($"Correct Answer: {correctAnswer}", correctAnswerFont)
                                     {
                                         IndentationLeft = 40,
                                         SpacingAfter = 10
                                     };
-                                    document.Add(answerText);
+                                    document.Add(correctAnswerText);
 
                                     questionNumber++;
                                 }
@@ -501,4 +543,5 @@ namespace Examination_System.controller
 
     }
 }
+
 

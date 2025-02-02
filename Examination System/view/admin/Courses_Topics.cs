@@ -30,6 +30,8 @@ namespace Examination_System.view.admin
         ICourseRepo courseMethods;
         ITopicRepo topicMethods;
         IAdminRepo adminMethods;
+        IExamRepo examMethods;
+        Exam exam;
 
         public Courses_Topics(Form home, string adminEmail)
         {
@@ -40,9 +42,12 @@ namespace Examination_System.view.admin
             topic = new Topic();
             course = new Course();
             track = new model.Track();
+            exam = new Exam();
+
             courseMethods = new CourseMethods();
             topicMethods = new TopicMethods();
             adminMethods = new AdminMethods();
+            examMethods = new ExamMethods();
 
             TableData.getData("courseView", "[Course Name]", search.Text, course_table);
             TableData.getData("topicsDetails", "[Topic Name]", search.Text, topic_table);
@@ -118,6 +123,8 @@ namespace Examination_System.view.admin
                 if (course_name.Text != string.Empty && topic_id.Text != string.Empty)
                 {
                     course.CourseName= course_name.Text;
+                    exam.ExamName = course_name.Text;
+
                     course.Admin_id_FK = adminMethods.getID("Admin", Home._email);
                     var topicId = Convert.ToInt32(topic_id.Text);
                     var result = HelperMethods.CheckTopic(topicId);
@@ -125,6 +132,11 @@ namespace Examination_System.view.admin
                     {
                         course.TopicId = topicId;
                         courseMethods.Insert(course); // Im
+
+                        course.CourseId = courseMethods.GetCourseID("Course", course.CourseName);
+
+                        examMethods.Insert(exam, course);
+
                         MessageBox.Show("Course is Inserted Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         TableData.getData("courseView", "[Course Name]", search.Text, course_table);
 
@@ -418,6 +430,8 @@ namespace Examination_System.view.admin
                 TableData.getData("courseView", "[Course Name]", search.Text, course_table);
             else if (topic_rbtn.Checked)
                 TableData.getData("topicsDetails", "[Topic Name]", search.Text, topic_table);
+            else if (track_rbtn.Checked)
+                TableData.getData("trackView", "[Track Name]", search.Text, track_table);
         }
         private string CheckTableToDeleteOrUpdate()
         {
@@ -513,6 +527,11 @@ namespace Examination_System.view.admin
             }
             else
                 MessageBox.Show("Database Exception", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void track_rbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            setEnabledItems();
         }
     }
 }
