@@ -12,7 +12,7 @@ namespace Examination_System.controller
     internal class DatabaseConnection
     {
         //private static string connectionString = @"Data Source=lSa3edii\SQLEXPRESS01;Initial Catalog=Examination System;Integrated Security=True;";
-        private static string connectionString = "Data Source=SQL1002.site4now.net;Initial Catalog=db_ab2209_examinationsystem;User Id=db_ab2209_examinationsystem_admin;Password=Hello1[~World]";
+        private static string connectionString = Environment.GetEnvironmentVariable("ExamSysDB");
 
         public DatabaseConnection() { }
     
